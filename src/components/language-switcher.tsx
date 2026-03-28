@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { useRouter, usePathname } from 'next-intl/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import {
   Select,
   SelectContent,
@@ -10,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { locales } from '@/i18n';
+import { locales, defaultLocale } from '@/i18n';
 import { Skeleton } from '@/components/ui/skeleton';
 
 // This component contains the hooks and will only be rendered on the client.
@@ -20,8 +20,22 @@ function LanguageSelector() {
   const locale = useLocale();
   const t = useTranslations('Language');
 
-  const onSelectChange = (value: string) => {
-    router.replace(pathname, { locale: value });
+  const onSelectChange = (newLocale: string) => {
+    // The `usePathname` hook from `next/navigation` returns the
+    // an un-localized path for the default locale, and a localized path
+    // for all other locales.
+    const segments = pathname.split('/');
+    if (locales.includes(segments[1])) {
+      segments.splice(1, 1);
+    }
+    let newPath = segments.join('/');
+    if (newPath === '') newPath = '/';
+
+    if (newLocale !== defaultLocale) {
+      newPath = `/${newLocale}${newPath === '/' ? '' : newPath}`;
+    }
+
+    router.replace(newPath);
   };
 
   return (
