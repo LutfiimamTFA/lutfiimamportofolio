@@ -6,7 +6,6 @@ import SkillsSection from '@/components/skills-section';
 import ApproachSection from '@/components/approach-section';
 import ContactSection from '@/components/contact-section';
 import Footer from '@/components/layout/footer';
-import AIAssistant from '@/components/ai-assistant';
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
         <ContactSection />
       </main>
       <Footer />
-      <AIAssistant />
     </div>
   );
 }
