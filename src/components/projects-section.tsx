@@ -12,14 +12,14 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="scroll-mt-20 bg-secondary/30 py-20 lg:py-32">
+    <section id="projects" className="bg-secondary/30 py-20 lg:py-32">
       <div className="container">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="mb-4 font-headline text-3xl font-semibold md:text-4xl">
             Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground">
-            Berikut adalah beberapa proyek pilihan yang telah saya kerjakan.
+            A selection of projects I've worked on, showcasing my skills and expertise.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -28,8 +28,7 @@ export default function ProjectsSection() {
             return (
               <Card
                 key={project.title}
-                className="group flex flex-col overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
-                style={{ animationDelay: `${index * 150}ms` }}
+                className="group flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
               >
                 <div className="relative h-52 w-full overflow-hidden">
                   {image && (
@@ -37,14 +36,15 @@ export default function ProjectsSection() {
                       src={image.imageUrl}
                       alt={project.title}
                       fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       data-ai-hint={image.imageHint}
                     />
                   )}
                   {project.link && (
-                    <Link href={project.link} target="_blank" rel="noopener noreferrer" className="absolute right-3 top-3 rounded-full bg-background/70 p-2 text-foreground backdrop-blur-sm transition-colors hover:bg-primary hover:text-primary-foreground">
+                    <Link href={project.link} target="_blank" rel="noopener noreferrer" className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-background/70 text-foreground backdrop-blur-sm transition-all hover:bg-primary hover:text-primary-foreground scale-0 group-hover:scale-100">
                       <ArrowUpRight className="h-5 w-5" />
+                      <span className="sr-only">View Project</span>
                     </Link>
                   )}
                 </div>

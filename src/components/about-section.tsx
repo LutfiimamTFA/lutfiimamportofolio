@@ -2,10 +2,10 @@ import { portfolioData } from '@/lib/portfolio-data';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="scroll-mt-20 py-20 lg:py-32">
+    <section id="about" className="py-20 lg:py-32">
       <div className="container">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="mb-8 text-center font-headline text-3xl font-semibold md:text-4xl">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="mb-8 font-headline text-3xl font-semibold md:text-4xl">
             About Me
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground">

@@ -8,16 +8,25 @@ export default function ApproachSection() {
     { text: portfolioData.approach.p3 },
   ];
 
+  const codeSnippet = `
+// Sample code snippet
+function greet(name) {
+  console.log(\`Hello, \${name}!\`);
+}
+
+greet('World');
+  `.trim();
+
   return (
-    <section id="approach" className="scroll-mt-20 bg-secondary/30 py-20 lg:py-32">
+    <section id="approach" className="bg-secondary/30 py-20 lg:py-32">
       <div className="container">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <h2 className="mb-4 font-headline text-3xl font-semibold md:text-4xl">
-              Working Approach
+              {portfolioData.approach.title}
             </h2>
             <p className="mb-8 text-lg text-muted-foreground">
-              Pendekatan saya dalam setiap proyek untuk memastikan hasil yang berkualitas dan efisien.
+              {portfolioData.approach.description}
             </p>
             <ul className="space-y-4">
               {points.map((point, index) => (
@@ -28,11 +37,10 @@ export default function ApproachSection() {
               ))}
             </ul>
           </div>
-          <div className="relative flex h-80 items-center justify-center lg:h-96">
-            <div className="absolute h-full w-full rounded-2xl bg-gradient-to-r from-primary to-accent opacity-20 blur-3xl"></div>
-            <p className="relative z-10 font-mono text-5xl font-bold text-foreground/80 md:text-7xl">
-              {'<CODE>'}
-            </p>
+          <div className="overflow-hidden rounded-lg bg-card p-6 shadow-lg">
+            <pre className="text-sm text-muted-foreground">
+                <code className="font-code">{codeSnippet}</code>
+            </pre>
           </div>
         </div>
       </div>

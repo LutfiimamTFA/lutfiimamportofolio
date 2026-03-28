@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "avatar",
+      "description": "Avatar image of the developer",
+      "imageUrl": "https://picsum.photos/seed/avatar/400/400",
+      "imageHint": "portrait person"
+    },
+    {
       "id": "project-1",
       "description": "CBDMS Workspace project image",
       "imageUrl": "https://picsum.photos/seed/cbdms/600/400",
@@ -29,6 +35,12 @@
       "description": "WordPress Development project image",
       "imageUrl": "https://picsum.photos/seed/wordpress/600/400",
       "imageHint": "website design"
+    },
+    {
+      "id": "project-6",
+      "description": "E-Commerce platform project image",
+      "imageUrl": "https://picsum.photos/seed/ecommerce/600/400",
+      "imageHint": "online shopping"
     }
   ]
 }

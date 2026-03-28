@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { portfolioData } from '@/lib/portfolio-data';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { Menu, Code2 } from 'lucide-react';
 
 export default function Header() {
@@ -26,7 +26,7 @@ export default function Header() {
         <Button asChild variant="link" key={link.href} onClick={() => setIsOpen(false)}>
           <Link
             href={link.href}
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            className="text-base text-muted-foreground transition-colors hover:text-foreground"
           >
             {link.name}
           </Link>
@@ -47,10 +47,13 @@ export default function Header() {
           <Code2 className="h-6 w-6 text-primary" />
           <span className="font-bold">{portfolioData.name}</span>
         </Link>
-        <nav className="hidden items-center gap-4 text-sm lg:flex">
+        <nav className="hidden items-center gap-1 text-sm lg:flex">
           <NavLinks />
         </nav>
         <div className="flex flex-1 items-center justify-end gap-2">
+          <Button asChild>
+            <Link href="#contact">{portfolioData.hero.cta2}</Link>
+          </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="lg:hidden">
@@ -59,20 +62,17 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-              <SheetTitle className="sr-only">Menu</SheetTitle>
+              <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
               <SheetDescription className="sr-only">A list of navigation links to explore the page.</SheetDescription>
               <Link href="/" className="mb-6 flex items-center gap-2" onClick={() => setIsOpen(false)}>
                 <Code2 className="h-6 w-6 text-primary" />
                 <span className="font-bold">{portfolioData.name}</span>
               </Link>
-              <nav className="flex flex-col items-start gap-4">
+              <nav className="flex flex-col items-start gap-2">
                 <NavLinks />
               </nav>
             </SheetContent>
           </Sheet>
-          <Button asChild>
-            <Link href="#contact">Hubungi Saya</Link>
-          </Button>
         </div>
       </div>
     </header>

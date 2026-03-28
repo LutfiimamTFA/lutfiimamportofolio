@@ -39,6 +39,8 @@ type PortfolioData = {
   projects: Project[];
   skills: SkillCategory[];
   approach: {
+    title: string;
+    description: string;
     p1: string;
     p2: string;
     p3: string;
@@ -51,7 +53,7 @@ type PortfolioData = {
 };
 
 export const portfolioData: PortfolioData = {
-  name: "DevFolio",
+  name: "John Doe",
   navLinks: [
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
@@ -59,88 +61,103 @@ export const portfolioData: PortfolioData = {
     { name: "Contact", href: "#contact" },
   ],
   hero: {
-    role: "Web Developer",
-    description: "Saya Web Developer dengan pengalaman membangun aplikasi berbasis web seperti sistem manajemen tugas, HR system, CRM, serta sistem pengadaan barang untuk instansi pemerintah. Fokus pada pengembangan sistem yang efisien, terstruktur, dan sesuai kebutuhan bisnis.",
-    cta1: "Lihat Proyek Saya",
-    cta2: "Hubungi Saya",
+    role: "Full Stack Developer",
+    description: "I build efficient, scalable, and user-friendly web applications. From task management systems to government procurement platforms, I turn complex requirements into elegant digital solutions.",
+    cta1: "View My Work",
+    cta2: "Hire Me",
   },
   about: {
-    p1: "Saya lulusan Teknik Informatika dengan pengalaman magang sebagai Web Developer di PT Environesia Global Saraya melalui program MagangHub Kementerian Ketenagakerjaan.",
-    p2: "Selama masa kuliah, saya juga mengikuti program MBKM dengan mengembangkan website sistem pengadaan barang untuk Dinas Peternakan dan Perikanan Kabupaten Blitar.",
-    p3: "Saya terbiasa mengembangkan aplikasi berbasis web dan bekerja dalam tim menggunakan metode Agile.",
-    p4: "Dalam proses pengembangan, saya memanfaatkan AI sebagai tools untuk mempercepat pengerjaan, membantu analisis solusi, dan meningkatkan efisiensi, tanpa mengabaikan kualitas dan struktur kode.",
+    p1: "As a Computer Science graduate, I gained hands-on experience as a Web Developer intern at PT Environesia Global Saraya through a government-sponsored program.",
+    p2: "During my studies, I also participated in the MBKM program, where I developed a procurement system website for the Blitar Regency's Livestock and Fisheries Service.",
+    p3: "I am experienced in developing web applications and thrive in team environments using Agile methodologies.",
+    p4: "I leverage AI-powered tools to accelerate development, analyze solutions, and boost efficiency, always ensuring that code quality and structure remain top priorities.",
   },
   projects: [
     {
       title: "CBDMS Workspace",
-      description: "Sistem manajemen tugas berbasis web dengan fitur Kanban interaktif, manajemen tugas, dependensi, dan dashboard real-time.",
-      tech: ["Firebase", "Firestore", "Web App"],
-      role: "Full Development",
+      description: "A web-based task management system with an interactive Kanban board, task dependencies, and a real-time dashboard.",
+      tech: ["Firebase", "Firestore", "React"],
+      role: "Full Stack Development",
       imageId: "project-1",
+      link: "#"
     },
     {
       title: "HR Platform System",
-      description: "Sistem HR untuk mengelola rekrutmen, data karyawan, dan proses approval bertingkat.",
+      description: "An HR system to manage recruitment, employee data, and multi-level approval processes.",
       tech: ["Web App", "Database System"],
-      role: "Development",
+      role: "Backend Development",
       imageId: "project-2",
+      link: "#"
     },
     {
-      title: "CRM WhatsApp Integration (WAHA)",
-      description: "Sistem CRM yang terhubung dengan WhatsApp untuk monitoring aktivitas dan performa sales.",
-      tech: ["WAHA", "API Integration"],
-      role: "Build from scratch",
+      title: "CRM WhatsApp Integration",
+      description: "A CRM system connected with WhatsApp (using WAHA) for monitoring sales activity and performance.",
+      tech: ["WAHA", "API Integration", "Node.js"],
+      role: "System Integration",
       imageId: "project-3",
+      link: "#"
     },
     {
-      title: "Sistem Pengadaan Barang (MBKM)",
-      description: "Website pengadaan barang untuk Dinas Peternakan dan Perikanan Kabupaten Blitar untuk membantu proses pengelolaan data dan transaksi pengadaan.",
-      tech: ["Web App", "Database System"],
-      role: "Development",
+      title: "Goods Procurement System",
+      description: "A website for the Blitar Regency to manage data and transactions for public procurement.",
+      tech: ["PHP", "MySQL", "Web App"],
+      role: "Full Stack Development",
       imageId: "project-4",
+      link: "#"
     },
     {
       title: "WordPress Development",
-      description: "Pembuatan website dan landing page menggunakan Elementor untuk kebutuhan konten dan event.",
-      tech: ["WordPress", "Elementor"],
-      role: "Development & Content Management",
+      description: "Created and managed websites and landing pages using Elementor for content and event marketing.",
+      tech: ["WordPress", "Elementor", "PHP"],
+      role: "Development & Content",
       imageId: "project-5",
+      link: "#"
     },
+    {
+      title: "E-Commerce Platform",
+      description: "A complete e-commerce solution with product management, shopping cart, and payment gateway integration.",
+      tech: ["Next.js", "Stripe", "PostgreSQL"],
+      role: "Full Stack Development",
+      imageId: "project-6",
+      link: "#"
+    }
   ],
   skills: [
     {
       category: "Backend",
-      technologies: ["Laravel", "PHP", "MySQL"],
+      technologies: ["Laravel", "PHP", "Node.js", "Express"],
     },
     {
-      category: "Frontend/Tools",
-      technologies: ["WordPress", "Elementor"],
+      category: "Frontend",
+      technologies: ["React", "Next.js", "Tailwind CSS", "WordPress"],
     },
     {
-      category: "Database & Platform",
-      technologies: ["Firebase"],
+      category: "Database & Cloud",
+      technologies: ["MySQL", "Firebase", "Firestore"],
     },
     {
-      category: "Tools",
-      technologies: ["Git", "n8n"],
+      category: "Tools & Methods",
+      technologies: ["Git", "Docker", "Agile", "n8n"],
     },
     {
-      category: "Additional",
-      technologies: ["AI-assisted development"],
+      category: "Expertise",
+      technologies: ["API Integration", "AI-assisted development"],
     },
   ],
   approach: {
-    p1: "Saya tidak hanya fokus pada coding, tetapi juga pada bagaimana sistem digunakan dalam kebutuhan nyata.",
-    p2: "Saya membangun aplikasi dengan pendekatan terstruktur, mempertimbangkan efisiensi, kemudahan penggunaan, dan skalabilitas.",
-    p3: "Saya juga memanfaatkan AI untuk mempercepat proses development, membantu eksplorasi solusi, dan meningkatkan produktivitas kerja.",
+    title: "My Working Approach",
+    description: "My approach to every project ensures high-quality, efficient results.",
+    p1: "I focus not just on coding, but on how the system addresses real-world user needs.",
+    p2: "I build applications with a structured approach, considering efficiency, usability, and scalability.",
+    p3: "I utilize AI to speed up the development process, assist in solution exploration, and boost overall productivity.",
   },
   contact: {
-    title: "Hubungi Saya",
-    description: "Saya terbuka untuk diskusi, kolaborasi, atau peluang kerja. Jangan ragu untuk menghubungi saya.",
+    title: "Get In Touch",
+    description: "I'm always open to discussing new projects, collaborations, or employment opportunities. Feel free to reach out.",
   },
   socials: [
-      { name: 'Email', url: 'mailto:developer@example.com', icon: Mail },
-      { name: 'GitHub', url: '#', icon: Github },
-      { name: 'LinkedIn', url: '#', icon: Linkedin },
+      { name: 'Email', url: 'mailto:john.doe@example.com', icon: Mail },
+      { name: 'GitHub', url: 'https://github.com', icon: Github },
+      { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin },
   ]
 };
