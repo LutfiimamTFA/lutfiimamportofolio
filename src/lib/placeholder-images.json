@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "CBDMS Workspace project image",
+      "imageUrl": "https://picsum.photos/seed/cbdms/600/400",
+      "imageHint": "task management"
+    },
+    {
+      "id": "project-2",
+      "description": "HR Platform System project image",
+      "imageUrl": "https://picsum.photos/seed/hrplatform/600/400",
+      "imageHint": "human resources"
+    },
+    {
+      "id": "project-3",
+      "description": "CRM WhatsApp Integration project image",
+      "imageUrl": "https://picsum.photos/seed/crm/600/400",
+      "imageHint": "mobile communication"
+    },
+    {
+      "id": "project-4",
+      "description": "Sistem Pengadaan Barang project image",
+      "imageUrl": "https://picsum.photos/seed/pengadaan/600/400",
+      "imageHint": "data management"
+    },
+    {
+      "id": "project-5",
+      "description": "WordPress Development project image",
+      "imageUrl": "https://picsum.photos/seed/wordpress/600/400",
+      "imageHint": "website design"
+    }
+  ]
 }
