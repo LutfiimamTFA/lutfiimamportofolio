@@ -18,9 +18,9 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params: { locale } }: Props) {
-  const t = await getTranslations({ locale, namespace: 'Metadata' });
-  const name = (await getTranslations({ locale, namespace: 'Header' }))('name');
+export async function generateMetadata({ params }: Props) {
+  const t = await getTranslations({ locale: params.locale, namespace: 'Metadata' });
+  const name = (await getTranslations({ locale: params.locale, namespace: 'Header' }))('name');
 
   return {
     title: t('title', { name }),
@@ -30,8 +30,9 @@ export async function generateMetadata({ params: { locale } }: Props) {
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: Props) {
+  const { locale } = params;
   unstable_setRequestLocale(locale);
   const messages = await getMessages({ locale });
 

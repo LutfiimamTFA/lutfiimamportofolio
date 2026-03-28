@@ -13,8 +13,8 @@ type Props = {
   params: { locale: string };
 };
 
-export default function Home({ params: { locale } }: Props) {
-  unstable_setRequestLocale(locale);
+export default function Home({ params }: Props) {
+  unstable_setRequestLocale(params.locale);
   
   return (
     <div className="flex min-h-screen flex-col">
