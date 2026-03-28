@@ -1,5 +1,6 @@
 'use client';
 
+import React, { useEffect, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { useRouter, usePathname } from 'next-intl/navigation';
 import {
@@ -10,8 +11,10 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { locales } from '@/i18n';
+import { Skeleton } from '@/components/ui/skeleton';
 
-export default function LanguageSwitcher() {
+// This component contains the hooks and will only be rendered on the client.
+function LanguageSelector() {
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
@@ -35,4 +38,15 @@ export default function LanguageSwitcher() {
       </SelectContent>
     </Select>
   );
+}
+
+// This is the exported component. It ensures LanguageSelector is only rendered on the client.
+export default function LanguageSwitcher() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  return isClient ? <LanguageSelector /> : <Skeleton className="h-10 w-28" />;
 }
