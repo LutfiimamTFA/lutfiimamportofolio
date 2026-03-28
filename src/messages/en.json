@@ -1,0 +1,122 @@
+
+{
+  "Metadata": {
+    "title": "{name}'s Portfolio",
+    "description": "Personal portfolio of a Web Developer."
+  },
+  "Header": {
+    "name": "John Doe",
+    "nav": {
+      "about": "About",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact"
+    },
+    "cta": "Hire Me"
+  },
+  "Hero": {
+    "role": "Full Stack Developer",
+    "description": "I build efficient, scalable, and user-friendly web applications. From task management systems to government procurement platforms, I turn complex requirements into elegant digital solutions.",
+    "cta1": "View My Work",
+    "cta2": "Hire Me"
+  },
+  "About": {
+    "title": "About Me",
+    "p1": "As a Computer Science graduate, I gained hands-on experience as a Web Developer intern at PT Environesia Global Saraya through a government-sponsored program.",
+    "p2": "During my studies, I also participated in the MBKM program, where I developed a procurement system website for the Blitar Regency's Livestock and Fisheries Service.",
+    "p3": "I am experienced in developing web applications and thrive in team environments using Agile methodologies.",
+    "p4": "I leverage AI-powered tools to accelerate development, analyze solutions, and boost efficiency, always ensuring that code quality and structure remain top priorities."
+  },
+  "Projects": {
+    "title": "Featured Projects",
+    "description": "A selection of projects I've worked on, showcasing my skills and expertise.",
+    "items": {
+      "cbdms": {
+        "title": "CBDMS Workspace",
+        "description": "A web-based task management system with an interactive Kanban board, task dependencies, and a real-time dashboard.",
+        "tech": ["Firebase", "Firestore", "React"],
+        "role": "Full Stack Development"
+      },
+      "hr": {
+        "title": "HR Platform System",
+        "description": "An HR system to manage recruitment, employee data, and multi-level approval processes.",
+        "tech": ["Web App", "Database System"],
+        "role": "Backend Development"
+      },
+      "crm": {
+        "title": "CRM WhatsApp Integration",
+        "description": "A CRM system connected with WhatsApp (using WAHA) for monitoring sales activity and performance.",
+        "tech": ["WAHA", "API Integration", "Node.js"],
+        "role": "System Integration"
+      },
+      "procurement": {
+        "title": "Goods Procurement System",
+        "description": "A website for the Blitar Regency to manage data and transactions for public procurement.",
+        "tech": ["PHP", "MySQL", "Web App"],
+        "role": "Full Stack Development"
+      },
+      "wordpress": {
+        "title": "WordPress Development",
+        "description": "Created and managed websites and landing pages using Elementor for content and event marketing.",
+        "tech": ["WordPress", "Elementor", "PHP"],
+        "role": "Development & Content"
+      },
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "description": "A complete e-commerce solution with product management, shopping cart, and payment gateway integration.",
+        "tech": ["Next.js", "Stripe", "PostgreSQL"],
+        "role": "Full Stack Development"
+      }
+    }
+  },
+  "Skills": {
+    "title": "Skills & Expertise",
+    "description": "The technologies and tools I use to bring ideas to life.",
+    "categories": {
+      "backend": {
+        "title": "Backend",
+        "tech": ["Laravel", "PHP", "Node.js", "Express"]
+      },
+      "frontend": {
+        "title": "Frontend",
+        "tech": ["React", "Next.js", "Tailwind CSS", "WordPress"]
+      },
+      "database": {
+        "title": "Database & Cloud",
+        "tech": ["MySQL", "Firebase", "Firestore"]
+      },
+      "tools": {
+        "title": "Tools & Methods",
+        "tech": ["Git", "Docker", "Agile", "n8n"]
+      },
+      "expertise": {
+        "title": "Expertise",
+        "tech": ["API Integration", "AI-assisted development"]
+      }
+    }
+  },
+  "Approach": {
+    "title": "My Working Approach",
+    "description": "My approach to every project ensures high-quality, efficient results.",
+    "p1": "I focus not just on coding, but on how the system addresses real-world user needs.",
+    "p2": "I build applications with a structured approach, considering efficiency, usability, and scalability.",
+    "p3": "I utilize AI to speed up the development process, assist in solution exploration, and boost overall productivity."
+  },
+  "Contact": {
+    "title": "Get In Touch",
+    "description": "I'm always open to discussing new projects, collaborations, or employment opportunities. Feel free to reach out.",
+    "cta": "Hire Me"
+  },
+  "Footer": {
+    "copyright": "Built by {name} © {year}. All rights reserved."
+  },
+  "Theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "Language":{
+    "placeholder": "Language"
+  }
+}

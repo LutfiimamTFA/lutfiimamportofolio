@@ -1,11 +1,13 @@
-import Link from 'next/link';
+import Link from 'next-intl/link';
 import Image from 'next/image';
-import { portfolioData } from '@/lib/portfolio-data';
+import { useTranslations } from 'next-intl';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 
 export default function HeroSection() {
+  const t = useTranslations('Hero');
+  const header_t = useTranslations('Header');
   const avatarImage = PlaceHolderImages.find((img) => img.id === 'avatar');
 
   return (
@@ -13,19 +15,19 @@ export default function HeroSection() {
       <div className="container grid h-full min-h-[calc(100vh-4rem)] items-center gap-8 py-10 md:grid-cols-2 md:py-20">
         <div className="max-w-3xl text-center md:text-left">
           <h1 className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">
-            {portfolioData.hero.role}
+            {t('role')}
           </h1>
           <p 
             className="mb-8 font-headline text-4xl font-semibold text-foreground md:text-5xl lg:text-6xl"
           >
-            {portfolioData.hero.description}
+            {t('description')}
           </p>
           <div className="flex justify-center gap-4 md:justify-start">
             <Button asChild size="lg">
-              <Link href="#projects">{portfolioData.hero.cta1}</Link>
+              <Link href="#projects">{t('cta1')}</Link>
             </Button>
             <Button asChild size="lg" variant="secondary">
-              <Link href="#contact">{portfolioData.hero.cta2}</Link>
+              <Link href="#contact">{t('cta2')}</Link>
             </Button>
           </div>
         </div>
@@ -33,7 +35,7 @@ export default function HeroSection() {
           {avatarImage && (
             <Image 
               src={avatarImage.imageUrl}
-              alt="Portrait of John Doe"
+              alt={header_t('name')}
               fill
               className="rounded-full object-cover"
               sizes="(max-width: 768px) 80vw, 40vw"

@@ -1,12 +1,9 @@
-import { portfolioData } from '@/lib/portfolio-data';
+import { useTranslations } from 'next-intl';
 import { CheckCircle2 } from 'lucide-react';
 
 export default function ApproachSection() {
-  const points = [
-    { text: portfolioData.approach.p1 },
-    { text: portfolioData.approach.p2 },
-    { text: portfolioData.approach.p3 },
-  ];
+  const t = useTranslations('Approach');
+  const points = [t('p1'), t('p2'), t('p3')];
 
   const codeSnippet = `
 // Sample code snippet
@@ -18,21 +15,21 @@ greet('World');
   `.trim();
 
   return (
-    <section id="approach" className="bg-secondary/30 py-20 lg:py-32">
+    <section id="approach" className="bg-secondary/30 py-16 lg:py-24">
       <div className="container">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <h2 className="mb-4 font-headline text-3xl font-semibold md:text-4xl">
-              {portfolioData.approach.title}
+              {t('title')}
             </h2>
             <p className="mb-8 text-lg text-muted-foreground">
-              {portfolioData.approach.description}
+              {t('description')}
             </p>
             <ul className="space-y-4">
               {points.map((point, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-1 h-6 w-6 shrink-0 text-primary" />
-                  <span className="text-lg text-muted-foreground">{point.text}</span>
+                  <span className="text-lg text-muted-foreground">{point}</span>
                 </li>
               ))}
             </ul>

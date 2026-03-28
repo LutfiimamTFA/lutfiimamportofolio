@@ -1,0 +1,122 @@
+
+{
+  "Metadata": {
+    "title": "Portofolio {name}",
+    "description": "Portofolio pribadi seorang Pengembang Web."
+  },
+  "Header": {
+    "name": "John Doe",
+    "nav": {
+      "about": "Tentang",
+      "projects": "Proyek",
+      "skills": "Keahlian",
+      "contact": "Kontak"
+    },
+    "cta": "Rekrut Saya"
+  },
+  "Hero": {
+    "role": "Pengembang Full Stack",
+    "description": "Saya membangun aplikasi web yang efisien, dapat diskalakan, dan ramah pengguna. Dari sistem manajemen tugas hingga platform pengadaan pemerintah, saya mengubah persyaratan kompleks menjadi solusi digital yang elegan.",
+    "cta1": "Lihat Karya Saya",
+    "cta2": "Rekrut Saya"
+  },
+  "About": {
+    "title": "Tentang Saya",
+    "p1": "Sebagai lulusan Ilmu Komputer, saya mendapatkan pengalaman langsung sebagai intern Pengembang Web di PT Environesia Global Saraya melalui program yang disponsori pemerintah.",
+    "p2": "Selama studi, saya juga berpartisipasi dalam program MBKM, di mana saya mengembangkan situs web sistem pengadaan untuk Dinas Peternakan dan Perikanan Kabupaten Blitar.",
+    "p3": "Saya berpengalaman dalam mengembangkan aplikasi web dan berkembang dalam lingkungan tim menggunakan metodologi Agile.",
+    "p4": "Saya memanfaatkan alat bertenaga AI untuk mempercepat pengembangan, menganalisis solusi, dan meningkatkan efisiensi, selalu memastikan kualitas dan struktur kode tetap menjadi prioritas utama."
+  },
+  "Projects": {
+    "title": "Proyek Unggulan",
+    "description": "Pilihan proyek yang pernah saya kerjakan, menampilkan keahlian dan keahlian saya.",
+    "items": {
+      "cbdms": {
+        "title": "Ruang Kerja CBDMS",
+        "description": "Sistem manajemen tugas berbasis web dengan papan Kanban interaktif, dependensi tugas, dan dasbor waktu nyata.",
+        "tech": ["Firebase", "Firestore", "React"],
+        "role": "Pengembangan Full Stack"
+      },
+      "hr": {
+        "title": "Sistem Platform SDM",
+        "description": "Sistem SDM untuk mengelola rekrutmen, data karyawan, dan proses persetujuan multi-level.",
+        "tech": ["Aplikasi Web", "Sistem Basis Data"],
+        "role": "Pengembangan Backend"
+      },
+      "crm": {
+        "title": "Integrasi CRM WhatsApp",
+        "description": "Sistem CRM yang terhubung dengan WhatsApp (menggunakan WAHA) untuk memantau aktivitas dan kinerja penjualan.",
+        "tech": ["WAHA", "Integrasi API", "Node.js"],
+        "role": "Integrasi Sistem"
+      },
+      "procurement": {
+        "title": "Sistem Pengadaan Barang",
+        "description": "Situs web untuk Kabupaten Blitar untuk mengelola data dan transaksi pengadaan publik.",
+        "tech": ["PHP", "MySQL", "Aplikasi Web"],
+        "role": "Pengembangan Full Stack"
+      },
+      "wordpress": {
+        "title": "Pengembangan WordPress",
+        "description": "Membuat dan mengelola situs web dan halaman arahan menggunakan Elementor untuk pemasaran konten dan acara.",
+        "tech": ["WordPress", "Elementor", "PHP"],
+        "role": "Pengembangan & Konten"
+      },
+      "ecommerce": {
+        "title": "Platform E-Commerce",
+        "description": "Solusi e-commerce lengkap dengan manajemen produk, keranjang belanja, dan integrasi gateway pembayaran.",
+        "tech": ["Next.js", "Stripe", "PostgreSQL"],
+        "role": "Pengembangan Full Stack"
+      }
+    }
+  },
+  "Skills": {
+    "title": "Keahlian & Keahlian",
+    "description": "Teknologi dan alat yang saya gunakan untuk mewujudkan ide.",
+    "categories": {
+      "backend": {
+        "title": "Backend",
+        "tech": ["Laravel", "PHP", "Node.js", "Express"]
+      },
+      "frontend": {
+        "title": "Frontend",
+        "tech": ["React", "Next.js", "Tailwind CSS", "WordPress"]
+      },
+      "database": {
+        "title": "Basis Data & Cloud",
+        "tech": ["MySQL", "Firebase", "Firestore"]
+      },
+      "tools": {
+        "title": "Alat & Metode",
+        "tech": ["Git", "Docker", "Agile", "n8n"]
+      },
+      "expertise": {
+        "title": "Keahlian",
+        "tech": ["Integrasi API", "Pengembangan berbantuan AI"]
+      }
+    }
+  },
+  "Approach": {
+    "title": "Pendekatan Kerja Saya",
+    "description": "Pendekatan saya untuk setiap proyek memastikan hasil yang berkualitas tinggi dan efisien.",
+    "p1": "Saya tidak hanya fokus pada pengkodean, tetapi pada bagaimana sistem mengatasi kebutuhan pengguna di dunia nyata.",
+    "p2": "Saya membangun aplikasi dengan pendekatan terstruktur, dengan mempertimbangkan efisiensi, kegunaan, dan skalabilitas.",
+    "p3": "Saya menggunakan AI untuk mempercepat proses pengembangan, membantu dalam eksplorasi solusi, dan meningkatkan produktivitas secara keseluruhan."
+  },
+  "Contact": {
+    "title": "Hubungi Saya",
+    "description": "Saya selalu terbuka untuk mendiskusikan proyek baru, kolaborasi, atau peluang kerja. Jangan ragu untuk menghubungi.",
+    "cta": "Rekrut Saya"
+  },
+  "Footer": {
+    "copyright": "Dibuat oleh {name} © {year}. Hak cipta dilindungi."
+  },
+  "Theme": {
+    "toggle": "Ubah tema",
+    "light": "Terang",
+    "dark": "Gelap",
+    "system": "Sistem"
+  },
+  "Language":{
+    "placeholder": "Bahasa"
+  }
+}

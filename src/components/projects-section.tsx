@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { portfolioData } from '@/lib/portfolio-data';
+import { useTranslations } from 'next-intl';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -7,23 +7,43 @@ import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
 export default function ProjectsSection() {
+  const t = useTranslations('Projects');
+  const projectKeys = ['cbdms', 'hr', 'crm', 'procurement', 'wordpress', 'ecommerce'] as const;
+  
+  const projectImageIds: Record<typeof projectKeys[number], string> = {
+    cbdms: 'project-1',
+    hr: 'project-2',
+    crm: 'project-3',
+    procurement: 'project-4',
+    wordpress: 'project-5',
+    ecommerce: 'project-6',
+  };
+
   const getImageById = (id: string) => {
     return PlaceHolderImages.find((img) => img.id === id);
   };
 
   return (
-    <section id="projects" className="bg-secondary/30 py-20 lg:py-32">
+    <section id="projects" className="bg-secondary/30 py-16 lg:py-24">
       <div className="container">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="mb-4 font-headline text-3xl font-semibold md:text-4xl">
-            Featured Projects
+            {t('title')}
           </h2>
           <p className="text-lg text-muted-foreground">
-            A selection of projects I've worked on, showcasing my skills and expertise.
+            {t('description')}
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {portfolioData.projects.map((project, index) => {
+          {projectKeys.map((key) => {
+            const project = {
+              title: t(`items.${key}.title`),
+              description: t(`items.${key}.description`),
+              tech: t.raw(`items.${key}.tech`) as string[],
+              role: t(`items.${key}.role`),
+              imageId: projectImageIds[key],
+              link: "#"
+            };
             const image = getImageById(project.imageId);
             return (
               <Card
