@@ -13,10 +13,12 @@ import LanguageSwitcher from '@/components/language-switcher';
 export default function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isClient, setIsClient] = React.useState(false);
   const t = useTranslations('Header');
   const navLinks = ['about', 'projects', 'skills', 'contact'] as const;
 
   React.useEffect(() => {
+    setIsClient(true);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
@@ -57,7 +59,7 @@ export default function Header() {
         <div className="flex flex-1 items-center justify-end gap-2">
           <div className="hidden items-center gap-2 md:flex">
             <ThemeToggle />
-            <LanguageSwitcher />
+            {isClient && <LanguageSwitcher />}
           </div>
           <Button asChild>
             <Link href="#contact">{t('cta')}</Link>
@@ -81,7 +83,7 @@ export default function Header() {
               </nav>
                <div className="mt-6 flex items-center gap-2">
                 <ThemeToggle />
-                <LanguageSwitcher />
+                {isClient && <LanguageSwitcher />}
               </div>
             </SheetContent>
           </Sheet>

@@ -12,8 +12,9 @@ const socials = [
 ];
 
 export default function Footer() {
-  const t = useTranslations();
-  const name = t('Header.name');
+  const tFooter = useTranslations('Footer');
+  const tHeader = useTranslations('Header');
+  const name = tHeader('name');
 
   return (
     <footer className="border-t border-border/40">
@@ -21,7 +22,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <Code2 className="h-6 w-6 text-primary hidden md:block" />
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            {t('Footer.copyright', { name, year: new Date().getFullYear() })}
+            {tFooter('copyright', { name, year: new Date().getFullYear() })}
           </p>
         </div>
         <div className="flex items-center gap-2">
