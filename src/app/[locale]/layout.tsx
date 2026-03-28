@@ -20,8 +20,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params: { locale } }: Props) {
   const t = await getTranslations({ locale, namespace: 'Metadata' });
-  const header_t = await getTranslations({ locale, namespace: 'Header' });
-  const name = header_t('name');
+  const name = (await getTranslations({ locale, namespace: 'Header' }))('name');
 
   return {
     title: t('title', { name }),
@@ -34,7 +33,7 @@ export default async function RootLayout({
   params: { locale },
 }: Props) {
   unstable_setRequestLocale(locale);
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale} suppressHydrationWarning>
