@@ -1,8 +1,9 @@
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { Inter } from 'next/font/google';
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from '@/components/theme-provider';
 import { locales } from '@/i18n';
+import { NextIntlClientProvider } from 'next-intl';
 
 import '../globals.css';
 
@@ -19,7 +20,8 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params: { locale } }: Props) {
   const t = await getTranslations({ locale, namespace: 'Metadata' });
-  const name = await getTranslations({ locale, namespace: 'Header' }).then(t => t('name'));
+  const header_t = await getTranslations({ locale, namespace: 'Header' });
+  const name = header_t('name');
 
   return {
     title: t('title', { name }),
@@ -27,24 +29,27 @@ export async function generateMetadata({ params: { locale } }: Props) {
   };
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: { locale },
 }: Props) {
   unstable_setRequestLocale(locale);
+  const messages = await getMessages();
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-          <Toaster />
-        </ThemeProvider>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+            <Toaster />
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
