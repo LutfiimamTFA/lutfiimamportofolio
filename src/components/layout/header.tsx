@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { portfolioData } from '@/lib/portfolio-data';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Code2 } from 'lucide-react';
 
 export default function Header() {
@@ -59,6 +59,8 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetTitle className="sr-only">Menu</SheetTitle>
+              <SheetDescription className="sr-only">A list of navigation links to explore the page.</SheetDescription>
               <Link href="/" className="mb-6 flex items-center gap-2" onClick={() => setIsOpen(false)}>
                 <Code2 className="h-6 w-6 text-primary" />
                 <span className="font-bold">{portfolioData.name}</span>
