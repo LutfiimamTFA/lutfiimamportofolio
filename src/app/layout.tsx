@@ -1,2 +1,11 @@
-// This file is intentionally blank.
-// The new root layout is src/app/[locale]/layout.tsx
+import React from 'react';
+
+type Props = {
+  children: React.ReactNode;
+};
+
+// The root layout is required for the app to work correctly.
+// The main layout with <html> and <body> is in [locale]/layout.tsx.
+export default function RootLayout({ children }: Props) {
+  return <>{children}</>;
+}
