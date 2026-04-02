@@ -28,43 +28,163 @@
     "p4": "I actively use AI as a development partner, a style I call 'Vibe Coding'. For me, AI is not just a tool for writing code faster. I use it to explore various architectural solutions, analyze complex problems from different angles, and automate repetitive tasks. This approach allows me to focus more on high-level strategic thinking and building user-centric features, ultimately speeding up the development cycle while maintaining high code quality."
   },
   "Projects": {
-    "title": "Featured Projects",
-    "description": "A selection of projects I've worked on, showcasing my skills and expertise.",
+    "title": "Featured Project",
+    "description": "A project I've worked on, showcasing my skills and expertise.",
+    "view_details": "View Details",
+    "visit_site": "Visit Site",
     "items": {
       "cbdms": {
         "title": "CBDMS Workspace",
         "description": "A web-based task management system with an interactive Kanban board, task dependencies, and a real-time dashboard.",
-        "tech": ["Firebase", "Firestore", "React"],
-        "role": "Full Stack Development"
+        "tech": [
+          "Firebase",
+          "Firestore",
+          "React",
+          "Genkit"
+        ],
+        "role": "Full Stack Development",
+        "modal": {
+          "title": "Feature Details: CBDMS Workspace",
+          "description": "A comprehensive project management and team collaboration platform, designed to streamline workflows, boost productivity, and provide full visibility on all tasks.",
+          "highlights_title": "Feature Highlights",
+          "all_features_title": "Complete Feature List",
+          "highlights": [
+            {
+              "title": "End-to-End Interactive Project Management System",
+              "points": [
+                "Developed a fully interactive drag-and-drop Kanban board for real-time workflow visualization.",
+                "Implemented a complex task dependency system (waiting, blocking, related) to ensure an organized workflow.",
+                "Built a hierarchical task structure with support for individually assignable sub-tasks, complete with dynamic revision checklists."
+              ]
+            },
+            {
+              "title": "Real-time Admin Dashboard with Dynamic Data Visualization",
+              "points": [
+                "Designed an interactive admin dashboard using Tabs for data segmentation by job type (Tasks, Social Media, Web).",
+                "All dashboard components are connected in real-time to Firestore and update automatically based on filters.",
+                "Equipped with a 'Live' indicator for visual confirmation that the displayed data is live from the server."
+              ]
+            },
+            {
+              "title": "Full Automation & Integration with Instagram Graph API",
+              "points": [
+                "Built a secure OAuth 2.0 authentication flow to connect Instagram Business accounts.",
+                "Implemented a scheduled auto-posting feature that automatically publishes content (images and Reels).",
+                "Provided a page for synchronizing and displaying published posts directly from Instagram."
+              ]
+            },
+            {
+              "title": "Multi-tenancy Architecture with Role-Based Access Control (RBAC)",
+              "points": [
+                "Designed a multi-tenant system where each company's data is securely isolated.",
+                "Implemented a granular permission system for various roles, configurable via the admin panel.",
+                "Added an 'Emergency Admin' feature allowing Super Admins to grant temporary access rights."
+              ]
+            },
+            {
+              "title": "AI-Powered Productivity Features with Genkit",
+              "points": [
+                "Smart Task Suggestions: Analyzes historical task data to provide recommendations for subsequent tasks.",
+                "AI Priority Guard: Provides smart validation when a user attempts to raise a task's priority to prevent 'priority inflation'."
+              ]
+            }
+          ],
+          "all_features": [
+            {
+              "title": "Project Management",
+              "points": [
+                "Three views: Kanban Board, Task List (with filtering & sorting), and Schedule Calendar.",
+                "Comprehensive Task Details: Description, sub-tasks, dependencies, activity history, and comment section with @mention feature.",
+                "File Management: Upload local files or link from Google Drive."
+              ]
+            },
+            {
+              "title": "Social Media & Web Content Modules",
+              "points": [
+                "Content Planning via Kanban Board and Calendar.",
+                "Automated Publishing for Instagram (including Reels).",
+                "Analytics Dashboard to monitor content performance.",
+                "Rich text (WYSIWYG) content editor."
+              ]
+            },
+            {
+              "title": "User Management & Security",
+              "points": [
+                "Full CRUD features for user accounts.",
+                "Roles & Permissions System: Admin panel to configure access rights for each role.",
+                "Secure login process, password reset, and custom token claims."
+              ]
+            },
+            {
+              "title": "Settings & Customization",
+              "points": [
+                "Change company name, logo, and basic information.",
+                "Brand/Client Management.",
+                "Workflow Customization with a drag-and-drop interface.",
+                "Navigation Editor: Full customization of the sidebar menu for each user role."
+              ]
+            },
+            {
+              "title": "Additional Utilities & Productivity",
+              "points": [
+                "Maintenance Mode.",
+                "Real-time in-app notifications.",
+                "Daily Checklist for routine tasks.",
+                "Time Tracking on each task.",
+                "Link Sharing with password protection and expiration dates."
+              ]
+            }
+          ]
+        }
       },
       "hr": {
         "title": "HR Platform System",
         "description": "An HR system to manage recruitment, employee data, and multi-level approval processes.",
-        "tech": ["Laravel", "PHP", "MySQL"],
+        "tech": [
+          "Laravel",
+          "PHP",
+          "MySQL"
+        ],
         "role": "Backend Development"
       },
       "crm": {
         "title": "CRM System",
         "description": "A CRM system for monitoring sales activity and performance, including API integrations.",
-        "tech": ["Node.js", "API Integration", "MySQL"],
+        "tech": [
+          "Node.js",
+          "API Integration",
+          "MySQL"
+        ],
         "role": "System Integration"
       },
       "procurement": {
         "title": "Goods Procurement System",
         "description": "A website for the Blitar Regency to manage data and transactions for public procurement.",
-        "tech": ["PHP", "MySQL", "Web App"],
+        "tech": [
+          "PHP",
+          "MySQL",
+          "Web App"
+        ],
         "role": "Full Stack Development"
       },
       "wordpress": {
         "title": "WordPress Development",
         "description": "Created and managed websites and landing pages using Elementor for content and event marketing.",
-        "tech": ["WordPress", "Elementor", "PHP"],
+        "tech": [
+          "WordPress",
+          "Elementor",
+          "PHP"
+        ],
         "role": "Development & Content"
       },
       "ecommerce": {
         "title": "Financial System Application",
         "description": "A complete financial system solution with transaction management, reporting, and dashboard analytics.",
-        "tech": ["Next.js", "PostgreSQL", "Prisma"],
+        "tech": [
+          "Next.js",
+          "PostgreSQL",
+          "Prisma"
+        ],
         "role": "Full Stack Development"
       }
     }
@@ -75,23 +195,44 @@
     "categories": {
       "backend": {
         "title": "Backend",
-        "tech": ["Laravel", "PHP", "Node.js", "Express"]
+        "tech": [
+          "Laravel",
+          "PHP",
+          "Node.js",
+          "Express"
+        ]
       },
       "frontend": {
         "title": "Frontend",
-        "tech": ["React", "Next.js", "Tailwind CSS", "WordPress"]
+        "tech": [
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "WordPress"
+        ]
       },
       "database": {
         "title": "Database & Cloud",
-        "tech": ["MySQL", "Firebase", "Firestore"]
+        "tech": [
+          "MySQL",
+          "Firebase",
+          "Firestore"
+        ]
       },
       "tools": {
         "title": "Tools & Methods",
-        "tech": ["Git", "Docker", "Agile"]
+        "tech": [
+          "Git",
+          "Docker",
+          "Agile"
+        ]
       },
       "expertise": {
         "title": "Expertise",
-        "tech": ["API Integration", "AI-assisted development"]
+        "tech": [
+          "API Integration",
+          "AI-assisted development"
+        ]
       }
     }
   },
@@ -115,7 +256,7 @@
     "dark": "Dark",
     "system": "System"
   },
-  "Language":{
+  "Language": {
     "placeholder": "Language"
   }
 }

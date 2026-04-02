@@ -29,42 +29,162 @@
   },
   "Projects": {
     "title": "Proyek Unggulan",
-    "description": "Pilihan proyek yang pernah saya kerjakan, menampilkan keahlian dan keahlian saya.",
+    "description": "Proyek yang pernah saya kerjakan, menampilkan keahlian dan keahlian saya.",
+    "view_details": "Lihat Detail",
+    "visit_site": "Kunjungi Situs",
     "items": {
       "cbdms": {
         "title": "Ruang Kerja CBDMS",
         "description": "Sistem manajemen tugas berbasis web dengan papan Kanban interaktif, dependensi tugas, dan dasbor waktu nyata.",
-        "tech": ["Firebase", "Firestore", "React"],
-        "role": "Pengembangan Full Stack"
+        "tech": [
+          "Firebase",
+          "Firestore",
+          "React",
+          "Genkit"
+        ],
+        "role": "Pengembangan Full Stack",
+        "modal": {
+          "title": "Detail Fitur: Ruang Kerja CBDMS",
+          "description": "Sebuah platform manajemen proyek dan kolaborasi tim yang komprehensif, dirancang untuk menyederhanakan alur kerja, meningkatkan produktivitas, dan memberikan visibilitas penuh atas semua tugas.",
+          "highlights_title": "Fitur Unggulan",
+          "all_features_title": "Daftar Fitur Lengkap",
+          "highlights": [
+            {
+              "title": "Sistem Manajemen Proyek End-to-End yang Interaktif",
+              "points": [
+                "Mengembangkan papan Kanban drag-and-drop yang sepenuhnya interaktif untuk visualisasi alur kerja secara real-time.",
+                "Mengimplementasikan sistem dependensi tugas yang kompleks (menunggu, memblokir, terkait) untuk memastikan alur kerja yang terorganisir.",
+                "Membangun struktur tugas hierarkis dengan dukungan untuk sub-tasks yang dapat ditugaskan secara individual, lengkap dengan checklist revisi dinamis."
+              ]
+            },
+            {
+              "title": "Dasbor Admin Real-time dengan Visualisasi Data Dinamis",
+              "points": [
+                "Merancang dasbor admin interaktif menggunakan Tabs untuk segmentasi data berdasarkan jenis pekerjaan (Tugas, Social Media, Web).",
+                "Semua komponen dasbor terhubung secara real-time ke Firestore dan diperbarui secara otomatis sesuai dengan filter.",
+                "Dilengkapi indikator 'Live' untuk memberikan konfirmasi visual bahwa data yang ditampilkan adalah data langsung dari server."
+              ]
+            },
+            {
+              "title": "Otomatisasi & Integrasi Penuh dengan API Instagram Graph",
+              "points": [
+                "Membangun alur otentikasi OAuth 2.0 yang aman untuk menghubungkan akun Instagram Business.",
+                "Mengimplementasikan fitur auto-posting terjadwal yang mempublikasikan konten (gambar dan Reels) secara otomatis.",
+                "Menyediakan halaman untuk sinkronisasi dan menampilkan postingan yang sudah terbit langsung dari Instagram."
+              ]
+            },
+            {
+              "title": "Arsitektur Multi-tenancy dengan Kontrol Hak Akses Berbasis Peran (RBAC)",
+              "points": [
+                "Merancang sistem yang mendukung banyak perusahaan (multi-tenant) di mana data setiap perusahaan terisolasi dengan aman.",
+                "Mengimplementasikan sistem izin yang granural untuk berbagai peran yang dapat dikonfigurasi melalui panel admin.",
+                "Menambahkan fitur 'Emergency Admin' yang memungkinkan Super Admin memberikan hak akses sementara."
+              ]
+            },
+            {
+              "title": "Fitur Produktivitas Berbasis AI dengan Genkit",
+              "points": [
+                "Smart Task Suggestions: Menganalisis data historis tugas untuk memberikan rekomendasi pekerjaan selanjutnya.",
+                "AI Priority Guard: Memberikan validasi cerdas saat seorang pengguna mencoba menaikkan prioritas tugas untuk mencegah 'inflasi prioritas'."
+              ]
+            }
+          ],
+          "all_features": [
+            {
+              "title": "Manajemen Proyek",
+              "points": [
+                "Tiga tampilan: Papan Kanban, Daftar Tugas (dengan filter & sorting), dan Kalender Jadwal.",
+                "Detail Tugas Komprehensif: Deskripsi, sub-tasks, dependensi, riwayat aktivitas, dan kolom komentar dengan fitur @mention.",
+                "Manajemen File: Unggah file lokal atau tautkan dari Google Drive."
+              ]
+            },
+            {
+              "title": "Modul Social Media & Konten Web",
+              "points": [
+                "Perencanaan Konten melalui Papan Kanban dan Kalender.",
+                "Otomatisasi Publikasi untuk Instagram (termasuk Reels).",
+                "Dasbor Analitik untuk memantau performa konten.",
+                "Editor konten berbasis rich text (WYSIWYG)."
+              ]
+            },
+            {
+              "title": "Manajemen Pengguna & Keamanan",
+              "points": [
+                "Fitur CRUD penuh untuk akun pengguna.",
+                "Sistem Peran & Izin: Panel admin untuk mengonfigurasi hak akses setiap peran.",
+                "Proses login yang aman, reset password, dan klaim token kustom."
+              ]
+            },
+            {
+              "title": "Pengaturan & Kustomisasi",
+              "points": [
+                "Mengubah nama, logo, dan informasi dasar perusahaan.",
+                "Manajemen Merek/Klien.",
+                "Kustomisasi Alur Kerja (Workflow) dengan antarmuka drag-and-drop.",
+                "Editor Navigasi: Kustomisasi penuh menu sidebar untuk setiap peran."
+              ]
+            },
+            {
+              "title": "Utilitas & Produktivitas Tambahan",
+              "points": [
+                "Mode Pemeliharaan (Maintenance Mode).",
+                "Notifikasi in-app real-time.",
+                "Ceklis Harian untuk tugas rutin.",
+                "Time Tracking pada setiap tugas.",
+                "Berbagi Tautan (Sharing) dengan perlindungan kata sandi dan tanggal kedaluwarsa."
+              ]
+            }
+          ]
+        }
       },
       "hr": {
         "title": "Sistem Platform SDM",
         "description": "Sistem SDM untuk mengelola rekrutmen, data karyawan, dan proses persetujuan multi-level.",
-        "tech": ["Laravel", "PHP", "MySQL"],
+        "tech": [
+          "Laravel",
+          "PHP",
+          "MySQL"
+        ],
         "role": "Pengembangan Backend"
       },
       "crm": {
         "title": "Sistem CRM",
         "description": "Sistem CRM untuk memantau aktivitas dan kinerja penjualan, termasuk integrasi API.",
-        "tech": ["Node.js", "Integrasi API", "MySQL"],
+        "tech": [
+          "Node.js",
+          "Integrasi API",
+          "MySQL"
+        ],
         "role": "Integrasi Sistem"
       },
       "procurement": {
         "title": "Sistem Pengadaan Barang",
         "description": "Situs web untuk Kabupaten Blitar untuk mengelola data dan transaksi pengadaan publik.",
-        "tech": ["PHP", "MySQL", "Aplikasi Web"],
+        "tech": [
+          "PHP",
+          "MySQL",
+          "Aplikasi Web"
+        ],
         "role": "Pengembangan Full Stack"
       },
       "wordpress": {
         "title": "Pengembangan WordPress",
         "description": "Membuat dan mengelola situs web dan halaman arahan menggunakan Elementor untuk pemasaran konten dan acara.",
-        "tech": ["WordPress", "Elementor", "PHP"],
+        "tech": [
+          "WordPress",
+          "Elementor",
+          "PHP"
+        ],
         "role": "Pengembangan & Konten"
       },
       "ecommerce": {
         "title": "Aplikasi Sistem Keuangan",
         "description": "Solusi sistem keuangan lengkap dengan manajemen transaksi, pelaporan, dan analitik dasbor.",
-        "tech": ["Next.js", "PostgreSQL", "Prisma"],
+        "tech": [
+          "Next.js",
+          "PostgreSQL",
+          "Prisma"
+        ],
         "role": "Pengembangan Full Stack"
       }
     }
@@ -75,23 +195,44 @@
     "categories": {
       "backend": {
         "title": "Backend",
-        "tech": ["Laravel", "PHP", "Node.js", "Express"]
+        "tech": [
+          "Laravel",
+          "PHP",
+          "Node.js",
+          "Express"
+        ]
       },
       "frontend": {
         "title": "Frontend",
-        "tech": ["React", "Next.js", "Tailwind CSS", "WordPress"]
+        "tech": [
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "WordPress"
+        ]
       },
       "database": {
         "title": "Basis Data & Cloud",
-        "tech": ["MySQL", "Firebase", "Firestore"]
+        "tech": [
+          "MySQL",
+          "Firebase",
+          "Firestore"
+        ]
       },
       "tools": {
         "title": "Alat & Metode",
-        "tech": ["Git", "Docker", "Agile"]
+        "tech": [
+          "Git",
+          "Docker",
+          "Agile"
+        ]
       },
       "expertise": {
         "title": "Keahlian",
-        "tech": ["Integrasi API", "Pengembangan berbantuan AI"]
+        "tech": [
+          "Integrasi API",
+          "Pengembangan berbantuan AI"
+        ]
       }
     }
   },
@@ -115,7 +256,7 @@
     "dark": "Gelap",
     "system": "Sistem"
   },
-  "Language":{
+  "Language": {
     "placeholder": "Bahasa"
   }
 }

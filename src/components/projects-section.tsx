@@ -3,27 +3,42 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Github, ExternalLink } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { Separator } from '@/components/ui/separator';
 
 export default function ProjectsSection() {
   const t = useTranslations('Projects');
-  const projectKeys = ['cbdms', 'hr', 'crm', 'procurement', 'wordpress', 'ecommerce'] as const;
-  
+  const projectKeys = ['cbdms'] as const;
+
   const projectImageIds: Record<typeof projectKeys[number], string> = {
     cbdms: 'project-1',
-    hr: 'project-2',
-    crm: 'project-3',
-    procurement: 'project-4',
-    wordpress: 'project-5',
-    ecommerce: 'project-6',
   };
 
   const getImageById = (id: string) => {
     return PlaceHolderImages.find((img) => img.id === id);
   };
+
+  type Highlight = { title: string; points: string[] };
+  type AllFeatures = { title: string; points: string[] };
 
   return (
     <section id="projects" className="bg-secondary/30 py-16 lg:py-24">
@@ -32,11 +47,9 @@ export default function ProjectsSection() {
           <h2 className="mb-4 font-headline text-3xl font-semibold md:text-4xl">
             {t('title')}
           </h2>
-          <p className="text-lg text-muted-foreground">
-            {t('description')}
-          </p>
+          <p className="text-lg text-muted-foreground">{t('description')}</p>
         </div>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto max-w-lg">
           {projectKeys.map((key) => {
             const project = {
               title: t(`items.${key}.title`),
@@ -44,47 +57,132 @@ export default function ProjectsSection() {
               tech: t.raw(`items.${key}.tech`) as string[],
               role: t(`items.${key}.role`),
               imageId: projectImageIds[key],
-              link: "#"
+              liveLink:
+                'https://studio--studio-3200695440-bed4a.us-central1.hosted.app/',
+              githubLink: 'https://github.com/LutfiimamTFA/CBDMS/tree/main-2',
+              modal: {
+                title: t(`items.${key}.modal.title`),
+                description: t(`items.${key}.modal.description`),
+                highlights_title: t(`items.${key}.modal.highlights_title`),
+                all_features_title: t(
+                  `items.${key}.modal.all_features_title`
+                ),
+                highlights: t.raw(
+                  `items.${key}.modal.highlights`
+                ) as Highlight[],
+                all_features: t.raw(
+                  `items.${key}.modal.all_features`
+                ) as AllFeatures[],
+              },
             };
             const image = getImageById(project.imageId);
             return (
-              <Card
-                key={project.title}
-                className="group flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
-              >
-                <div className="relative h-52 w-full overflow-hidden">
-                  {image && (
-                    <Image
-                      src={image.imageUrl}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      data-ai-hint={image.imageHint}
-                    />
-                  )}
-                  {project.link && (
-                    <Link href={project.link} target="_blank" rel="noopener noreferrer" className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-background/70 text-foreground backdrop-blur-sm transition-all hover:bg-primary hover:text-primary-foreground scale-0 group-hover:scale-100">
-                      <ArrowUpRight className="h-5 w-5" />
-                      <span className="sr-only">View Project</span>
-                    </Link>
-                  )}
-                </div>
-                <CardHeader>
-                  <CardTitle>{project.title}</CardTitle>
-                  <CardDescription className="text-base">{project.role}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex flex-1 flex-col">
-                    <p className="flex-1 text-muted-foreground">{project.description}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                        {project.tech.map((tech) => (
-                        <Badge key={tech} variant="secondary">
-                            {tech}
-                        </Badge>
-                        ))}
+              <Dialog key={project.title}>
+                <DialogTrigger asChild>
+                  <Card className="group flex cursor-pointer flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <div className="relative h-60 w-full overflow-hidden">
+                      {image && (
+                        <Image
+                          src={image.imageUrl}
+                          alt={project.title}
+                          fill
+                          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          data-ai-hint={image.imageHint}
+                        />
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                      <div className="absolute bottom-4 right-4 flex items-center gap-2 rounded-full bg-background/80 px-3 py-1 text-xs text-foreground backdrop-blur-sm opacity-0 transition-opacity group-hover:opacity-100">
+                        {t('view_details')}
+                        <ArrowUpRight className="h-4 w-4" />
+                      </div>
                     </div>
-                </CardContent>
-              </Card>
+                    <CardHeader>
+                      <CardTitle>{project.title}</CardTitle>
+                      <CardDescription className="text-base">
+                        {project.role}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex flex-1 flex-col">
+                      <p className="flex-1 text-muted-foreground">
+                        {project.description}
+                      </p>
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {project.tech.map((tech) => (
+                          <Badge key={tech} variant="secondary">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent className="max-h-[90svh] max-w-4xl">
+                  <DialogHeader className="pr-6">
+                    <DialogTitle className="text-2xl">
+                      {project.modal.title}
+                    </DialogTitle>
+                    <DialogDescription>
+                      {project.modal.description}
+                    </DialogDescription>
+                  </DialogHeader>
+                  <ScrollArea className="-mr-6 h-[60svh] pr-6">
+                    <div className="space-y-6 text-sm">
+                      <h3 className="text-lg font-semibold text-foreground">
+                        {project.modal.highlights_title}
+                      </h3>
+                      <div className="space-y-4">
+                        {project.modal.highlights.map((highlight, i) => (
+                          <div key={i}>
+                            <h4 className="font-semibold">{highlight.title}</h4>
+                            <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                              {highlight.points.map((point, j) => (
+                                <li key={j}>{point}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                      <Separator />
+                      <h3 className="text-lg font-semibold text-foreground">
+                        {project.modal.all_features_title}
+                      </h3>
+                      <div className="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2">
+                        {project.modal.all_features.map((feature, i) => (
+                          <div key={i}>
+                            <h4 className="font-semibold">{feature.title}</h4>
+                            <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                              {feature.points.map((point, j) => (
+                                <li key={j}>{point}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </ScrollArea>
+                  <DialogFooter className="flex-col gap-2 sm:flex-row sm:justify-start">
+                    <Button asChild>
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="mr-2" /> {t('visit_site')}
+                      </a>
+                    </Button>
+                    <Button asChild variant="secondary">
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="mr-2" /> GitHub
+                      </a>
+                    </Button>
+                  </DialogFooter>
+                </DialogContent>
+              </Dialog>
             );
           })}
         </div>

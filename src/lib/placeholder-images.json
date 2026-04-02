@@ -9,8 +9,8 @@
     {
       "id": "project-1",
       "description": "CBDMS Workspace project image",
-      "imageUrl": "https://picsum.photos/seed/cbdms/600/400",
-      "imageHint": "task management"
+      "imageUrl": "https://etgcvmbpzkvqbnjohuvn.supabase.co/storage/v1/object/sign/Foto/Screenshot%202026-04-02%20111211.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9jYTgwZjQwYy0zMzg0LTQ0OGMtOTllYi0xNDhiNTQ2NjczMmMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGb3RvL1NjcmVlbnNob3QgMjAyNi0wNC0wMiAxMTEyMTEucG5nIiwiaWF0IjoxNzc1MTAzMTk1LCJleHAiOjE4MDY2MzkxOTV9.Y3z24kUn1-xcok9mksewq3VJ-yP9um8mz_RrJ4PkQa0",
+      "imageHint": "project management dashboard"
     },
     {
       "id": "project-2",
