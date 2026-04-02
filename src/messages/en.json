@@ -296,7 +296,36 @@
                 }
             ]
         }
-    }
+      },
+      "hajatan": {
+        "title": "'Hajatan Akbar' Landing Page",
+        "description": "Developed a mobile-only landing page for an event, focusing on implementing the design and button functionality.",
+        "tech": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "role": "Frontend Development",
+        "liveLink": "https://environesia.id/hajatanakbar/",
+        "githubLink": "",
+        "modal": {
+          "title": "'Hajatan Akbar' Landing Page",
+          "description": "A landing page designed specifically for mobile display to promote an event. This project was a collaboration where I was responsible for turning a static design into a functional web page.",
+          "highlights_title": "Key Contributions",
+          "all_features_title": "",
+          "highlights": [
+            {
+              "title": "Implementation & Functionality",
+              "points": [
+                "Translated the visual design from a teammate into responsive HTML and CSS code for mobile devices.",
+                "Ensured all interactive elements, especially buttons, functioned correctly.",
+                "Configured all links and call-to-action (CTA) buttons to direct users to the correct destinations, such as registration forms or social media."
+              ]
+            }
+          ],
+          "all_features": []
+        }
+      }
     }
   },
   "Skills": {

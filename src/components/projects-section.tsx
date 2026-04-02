@@ -27,13 +27,14 @@ import { Separator } from '@/components/ui/separator';
 
 export default function ProjectsSection() {
   const t = useTranslations('Projects');
-  const projectKeys = ['cbdms', 'lsp', 'crm', 'hrp'] as const;
+  const projectKeys = ['cbdms', 'lsp', 'crm', 'hrp', 'hajatan'] as const;
 
   const projectImageIds: Record<typeof projectKeys[number], string> = {
     cbdms: 'project-1',
     lsp: 'project-2',
     crm: 'project-3',
     hrp: 'project-4',
+    hajatan: 'project-5',
   };
 
   const getImageById = (id: string) => {
@@ -168,7 +169,7 @@ export default function ProjectsSection() {
                       )}
                     </div>
                   </ScrollArea>
-                  <DialogFooter className="flex-col items-end gap-2 sm:flex-row">
+                  <DialogFooter className="flex-col items-end gap-2 sm:flex-row sm:justify-end">
                     {project.liveLink && (
                       <Button asChild>
                         <a
