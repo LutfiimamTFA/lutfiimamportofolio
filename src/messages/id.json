@@ -167,6 +167,37 @@
           ],
           "all_features": []
         }
+      },
+      "crm": {
+        "title": "Integrasi CRM & WhatsApp",
+        "description": "Membangun bukti konsep (PoC) CRM yang terintegrasi dengan WAHA (WhatsApp HTTP API) untuk memantau obrolan agen penjualan, memanfaatkan alur kerja N8N yang sudah ada.",
+        "tech": [
+          "Node.js",
+          "N8N",
+          "WAHA",
+          "Supabase"
+        ],
+        "role": "Integrasi & Pengembangan",
+        "liveLink": "",
+        "githubLink": "",
+        "modal": {
+          "title": "PoC: Integrasi CRM dengan WhatsApp",
+          "description": "Sebuah proyek bukti konsep (proof-of-concept) yang dirancang untuk memberikan visibilitas kepada manajer penjualan terhadap percakapan WhatsApp tim mereka. Meskipun proyek ini tidak dilanjutkan karena perubahan strategi bisnis, proyek ini berhasil menunjukkan kemampuan integrasi teknis.",
+          "highlights_title": "Kontribusi Utama",
+          "all_features_title": "",
+          "highlights": [
+            {
+              "title": "Integrasi dan Pengembangan Sistem",
+              "points": [
+                "Membangun CRM berbasis web dari awal sebagai antarmuka pemantauan.",
+                "Mengintegrasikan CRM dengan WAHA (WhatsApp HTTP API) untuk mengambil dan menampilkan data obrolan.",
+                "Mengadaptasi dan melanjutkan alur kerja otomasi N8N yang sudah ada untuk memproses data yang masuk.",
+                "Berkolaborasi dalam struktur database menggunakan Supabase untuk menyimpan informasi obrolan."
+              ]
+            }
+          ],
+          "all_features": []
+        }
       }
     }
   },

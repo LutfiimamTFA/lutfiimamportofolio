@@ -167,6 +167,37 @@
           ],
           "all_features": []
         }
+      },
+      "crm": {
+        "title": "CRM & WhatsApp Integration",
+        "description": "Built a proof-of-concept CRM integrated with WAHA (WhatsApp HTTP API) to monitor sales agent chats, leveraging an existing N8N workflow.",
+        "tech": [
+          "Node.js",
+          "N8N",
+          "WAHA",
+          "Supabase"
+        ],
+        "role": "Integration & Development",
+        "liveLink": "",
+        "githubLink": "",
+        "modal": {
+          "title": "PoC: CRM with WhatsApp Integration",
+          "description": "A proof-of-concept project designed to give sales managers visibility into their team's WhatsApp conversations. While the project was not continued due to a shift in business strategy, it successfully demonstrated the technical integration capabilities.",
+          "highlights_title": "Key Contributions",
+          "all_features_title": "",
+          "highlights": [
+            {
+              "title": "System Integration and Development",
+              "points": [
+                "Built a web-based CRM from the ground up to serve as the monitoring interface.",
+                "Integrated the CRM with the WAHA (WhatsApp HTTP API) to fetch and display chat data.",
+                "Adapted and continued an existing N8N automation workflow to process the incoming data.",
+                "Collaborated on the database structure using Supabase to store chat information."
+              ]
+            }
+          ],
+          "all_features": []
+        }
       }
     }
   },
