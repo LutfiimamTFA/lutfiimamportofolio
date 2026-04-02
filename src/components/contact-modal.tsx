@@ -16,7 +16,7 @@ import { Code2 } from 'lucide-react';
 export function ContactModal({ children }: { children: React.ReactNode }) {
   const t = useTranslations('ContactModal');
   const tHeader = useTranslations('Header');
-  const whatsappNumber = '6289680697803';
+  const whatsappNumber = '6289680597803';
   const email = 'lutfiimam81@gmail.com';
 
   return (
