@@ -178,7 +178,7 @@
           "Supabase"
         ],
         "role": "Integrasi & Pengembangan",
-        "liveLink": "",
+        "liveLink": "https://greenlabcrm.vercel.app/login",
         "githubLink": "",
         "modal": {
           "title": "PoC: Integrasi CRM dengan WhatsApp",
