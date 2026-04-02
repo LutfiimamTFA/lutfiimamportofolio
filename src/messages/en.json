@@ -28,8 +28,8 @@
     "p4": "I actively use AI as a development partner, a style I call 'Vibe Coding'. For me, AI is not just a tool for writing code faster. I use it to explore various architectural solutions, analyze complex problems from different angles, and automate repetitive tasks. This approach allows me to focus more on high-level strategic thinking and building user-centric features, ultimately speeding up the development cycle while maintaining high code quality."
   },
   "Projects": {
-    "title": "Featured Project",
-    "description": "A project I've worked on, showcasing my skills and expertise.",
+    "title": "Featured Projects",
+    "description": "A selection of projects I've worked on, showcasing my skills and expertise.",
     "view_details": "View Details",
     "visit_site": "Visit Site",
     "items": {
@@ -43,6 +43,8 @@
           "Genkit"
         ],
         "role": "Full Stack Development",
+        "liveLink": "https://studio--studio-3200695440-bed4a.us-central1.hosted.app/",
+        "githubLink": "https://github.com/LutfiimamTFA/CBDMS/tree/main-2",
         "modal": {
           "title": "Feature Details: CBDMS Workspace",
           "description": "A comprehensive project management and team collaboration platform, designed to streamline workflows, boost productivity, and provide full visibility on all tasks.",
@@ -137,55 +139,34 @@
           ]
         }
       },
-      "hr": {
-        "title": "HR Platform System",
-        "description": "An HR system to manage recruitment, employee data, and multi-level approval processes.",
-        "tech": [
-          "Laravel",
-          "PHP",
-          "MySQL"
-        ],
-        "role": "Backend Development"
-      },
-      "crm": {
-        "title": "CRM System",
-        "description": "A CRM system for monitoring sales activity and performance, including API integrations.",
-        "tech": [
-          "Node.js",
-          "API Integration",
-          "MySQL"
-        ],
-        "role": "System Integration"
-      },
-      "procurement": {
-        "title": "Goods Procurement System",
-        "description": "A website for the Blitar Regency to manage data and transactions for public procurement.",
-        "tech": [
-          "PHP",
-          "MySQL",
-          "Web App"
-        ],
-        "role": "Full Stack Development"
-      },
-      "wordpress": {
-        "title": "WordPress Development",
-        "description": "Created and managed websites and landing pages using Elementor for content and event marketing.",
+      "lsp": {
+        "title": "WordPress Site for LSP",
+        "description": "Contributed to the development of a WordPress site using Elementor, focusing on data entry and implementing minor features from a template.",
         "tech": [
           "WordPress",
           "Elementor",
           "PHP"
         ],
-        "role": "Development & Content"
-      },
-      "ecommerce": {
-        "title": "Financial System Application",
-        "description": "A complete financial system solution with transaction management, reporting, and dashboard analytics.",
-        "tech": [
-          "Next.js",
-          "PostgreSQL",
-          "Prisma"
-        ],
-        "role": "Full Stack Development"
+        "role": "Development & Content",
+        "liveLink": "https://pusatstudilingkungan.id/",
+        "githubLink": "",
+        "modal": {
+          "title": "LSP Website Development",
+          "description": "Contributed to the development of the official website for the Environmental Study Center (LSP) using WordPress and Elementor.",
+          "highlights_title": "Key Contributions",
+          "all_features_title": "",
+          "highlights": [
+            {
+              "title": "Content and Feature Implementation",
+              "points": [
+                "Responsible for data entry for training program codes and descriptions.",
+                "Added minor interactive features using pre-built Elementor templates.",
+                "Assisted in managing and updating site content as requested."
+              ]
+            }
+          ],
+          "all_features": []
+        }
       }
     }
   },

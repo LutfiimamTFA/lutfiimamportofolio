@@ -27,10 +27,11 @@ import { Separator } from '@/components/ui/separator';
 
 export default function ProjectsSection() {
   const t = useTranslations('Projects');
-  const projectKeys = ['cbdms'] as const;
+  const projectKeys = ['cbdms', 'lsp'] as const;
 
   const projectImageIds: Record<typeof projectKeys[number], string> = {
     cbdms: 'project-1',
+    lsp: 'project-2',
   };
 
   const getImageById = (id: string) => {
@@ -49,7 +50,7 @@ export default function ProjectsSection() {
           </h2>
           <p className="text-lg text-muted-foreground">{t('description')}</p>
         </div>
-        <div className="mx-auto max-w-lg">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
           {projectKeys.map((key) => {
             const project = {
               title: t(`items.${key}.title`),
@@ -57,9 +58,8 @@ export default function ProjectsSection() {
               tech: t.raw(`items.${key}.tech`) as string[],
               role: t(`items.${key}.role`),
               imageId: projectImageIds[key],
-              liveLink:
-                'https://studio--studio-3200695440-bed4a.us-central1.hosted.app/',
-              githubLink: 'https://github.com/LutfiimamTFA/CBDMS/tree/main-2',
+              liveLink: t(`items.${key}.liveLink`),
+              githubLink: t(`items.${key}.githubLink`),
               modal: {
                 title: t(`items.${key}.modal.title`),
                 description: t(`items.${key}.modal.description`),
@@ -143,22 +143,27 @@ export default function ProjectsSection() {
                           </div>
                         ))}
                       </div>
-                      <Separator />
-                      <h3 className="text-lg font-semibold text-foreground">
-                        {project.modal.all_features_title}
-                      </h3>
-                      <div className="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2">
-                        {project.modal.all_features.map((feature, i) => (
-                          <div key={i}>
-                            <h4 className="font-semibold">{feature.title}</h4>
-                            <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                              {feature.points.map((point, j) => (
-                                <li key={j}>{point}</li>
-                              ))}
-                            </ul>
+                      
+                      {project.modal.all_features && project.modal.all_features.length > 0 && (
+                        <>
+                          <Separator />
+                          <h3 className="text-lg font-semibold text-foreground">
+                            {project.modal.all_features_title}
+                          </h3>
+                          <div className="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2">
+                            {project.modal.all_features.map((feature, i) => (
+                              <div key={i}>
+                                <h4 className="font-semibold">{feature.title}</h4>
+                                <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                                  {feature.points.map((point, j) => (
+                                    <li key={j}>{point}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
                           </div>
-                        ))}
-                      </div>
+                        </>
+                      )}
                     </div>
                   </ScrollArea>
                   <DialogFooter className="flex-col gap-2 sm:flex-row sm:justify-start">
@@ -171,15 +176,17 @@ export default function ProjectsSection() {
                         <ExternalLink className="mr-2" /> {t('visit_site')}
                       </a>
                     </Button>
-                    <Button asChild variant="secondary">
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="mr-2" /> GitHub
-                      </a>
-                    </Button>
+                    {project.githubLink && (
+                      <Button asChild variant="secondary">
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="mr-2" /> GitHub
+                        </a>
+                      </Button>
+                    )}
                   </DialogFooter>
                 </DialogContent>
               </Dialog>
