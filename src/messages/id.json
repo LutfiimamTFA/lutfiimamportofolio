@@ -407,10 +407,13 @@
     }
   },
   "Approach": {
-    "title": "Pendekatan Kerja Saya",
-    "description": "Pendekatan saya untuk setiap proyek memastikan hasil yang berkualitas tinggi dan efisien.",
-    "p1": "Saya tidak hanya fokus pada pengkodean, tetapi pada bagaimana sistem mengatasi kebutuhan pengguna di dunia nyata.",
-    "p2": "Saya membangun aplikasi dengan pendekatan terstruktur, dengan mempertimbangkan efisiensi, kegunaan, dan skalabilitas."
+    "title": "Cara Saya Bekerja",
+    "description": "Saya fokus membangun sistem yang benar-benar digunakan, bukan sekadar selesai dibuat.",
+    "points": [
+      "Setiap fitur dikembangkan berdasarkan kebutuhan bisnis, seperti manajemen tugas, sistem HR, dan CRM yang saya kerjakan selama magang.",
+      "Saya terbiasa menyusun struktur aplikasi yang rapi, mudah dikembangkan, dan efisien dalam penggunaan.",
+      "Dalam proses development, saya memanfaatkan AI untuk mempercepat pengerjaan, membantu analisis solusi, dan meningkatkan produktivitas tanpa mengabaikan kualitas kode."
+    ]
   },
   "Contact": {
     "title": "Hubungi Saya",

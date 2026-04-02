@@ -408,9 +408,12 @@
   },
   "Approach": {
     "title": "My Working Approach",
-    "description": "My approach to every project ensures high-quality, efficient results.",
-    "p1": "I focus not just on coding, but on how the system addresses real-world user needs.",
-    "p2": "I build applications with a structured approach, considering efficiency, usability, and scalability."
+    "description": "I focus on building systems that are actually used, not just for the sake of completion.",
+    "points": [
+      "Every feature is developed based on business needs, like the task management, HR, and CRM systems I worked on during my internship.",
+      "I'm accustomed to structuring applications to be neat, scalable, and efficient in their use.",
+      "In my development process, I leverage AI to accelerate work, assist in solution analysis, and increase productivity without compromising code quality."
+    ]
   },
   "Contact": {
     "title": "Get In Touch",
