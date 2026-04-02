@@ -15,8 +15,8 @@ export default function HeroSection() {
   return (
     <section id="hero" className="relative flex items-center min-h-[calc(100vh-4rem)] py-16 lg:py-24">
       <div className="container">
-        <div className="grid items-center gap-12 md:grid-cols-2 lg:gap-20">
-          <div className="text-center md:text-left">
+        <div className="grid items-start gap-12 text-center md:grid-cols-2 md:text-left lg:gap-20">
+          <div>
             <h1 className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">
               {t('role')}
             </h1>
@@ -34,7 +34,7 @@ export default function HeroSection() {
               </Button>
             </div>
           </div>
-          <div className="relative order-first mx-auto h-[22rem] w-[22rem] md:order-last md:h-[28rem] md:w-[28rem]">
+          <div className="relative order-first mx-auto h-[25rem] w-[25rem] md:order-last md:h-[30rem] md:w-[30rem]">
             {avatarImage && (
               <Image 
                 src={avatarImage.imageUrl}
