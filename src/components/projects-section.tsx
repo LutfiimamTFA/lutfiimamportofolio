@@ -27,7 +27,7 @@ import { Separator } from '@/components/ui/separator';
 
 export default function ProjectsSection() {
   const t = useTranslations('Projects');
-  const projectKeys = ['cbdms', 'lsp', 'crm', 'hrp', 'hajatan'] as const;
+  const projectKeys = ['cbdms', 'lsp', 'crm', 'hrp', 'hajatan', 'procurement'] as const;
 
   const projectImageIds: Record<typeof projectKeys[number], string> = {
     cbdms: 'project-1',
@@ -35,6 +35,7 @@ export default function ProjectsSection() {
     crm: 'project-3',
     hrp: 'project-4',
     hajatan: 'project-5',
+    procurement: 'project-6',
   };
 
   const getImageById = (id: string) => {

@@ -325,6 +325,37 @@
           ],
           "all_features": []
         }
+      },
+      "procurement": {
+        "title": "Sistem Pengadaan Barang Pemda Blitar",
+        "description": "Aplikasi web untuk mengelola pengadaan barang di Dinas Peternakan dan Perikanan Kabupaten Blitar, dikembangkan sebagai bagian dari program MBKM.",
+        "tech": [
+          "Laravel",
+          "MySQL",
+          "Git",
+          "Agile"
+        ],
+        "role": "Full Stack Web Developer (MBKM)",
+        "liveLink": "",
+        "githubLink": "",
+        "modal": {
+          "title": "Sistem Pengadaan Barang - Dinas Kab. Blitar",
+          "description": "Berkontribusi dalam pengembangan aplikasi web pengadaan barang untuk Dinas Peternakan dan Perikanan Blitar menggunakan Laravel sebagai bagian dari program MBKM.",
+          "highlights_title": "Kontribusi Utama",
+          "all_features_title": "",
+          "highlights": [
+            {
+              "title": "Pengembangan Sistem Inti",
+              "points": [
+                "Merancang login multi-pengguna dengan Laravel Guards untuk membedakan hak akses.",
+                "Mengembangkan modul untuk transaksi barang keluar-masuk, riwayat pengadaan, dan informasi penerima.",
+                "Menyusun struktur database MySQL yang aman dan mendukung transaksi.",
+                "Berkolaborasi dalam tim Agile menggunakan Git untuk kontrol versi."
+              ]
+            }
+          ],
+          "all_features": []
+        }
       }
     }
   },

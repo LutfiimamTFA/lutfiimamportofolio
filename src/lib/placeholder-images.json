@@ -38,9 +38,9 @@
     },
     {
       "id": "project-6",
-      "description": "E-Commerce platform project image",
-      "imageUrl": "https://picsum.photos/seed/ecommerce/600/400",
-      "imageHint": "online shopping"
+      "description": "Procurement system for a government agency",
+      "imageUrl": "https://etgcvmbpzkvqbnjohuvn.supabase.co/storage/v1/object/sign/Foto/Screenshot%202026-04-02%20123124.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9jYTgwZjQwYy0zMzg0LTQ0OGMtOTllYi0xNDhiNTQ2NjczMmMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGb3RvL1NjcmVlbnNob3QgMjAyNi0wNC0wMiAxMjMxMjQucG5nIiwiaWF0IjoxNzc1MTA4MDIxLCJleHAiOjE4MDY2NDQwMjF9.PCwIJJhhL5SRvrG1gvyFdXqBrvy4ZiH6uoiC2C1Ih10",
+      "imageHint": "government procurement system"
     }
   ]
 }
