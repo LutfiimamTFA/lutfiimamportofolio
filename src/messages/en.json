@@ -5,7 +5,7 @@
     "description": "Personal portfolio of a Web Developer."
   },
   "Header": {
-    "name": "John Doe",
+    "name": "Lutfi Imam Tauchid F.A.",
     "nav": {
       "about": "About",
       "projects": "Projects",
@@ -22,10 +22,10 @@
   },
   "About": {
     "title": "About Me",
-    "p1": "As a Computer Science graduate, I gained hands-on experience as a Web Developer intern at PT Environesia Global Saraya through a government-sponsored program.",
-    "p2": "During my studies, I also participated in the MBKM program, where I developed a procurement system website for the Blitar Regency's Livestock and Fisheries Service.",
-    "p3": "I am experienced in developing web applications and thrive in team environments using Agile methodologies.",
-    "p4": "I leverage AI-powered tools to accelerate development, analyze solutions, and boost efficiency, always ensuring that code quality and structure remain top priorities."
+    "p1": "Information Engineering undergraduate at Semarang University (2025) with experience as a Web Developer through the Ministry of Manpower's MagangHub program at PT Environesia Global Saraya (Nov 2025 – May 2026).",
+    "p2": "During my studies, I was also involved in the MBKM program and various application development projects, including a procurement system for a government agency.",
+    "p3": "I have built end-to-end applications like the CBDMS Workspace, a task management system with an interactive Kanban board, task dependencies, multi-tenancy, and a real-time dashboard using Firestore.",
+    "p4": "Experienced in developing and integrating HR, CRM, and financial systems, I leverage AI to assist in solution analysis and accelerate the development process, always prioritizing code quality and collaboration using tools like Git in an Agile environment."
   },
   "Projects": {
     "title": "Featured Projects",
@@ -40,13 +40,13 @@
       "hr": {
         "title": "HR Platform System",
         "description": "An HR system to manage recruitment, employee data, and multi-level approval processes.",
-        "tech": ["Web App", "Database System"],
+        "tech": ["Laravel", "PHP", "MySQL"],
         "role": "Backend Development"
       },
       "crm": {
-        "title": "CRM WhatsApp Integration",
-        "description": "A CRM system connected with WhatsApp (using WAHA) for monitoring sales activity and performance.",
-        "tech": ["WAHA", "API Integration", "Node.js"],
+        "title": "CRM System",
+        "description": "A CRM system for monitoring sales activity and performance, including API integrations.",
+        "tech": ["Node.js", "API Integration", "MySQL"],
         "role": "System Integration"
       },
       "procurement": {
@@ -62,9 +62,9 @@
         "role": "Development & Content"
       },
       "ecommerce": {
-        "title": "E-Commerce Platform",
-        "description": "A complete e-commerce solution with product management, shopping cart, and payment gateway integration.",
-        "tech": ["Next.js", "Stripe", "PostgreSQL"],
+        "title": "Financial System Application",
+        "description": "A complete financial system solution with transaction management, reporting, and dashboard analytics.",
+        "tech": ["Next.js", "PostgreSQL", "Prisma"],
         "role": "Full Stack Development"
       }
     }
@@ -87,7 +87,7 @@
       },
       "tools": {
         "title": "Tools & Methods",
-        "tech": ["Git", "Docker", "Agile", "n8n"]
+        "tech": ["Git", "Docker", "Agile"]
       },
       "expertise": {
         "title": "Expertise",

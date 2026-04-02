@@ -3,8 +3,8 @@
     {
       "id": "avatar",
       "description": "Avatar image of the developer",
-      "imageUrl": "https://picsum.photos/seed/avatar/400/400",
-      "imageHint": "portrait person"
+      "imageUrl": "https://picsum.photos/seed/lutfi/400/400",
+      "imageHint": "man portrait"
     },
     {
       "id": "project-1",

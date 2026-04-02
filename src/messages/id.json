@@ -5,7 +5,7 @@
     "description": "Portofolio pribadi seorang Pengembang Web."
   },
   "Header": {
-    "name": "John Doe",
+    "name": "Lutfi Imam Tauchid F.A.",
     "nav": {
       "about": "Tentang",
       "projects": "Proyek",
@@ -22,10 +22,10 @@
   },
   "About": {
     "title": "Tentang Saya",
-    "p1": "Sebagai lulusan Ilmu Komputer, saya mendapatkan pengalaman langsung sebagai intern Pengembang Web di PT Environesia Global Saraya melalui program yang disponsori pemerintah.",
-    "p2": "Selama studi, saya juga berpartisipasi dalam program MBKM, di mana saya mengembangkan situs web sistem pengadaan untuk Dinas Peternakan dan Perikanan Kabupaten Blitar.",
-    "p3": "Saya berpengalaman dalam mengembangkan aplikasi web dan berkembang dalam lingkungan tim menggunakan metodologi Agile.",
-    "p4": "Saya memanfaatkan alat bertenaga AI untuk mempercepat pengembangan, menganalisis solusi, dan meningkatkan efisiensi, selalu memastikan kualitas dan struktur kode tetap menjadi prioritas utama."
+    "p1": "Sarjana Teknik Informatika dari Universitas Semarang (2025) dengan pengalaman sebagai Web Developer melalui program MagangHub Kementerian Ketenagakerjaan di PT Environesia Global Saraya (Nov 2025 – Mei 2026).",
+    "p2": "Selama studi, saya juga terlibat dalam program MBKM dan berbagai proyek pengembangan aplikasi, termasuk sistem pengadaan untuk instansi pemerintah.",
+    "p3": "Saya telah membangun aplikasi end-to-end seperti CBDMS Workspace, sebuah sistem manajemen tugas dengan papan Kanban interaktif, dependensi tugas, multi-tenancy, dan dasbor real-time menggunakan Firestore.",
+    "p4": "Berpengalaman dalam mengembangkan dan mengintegrasikan sistem HR, CRM, dan keuangan, saya memanfaatkan AI untuk membantu analisis solusi dan mempercepat proses pengembangan, dengan selalu memprioritaskan kualitas kode dan kolaborasi menggunakan alat seperti Git dalam lingkungan Agile."
   },
   "Projects": {
     "title": "Proyek Unggulan",
@@ -40,13 +40,13 @@
       "hr": {
         "title": "Sistem Platform SDM",
         "description": "Sistem SDM untuk mengelola rekrutmen, data karyawan, dan proses persetujuan multi-level.",
-        "tech": ["Aplikasi Web", "Sistem Basis Data"],
+        "tech": ["Laravel", "PHP", "MySQL"],
         "role": "Pengembangan Backend"
       },
       "crm": {
-        "title": "Integrasi CRM WhatsApp",
-        "description": "Sistem CRM yang terhubung dengan WhatsApp (menggunakan WAHA) untuk memantau aktivitas dan kinerja penjualan.",
-        "tech": ["WAHA", "Integrasi API", "Node.js"],
+        "title": "Sistem CRM",
+        "description": "Sistem CRM untuk memantau aktivitas dan kinerja penjualan, termasuk integrasi API.",
+        "tech": ["Node.js", "Integrasi API", "MySQL"],
         "role": "Integrasi Sistem"
       },
       "procurement": {
@@ -62,9 +62,9 @@
         "role": "Pengembangan & Konten"
       },
       "ecommerce": {
-        "title": "Platform E-Commerce",
-        "description": "Solusi e-commerce lengkap dengan manajemen produk, keranjang belanja, dan integrasi gateway pembayaran.",
-        "tech": ["Next.js", "Stripe", "PostgreSQL"],
+        "title": "Aplikasi Sistem Keuangan",
+        "description": "Solusi sistem keuangan lengkap dengan manajemen transaksi, pelaporan, dan analitik dasbor.",
+        "tech": ["Next.js", "PostgreSQL", "Prisma"],
         "role": "Pengembangan Full Stack"
       }
     }
@@ -87,7 +87,7 @@
       },
       "tools": {
         "title": "Alat & Metode",
-        "tech": ["Git", "Docker", "Agile", "n8n"]
+        "tech": ["Git", "Docker", "Agile"]
       },
       "expertise": {
         "title": "Keahlian",
