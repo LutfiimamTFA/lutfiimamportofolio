@@ -21,7 +21,7 @@ export default function HeroSection() {
               {t('role')}
             </h1>
             <p 
-              className="mb-8 font-headline text-4xl font-semibold text-foreground md:text-5xl lg:text-6xl"
+              className="mb-8 max-w-2xl font-headline text-4xl font-semibold text-foreground md:text-5xl lg:text-6xl"
             >
               {t('description')}
             </p>
@@ -34,7 +34,7 @@ export default function HeroSection() {
               </Button>
             </div>
           </div>
-          <div className="relative order-first mx-auto h-[25rem] w-[25rem] md:order-last md:h-[30rem] md:w-[30rem]">
+          <div className="relative order-first mx-auto h-[30rem] w-[30rem] md:order-last md:h-[35rem] md:w-[35rem]">
             {avatarImage && (
               <Image 
                 src={avatarImage.imageUrl}
