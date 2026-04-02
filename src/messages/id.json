@@ -25,7 +25,7 @@
     "p1": "Sarjana Teknik Informatika dari Universitas Semarang (2025) dengan pengalaman sebagai Web Developer melalui program MagangHub Kementerian Ketenagakerjaan di PT Environesia Global Saraya (Nov 2025 – Mei 2026).",
     "p2": "Selama studi, saya juga terlibat dalam program MBKM dan berbagai proyek pengembangan aplikasi, termasuk sistem pengadaan untuk instansi pemerintah.",
     "p3": "Saya telah membangun aplikasi end-to-end seperti CBDMS Workspace, sebuah sistem manajemen tugas dengan papan Kanban interaktif, dependensi tugas, multi-tenancy, dan dasbor real-time menggunakan Firestore.",
-    "p4": "Berpengalaman dalam mengembangkan dan mengintegrasikan sistem HR, CRM, dan keuangan, saya memanfaatkan AI untuk membantu analisis solusi dan mempercepat proses pengembangan, dengan selalu memprioritaskan kualitas kode dan kolaborasi menggunakan alat seperti Git dalam lingkungan Agile."
+    "p4": "Saya secara aktif memanfaatkan AI sebagai partner pengembangan, sebuah gaya yang saya sebut 'Vibe Coding'. Bagi saya, AI bukan hanya alat untuk menulis kode lebih cepat. Saya menggunakannya untuk mengeksplorasi berbagai solusi arsitektur, menganalisis masalah kompleks dari berbagai sudut pandang, dan mengotomatiskan tugas-tugas repetitif. Pendekatan ini memungkinkan saya untuk lebih fokus pada pemikiran strategis tingkat tinggi dan membangun fitur yang berpusat pada pengguna, yang pada akhirnya mempercepat siklus pengembangan sambil menjaga kualitas kode yang tinggi."
   },
   "Projects": {
     "title": "Proyek Unggulan",
@@ -99,8 +99,7 @@
     "title": "Pendekatan Kerja Saya",
     "description": "Pendekatan saya untuk setiap proyek memastikan hasil yang berkualitas tinggi dan efisien.",
     "p1": "Saya tidak hanya fokus pada pengkodean, tetapi pada bagaimana sistem mengatasi kebutuhan pengguna di dunia nyata.",
-    "p2": "Saya membangun aplikasi dengan pendekatan terstruktur, dengan mempertimbangkan efisiensi, kegunaan, dan skalabilitas.",
-    "p3": "Saya menggunakan AI untuk mempercepat proses pengembangan, membantu dalam eksplorasi solusi, dan meningkatkan produktivitas secara keseluruhan."
+    "p2": "Saya membangun aplikasi dengan pendekatan terstruktur, dengan mempertimbangkan efisiensi, kegunaan, dan skalabilitas."
   },
   "Contact": {
     "title": "Hubungi Saya",

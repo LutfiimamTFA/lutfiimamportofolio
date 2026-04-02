@@ -5,7 +5,7 @@ import { CheckCircle2 } from 'lucide-react';
 
 export default function ApproachSection() {
   const t = useTranslations('Approach');
-  const points = [t('p1'), t('p2'), t('p3')];
+  const points = [t('p1'), t('p2')];
 
   const codeSnippet = `
 // Sample code snippet

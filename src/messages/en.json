@@ -25,7 +25,7 @@
     "p1": "Information Engineering undergraduate at Semarang University (2025) with experience as a Web Developer through the Ministry of Manpower's MagangHub program at PT Environesia Global Saraya (Nov 2025 – May 2026).",
     "p2": "During my studies, I was also involved in the MBKM program and various application development projects, including a procurement system for a government agency.",
     "p3": "I have built end-to-end applications like the CBDMS Workspace, a task management system with an interactive Kanban board, task dependencies, multi-tenancy, and a real-time dashboard using Firestore.",
-    "p4": "Experienced in developing and integrating HR, CRM, and financial systems, I leverage AI to assist in solution analysis and accelerate the development process, always prioritizing code quality and collaboration using tools like Git in an Agile environment."
+    "p4": "I actively use AI as a development partner, a style I call 'Vibe Coding'. For me, AI is not just a tool for writing code faster. I use it to explore various architectural solutions, analyze complex problems from different angles, and automate repetitive tasks. This approach allows me to focus more on high-level strategic thinking and building user-centric features, ultimately speeding up the development cycle while maintaining high code quality."
   },
   "Projects": {
     "title": "Featured Projects",
@@ -99,8 +99,7 @@
     "title": "My Working Approach",
     "description": "My approach to every project ensures high-quality, efficient results.",
     "p1": "I focus not just on coding, but on how the system addresses real-world user needs.",
-    "p2": "I build applications with a structured approach, considering efficiency, usability, and scalability.",
-    "p3": "I utilize AI to speed up the development process, assist in solution exploration, and boost overall productivity."
+    "p2": "I build applications with a structured approach, considering efficiency, usability, and scalability."
   },
   "Contact": {
     "title": "Get In Touch",
