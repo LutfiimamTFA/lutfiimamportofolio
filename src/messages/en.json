@@ -198,7 +198,105 @@
           ],
           "all_features": []
         }
-      }
+      },
+      "hrp": {
+        "title": "HRP (Environesia Career)",
+        "description": "An end-to-end recruitment and HR management platform with AI-powered candidate analysis and a dynamic approval system.",
+        "tech": [
+            "Next.js",
+            "Firebase",
+            "Genkit",
+            "Tailwind CSS"
+        ],
+        "role": "Full Stack Development",
+        "liveLink": "https://studio--studio-9262077557-bc9c9.us-central1.hosted.app/careers",
+        "githubLink": "https://github.com/LutfiimamTFA/HRPEnvironesia.git",
+        "modal": {
+            "title": "Feature Details: HRP Starter Kit",
+            "description": "A solid, modular, and extensible Human Resource Planning (HRP) platform. Each feature is designed to be interconnected, supporting the HR process from end to end.",
+            "highlights_title": "Feature Highlights",
+            "all_features_title": "Complete Feature List by Module",
+            "highlights": [
+                {
+                    "title": "Intelligent End-to-End Recruitment Workflow",
+                    "points": [
+                        "Manages the entire recruitment lifecycle, from job posting, candidate application, testing, interviews, to employee activation.",
+                        "AI-Powered Candidate Analysis: The system 'reads' CVs and provides a match score and automated interview question recommendations."
+                    ]
+                },
+                {
+                    "title": "Role & Type-Based Employee Management",
+                    "points": [
+                        "Different dashboards and workflows for Permanent Employees, Probationary (Training) Employees, and Interns.",
+                        "Specialized features like daily reports and monthly evaluations to support a structured internship program."
+                    ]
+                },
+                {
+                    "title": "Dynamic Multi-Level Approval System",
+                    "points": [
+                        "Automated approval flows for Overtime and Leave requests: Employee -> Division Manager -> HRD.",
+                        "Smart routing: If a Manager submits a request for themselves, the system automatically routes it to HRD, bypassing the manager-level approval."
+                    ]
+                },
+                {
+                    "title": "Robust Role-Based Access Control (RBAC) Architecture",
+                    "points": [
+                        "Each user (Super Admin, HRD, Manager, Employee, Candidate) gets a tailored view and access based on their responsibilities.",
+                        "Dynamically configured through menu settings and strict security rules."
+                    ]
+                }
+            ],
+            "all_features": [
+                {
+                    "title": "Career & Candidate Portal",
+                    "points": [
+                        "Public-facing page to display all active job vacancies.",
+                        "Multi-step application process: profile, document uploads, and job application.",
+                        "Personal candidate dashboard to track application status and schedules."
+                    ]
+                },
+                {
+                    "title": "Recruitment Management (HRD/Admin)",
+                    "points": [
+                        "Vacancy management (Draft, Published, Closed).",
+                        "Candidate application management (Screening, Interview, Hired, etc.).",
+                        "Interview scheduling and job offer delivery."
+                    ]
+                },
+                {
+                    "title": "Employee Management",
+                    "points": [
+                        "Centralized database to manage profiles of all employee types.",
+                        "Onboarding via invitation batches with quotas for mass recruitment.",
+                        "Daily attendance management with location-based (GPS) validation."
+                    ]
+                },
+                {
+                    "title": "Requests & Approvals",
+                    "points": [
+                        "Dynamic forms for submitting overtime and leave requests (sick, personal, etc.) with attachment uploads.",
+                        "Dedicated dashboards for Managers and HRD to review and approve/reject requests."
+                    ]
+                },
+                {
+                    "title": "Internship-Specific Features",
+                    "points": [
+                        "Daily report forms for interns (activities, learnings, challenges).",
+                        "Report summaries to view all submitted reports.",
+                        "Monthly evaluation and feedback feature from mentors or HRD."
+                    ]
+                },
+                {
+                    "title": "Administration & Settings",
+                    "points": [
+                        "User and role management (HRD, Manager, etc.).",
+                        "Company master data (Brands, Divisions).",
+                        "Navigation menu customization for each user role."
+                    ]
+                }
+            ]
+        }
+    }
     }
   },
   "Skills": {

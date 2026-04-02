@@ -198,7 +198,105 @@
           ],
           "all_features": []
         }
-      }
+      },
+      "hrp": {
+        "title": "HRP (Environesia Karir)",
+        "description": "Platform rekrutmen dan manajemen SDM end-to-end dengan analisis kandidat berbasis AI dan sistem persetujuan dinamis.",
+        "tech": [
+            "Next.js",
+            "Firebase",
+            "Genkit",
+            "Tailwind CSS"
+        ],
+        "role": "Pengembangan Full Stack",
+        "liveLink": "https://studio--studio-9262077557-bc9c9.us-central1.hosted.app/careers",
+        "githubLink": "https://github.com/LutfiimamTFA/HRPEnvironesia.git",
+        "modal": {
+            "title": "Detail Fitur: HRP Starter Kit",
+            "description": "Sebuah platform Human Resource Panning (HRP) yang solid, modular, dan siap untuk dikembangkan lebih lanjut. Setiap fitur dirancang untuk saling terhubung dan mendukung proses HR dari hulu ke hilir.",
+            "highlights_title": "Fitur Unggulan",
+            "all_features_title": "Daftar Fitur Lengkap per Modul",
+            "highlights": [
+                {
+                    "title": "Alur Rekrutmen End-to-End yang Cerdas",
+                    "points": [
+                        "Mengelola seluruh siklus hidup rekrutmen, dari posting lowongan, lamaran kandidat, tes, wawancara, hingga menjadi karyawan.",
+                        "Analisis Kandidat Berbasis AI: Sistem 'membaca' CV dan memberikan skor kecocokan serta rekomendasi pertanyaan wawancara otomatis."
+                    ]
+                },
+                {
+                    "title": "Manajemen Karyawan Berbasis Peran & Tipe",
+                    "points": [
+                        "Dasbor dan alur kerja yang berbeda untuk Karyawan Tetap, Karyawan Probation (Training), dan Peserta Magang.",
+                        "Fitur khusus seperti laporan harian dan evaluasi bulanan untuk mendukung program magang yang terstruktur."
+                    ]
+                },
+                {
+                    "title": "Sistem Persetujuan Bertingkat yang Dinamis",
+                    "points": [
+                        "Alur persetujuan otomatis untuk Lembur dan Izin: Karyawan -> Manajer Divisi -> HRD.",
+                        "Penanganan cerdas: Jika seorang Manajer mengajukan untuk dirinya sendiri, sistem otomatis meneruskannya ke HRD, melewati persetujuan level manajer."
+                    ]
+                },
+                {
+                    "title": "Arsitektur Berbasis Peran yang Kuat (RBAC)",
+                    "points": [
+                        "Setiap pengguna (Super Admin, HRD, Manajer, Karyawan, Kandidat) memiliki tampilan dan akses yang disesuaikan dengan tanggung jawab mereka.",
+                        "Diatur secara dinamis melalui konfigurasi menu dan security rules yang ketat."
+                    ]
+                }
+            ],
+            "all_features": [
+                {
+                    "title": "Portal Karir & Kandidat",
+                    "points": [
+                        "Halaman publik untuk menampilkan semua lowongan yang aktif.",
+                        "Proses lamaran multi-langkah: profil, unggah dokumen, dan melamar.",
+                        "Dasbor pribadi kandidat untuk melacak status lamaran dan jadwal."
+                    ]
+                },
+                {
+                    "title": "Manajemen Rekrutmen (HRD/Admin)",
+                    "points": [
+                        "Manajemen lowongan (Draft, Published, Closed).",
+                        "Manajemen aplikasi kandidat (Screening, Interview, Hired, dll).",
+                        "Penjadwalan wawancara dan pengiriman penawaran kerja."
+                    ]
+                },
+                {
+                    "title": "Manajemen Karyawan",
+                    "points": [
+                        "Pusat data untuk mengelola profil semua tipe karyawan.",
+                        "Onboarding via undangan dengan kuota untuk rekrutmen massal.",
+                        "Manajemen absensi harian dengan validasi berbasis lokasi (GPS)."
+                    ]
+                },
+                {
+                    "title": "Pengajuan & Persetujuan",
+                    "points": [
+                        "Formulir dinamis untuk pengajuan lembur dan izin (sakit, keluar, dll) dengan unggah lampiran.",
+                        "Dasbor khusus untuk Manajer dan HRD untuk me-review dan menyetujui/menolak pengajuan."
+                    ]
+                },
+                {
+                    "title": "Fitur Khusus Magang",
+                    "points": [
+                        "Formulir laporan harian untuk intern (aktivitas, pembelajaran, kendala).",
+                        "Rekap laporan untuk melihat ringkasan semua laporan yang dibuat.",
+                        "Fitur evaluasi dan feedback bulanan dari mentor atau HRD."
+                    ]
+                },
+                {
+                    "title": "Administrasi & Pengaturan",
+                    "points": [
+                        "Manajemen pengguna dan peran (HRD, Manager, dll).",
+                        "Master data perusahaan (Brands, Divisi).",
+                        "Kustomisasi menu navigasi untuk setiap peran pengguna."
+                    ]
+                }
+            ]
+        }
+    }
     }
   },
   "Skills": {

@@ -27,12 +27,13 @@ import { Separator } from '@/components/ui/separator';
 
 export default function ProjectsSection() {
   const t = useTranslations('Projects');
-  const projectKeys = ['cbdms', 'lsp', 'crm'] as const;
+  const projectKeys = ['cbdms', 'lsp', 'crm', 'hrp'] as const;
 
   const projectImageIds: Record<typeof projectKeys[number], string> = {
     cbdms: 'project-1',
     lsp: 'project-2',
     crm: 'project-3',
+    hrp: 'project-4',
   };
 
   const getImageById = (id: string) => {
@@ -51,7 +52,7 @@ export default function ProjectsSection() {
           </h2>
           <p className="text-lg text-muted-foreground">{t('description')}</p>
         </div>
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2">
           {projectKeys.map((key) => {
             const project = {
               title: t(`items.${key}.title`),
@@ -88,7 +89,7 @@ export default function ProjectsSection() {
                           alt={project.title}
                           fill
                           className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          sizes="(max-width: 768px) 100vw, 50vw"
                           data-ai-hint={image.imageHint}
                         />
                       )}
@@ -167,7 +168,7 @@ export default function ProjectsSection() {
                       )}
                     </div>
                   </ScrollArea>
-                  <DialogFooter className="flex-col gap-2 sm:flex-row">
+                  <DialogFooter className="flex-col items-end gap-2 sm:flex-row">
                     {project.liveLink && (
                       <Button asChild>
                         <a
