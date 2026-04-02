@@ -420,6 +420,12 @@
     "description": "Saya selalu terbuka untuk mendiskusikan proyek baru, kolaborasi, atau peluang kerja. Jangan ragu untuk menghubungi.",
     "cta": "Rekrut Saya"
   },
+  "ContactModal": {
+    "title": "Halo, saya {name}!",
+    "description": "Saya selalu terbuka untuk mendiskusikan proyek baru, ide-ide kreatif, atau peluang untuk menjadi bagian dari tim Anda. Silakan hubungi saya melalui salah satu saluran di bawah ini.",
+    "whatsapp_cta": "Chat di WhatsApp",
+    "email_cta": "Kirim Email"
+  },
   "Footer": {
     "copyright": "Dibuat oleh {name} © {year}. Hak cipta dilindungi.",
     "nav_title": "Navigasi Cepat",

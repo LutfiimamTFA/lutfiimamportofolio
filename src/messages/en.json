@@ -420,6 +420,12 @@
     "description": "I'm always open to discussing new projects, collaborations, or employment opportunities. Feel free to reach out.",
     "cta": "Hire Me"
   },
+  "ContactModal": {
+    "title": "Hello, I'm {name}!",
+    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your team. Feel free to reach out through your preferred channel below.",
+    "whatsapp_cta": "Chat on WhatsApp",
+    "email_cta": "Send an Email"
+  },
   "Footer": {
     "copyright": "Built by {name} © {year}. All rights reserved.",
     "nav_title": "Quick Navigation",

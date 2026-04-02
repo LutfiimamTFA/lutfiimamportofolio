@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
+import { ContactModal } from '@/components/contact-modal';
 
 export default function HeroSection() {
   const t = useTranslations('Hero');
@@ -29,9 +30,9 @@ export default function HeroSection() {
               <Button asChild size="lg">
                 <Link href="#projects">{t('cta1')}</Link>
               </Button>
-              <Button asChild size="lg" variant="secondary">
-                <Link href="#contact">{t('cta2')}</Link>
-              </Button>
+              <ContactModal>
+                <Button size="lg" variant="secondary">{t('cta2')}</Button>
+              </ContactModal>
             </div>
           </div>
           <div className="relative order-first mx-auto h-[30rem] w-[30rem] md:order-last md:h-[35rem] md:w-[35rem]">

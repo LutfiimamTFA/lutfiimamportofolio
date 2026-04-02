@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
+import { ContactModal } from '@/components/contact-modal';
 
 export default function ContactSection() {
   const t = useTranslations('Contact');
@@ -17,9 +18,9 @@ export default function ContactSection() {
             {t('description')}
           </p>
           <div className="flex justify-center">
-             <Button asChild size="lg">
-              <a href="mailto:john.doe@example.com">{t('cta')}</a>
-            </Button>
+            <ContactModal>
+              <Button size="lg">{t('cta')}</Button>
+            </ContactModal>
           </div>
         </div>
       </div>

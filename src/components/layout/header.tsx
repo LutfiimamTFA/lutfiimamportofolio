@@ -10,6 +10,7 @@ import { Menu, Code2 } from 'lucide-react';
 import { ThemeToggle } from '@/components/theme-toggle';
 import LanguageSwitcher from '@/components/language-switcher';
 import { Skeleton } from '@/components/ui/skeleton';
+import { ContactModal } from '@/components/contact-modal';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -88,9 +89,9 @@ export default function Header() {
             <ThemeToggle />
             <LanguageSwitcher />
           </div>
-          <Button asChild>
-            <Link href="#contact">{t('cta')}</Link>
-          </Button>
+          <ContactModal>
+            <Button>{t('cta')}</Button>
+          </ContactModal>
           {isClient ? <MobileMenu /> : <Skeleton className="h-10 w-10 lg:hidden" />}
         </div>
       </div>
