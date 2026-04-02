@@ -12,8 +12,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { Skeleton } from "@/components/ui/skeleton"
 
-export function ThemeToggle() {
+function ThemeToggleComponent() {
   const { setTheme } = useTheme()
   const t = useTranslations("Theme")
 
@@ -39,4 +40,14 @@ export function ThemeToggle() {
       </DropdownMenuContent>
     </DropdownMenu>
   )
+}
+
+export function ThemeToggle() {
+  const [isClient, setIsClient] = React.useState(false)
+
+  React.useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  return isClient ? <ThemeToggleComponent /> : <Skeleton className="h-10 w-10" />
 }
