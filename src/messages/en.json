@@ -418,7 +418,15 @@
     "cta": "Hire Me"
   },
   "Footer": {
-    "copyright": "Built by {name} © {year}. All rights reserved."
+    "copyright": "Built by {name} © {year}. All rights reserved.",
+    "nav_title": "Quick Navigation",
+    "contact_title": "Contact",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
   },
   "Theme": {
     "toggle": "Toggle theme",

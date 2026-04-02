@@ -418,7 +418,15 @@
     "cta": "Rekrut Saya"
   },
   "Footer": {
-    "copyright": "Dibuat oleh {name} © {year}. Hak cipta dilindungi."
+    "copyright": "Dibuat oleh {name} © {year}. Hak cipta dilindungi.",
+    "nav_title": "Navigasi Cepat",
+    "contact_title": "Kontak",
+    "nav": {
+      "home": "Beranda",
+      "about": "Tentang",
+      "projects": "Proyek",
+      "contact": "Kontak"
+    }
   },
   "Theme": {
     "toggle": "Ubah tema",
