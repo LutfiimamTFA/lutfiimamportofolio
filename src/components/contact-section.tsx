@@ -3,9 +3,16 @@
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { ContactModal } from '@/components/contact-modal';
+import * as React from 'react';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export default function ContactSection() {
   const t = useTranslations('Contact');
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <section id="contact" className="py-16 lg:py-24">
@@ -18,9 +25,13 @@ export default function ContactSection() {
             {t('description')}
           </p>
           <div className="flex justify-center">
-            <ContactModal>
-              <Button size="lg">{t('cta')}</Button>
-            </ContactModal>
+            {isClient ? (
+              <ContactModal>
+                <Button size="lg">{t('cta')}</Button>
+              </ContactModal>
+            ) : (
+              <Skeleton className="h-11 w-[120px]" />
+            )}
           </div>
         </div>
       </div>

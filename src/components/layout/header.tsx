@@ -89,9 +89,13 @@ export default function Header() {
             <ThemeToggle />
             <LanguageSwitcher />
           </div>
-          <ContactModal>
-            <Button>{t('cta')}</Button>
-          </ContactModal>
+          {isClient ? (
+            <ContactModal>
+              <Button>{t('cta')}</Button>
+            </ContactModal>
+          ) : (
+            <Skeleton className="h-10 w-[98px]" />
+          )}
           {isClient ? <MobileMenu /> : <Skeleton className="h-10 w-10 lg:hidden" />}
         </div>
       </div>
