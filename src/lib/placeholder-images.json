@@ -3,8 +3,8 @@
     {
       "id": "avatar",
       "description": "Avatar image of the developer",
-      "imageUrl": "https://picsum.photos/seed/lutfi/400/400",
-      "imageHint": "man portrait"
+      "imageUrl": "https://storage.googleapis.com/fss-usercontent-2-public/images/lutfi-akbar.jpg",
+      "imageHint": "Lutfi Imam Tauchid F.A. portrait"
     },
     {
       "id": "project-1",
