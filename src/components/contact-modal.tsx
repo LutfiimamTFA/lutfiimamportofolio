@@ -47,7 +47,7 @@ export function ContactModal({ children }: { children: React.ReactNode }) {
             </a>
           </Button>
           <Button asChild size="lg" variant="secondary">
-            <a href={`mailto:${email}`}>
+            <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
               <Mail /> {t('email_cta')}
             </a>
           </Button>
