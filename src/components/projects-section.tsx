@@ -167,7 +167,7 @@ export default function ProjectsSection() {
                       )}
                     </div>
                   </ScrollArea>
-                  <DialogFooter className="flex-col gap-2 sm:flex-row sm:justify-start">
+                  <DialogFooter className="flex-col gap-2 sm:flex-row">
                     {project.liveLink && (
                       <Button asChild>
                         <a
