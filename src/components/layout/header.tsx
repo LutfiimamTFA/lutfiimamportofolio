@@ -9,10 +9,12 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from 
 import { Menu, Code2 } from 'lucide-react';
 import { ThemeToggle } from '@/components/theme-toggle';
 import LanguageSwitcher from '@/components/language-switcher';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isClient, setIsClient] = React.useState(false);
   const t = useTranslations('Header');
   const navLinks = ['about', 'projects', 'skills', 'contact'] as const;
 
@@ -21,6 +23,7 @@ export default function Header() {
       setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
+    setIsClient(true);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -37,6 +40,32 @@ export default function Header() {
         </Button>
       ))}
     </>
+  );
+
+  const MobileMenu = () => (
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+      <SheetTrigger asChild>
+        <Button variant="ghost" size="icon" className="lg:hidden">
+          <Menu />
+          <span className="sr-only">Toggle Menu</span>
+        </Button>
+      </SheetTrigger>
+      <SheetContent side="right">
+        <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+        <SheetDescription className="sr-only">A list of navigation links to explore the page.</SheetDescription>
+        <Link href="/" className="mb-6 flex items-center gap-2" onClick={() => setIsOpen(false)}>
+          <Code2 className="h-6 w-6 text-primary" />
+          <span className="font-bold">{t('name')}</span>
+        </Link>
+        <nav className="flex flex-col items-start gap-2">
+          <NavLinks />
+        </nav>
+         <div className="mt-6 flex items-center gap-2">
+          <ThemeToggle />
+          <LanguageSwitcher />
+        </div>
+      </SheetContent>
+    </Sheet>
   );
 
   return (
@@ -62,29 +91,7 @@ export default function Header() {
           <Button asChild>
             <Link href="#contact">{t('cta')}</Link>
           </Button>
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="lg:hidden">
-                <Menu />
-                <span className="sr-only">Toggle Menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
-              <SheetDescription className="sr-only">A list of navigation links to explore the page.</SheetDescription>
-              <Link href="/" className="mb-6 flex items-center gap-2" onClick={() => setIsOpen(false)}>
-                <Code2 className="h-6 w-6 text-primary" />
-                <span className="font-bold">{t('name')}</span>
-              </Link>
-              <nav className="flex flex-col items-start gap-2">
-                <NavLinks />
-              </nav>
-               <div className="mt-6 flex items-center gap-2">
-                <ThemeToggle />
-                <LanguageSwitcher />
-              </div>
-            </SheetContent>
-          </Sheet>
+          {isClient ? <MobileMenu /> : <Skeleton className="h-10 w-10 lg:hidden" />}
         </div>
       </div>
     </header>
