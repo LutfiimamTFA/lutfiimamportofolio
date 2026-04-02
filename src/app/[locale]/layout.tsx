@@ -19,8 +19,9 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props) {
-  const t = await getTranslations({ locale: params.locale, namespace: 'Metadata' });
-  const name = (await getTranslations({ locale: params.locale, namespace: 'Header' }))('name');
+  const { locale } = params;
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+  const name = (await getTranslations({ locale, namespace: 'Header' }))('name');
 
   return {
     title: t('title', { name }),
