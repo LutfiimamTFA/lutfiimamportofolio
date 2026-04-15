@@ -306,7 +306,7 @@
         }
       },
       "hajatan": {
-        "title": "Landing Page 'Hajatan Akbar'",
+        "title": "'Hajatan Akbar' Landing Page",
         "description": "Mengembangkan landing page mobile-only untuk sebuah event, fokus pada implementasi desain dan fungsionalitas tombol.",
         "tech": [
           "HTML",
@@ -317,10 +317,10 @@
         "liveLink": "https://environesia.id/hajatanakbar/",
         "githubLink": "",
         "modal": {
-          "title": "Landing Page 'Hajatan Akbar'",
-          "description": "Sebuah landing page yang dirancang khusus untuk tampilan mobile guna mempromosikan sebuah event. Proyek ini merupakan kolaborasi di mana saya bertanggung jawab untuk mengubah desain statis menjadi halaman web yang fungsional.",
+          "title": "'Hajatan Akbar' Landing Page",
+          "description": "Dirancang dengan fokus pada user experience dan konversi pengunjung.",
           "ai_description": "",
-          "intro": "",
+          "intro": "Landing page untuk event Hajatan Akbar yang dirancang untuk menampilkan informasi acara secara jelas, menarik, dan mudah diakses oleh pengunjung.",
           "highlights_title": "Kontribusi Utama",
           "all_features_title": "",
           "highlights": [
