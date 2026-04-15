@@ -216,7 +216,8 @@
         "githubLink": "https://github.com/LutfiimamTFA/HRPEnvironesia.git",
         "modal": {
             "title": "Detail Fitur: HRP Starter Kit",
-            "description": "Sebuah platform Human Resource Panning (HRP) yang solid, modular, dan siap untuk dikembangkan lebih lanjut. Setiap fitur dirancang untuk saling terhubung dan mendukung proses HR dari hulu ke hilir.",
+            "description": "HRP Starter Kit adalah sistem HR berbasis web yang mencakup proses rekrutmen, manajemen karyawan, serta sistem persetujuan bertingkat untuk mendukung operasional perusahaan secara terstruktur.",
+            "ai_description": "Dilengkapi analisis kandidat berbasis AI untuk membantu proses seleksi lebih cepat.",
             "intro": "",
             "highlights_title": "Fitur Unggulan",
             "all_features_title": "Daftar Fitur Lengkap per Modul",
@@ -286,7 +287,7 @@
                     "title": "Fitur Khusus Magang",
                     "points": [
                         "Formulir laporan harian untuk intern (aktivitas, pembelajaran, kendala).",
-                        "Rekap laporan untuk melihat ringkasan semua laporan yang telah dibuat.",
+                        "Rekap laporan untuk melihat ringkasan dari semua laporan yang telah dibuat.",
                         "Fitur evaluasi dan feedback bulanan dari mentor atau HRD."
                     ]
                 },

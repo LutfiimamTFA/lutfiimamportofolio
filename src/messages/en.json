@@ -216,7 +216,8 @@
         "githubLink": "https://github.com/LutfiimamTFA/HRPEnvironesia.git",
         "modal": {
             "title": "Feature Details: HRP Starter Kit",
-            "description": "A solid, modular, and extensible Human Resource Planning (HRP) platform. Each feature is designed to be interconnected, supporting the HR process from end to end.",
+            "description": "The HRP Starter Kit is a web-based HR system that covers the recruitment process, employee management, and a multi-level approval system to support structured company operations.",
+            "ai_description": "Equipped with AI-powered candidate analysis to help speed up the selection process.",
             "intro": "",
             "highlights_title": "Feature Highlights",
             "all_features_title": "Complete Feature List by Module",
