@@ -128,7 +128,7 @@ export default function ProjectsSection() {
                       <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
                       <DialogDescription>{project.modal.description}</DialogDescription>
                     </DialogHeader>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 py-4">
+                    <div className="grid grid-cols-1 gap-x-8 gap-y-4 py-4 md:grid-cols-2">
                       <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
                         <Image
                           src="https://drive.google.com/uc?export=view&id=1J_BfXc0RU628WtF6kTTgzoWimIwhmt8e"
@@ -178,24 +178,24 @@ export default function ProjectsSection() {
                             </>
                           )}
                         </div>
+                         <DialogFooter className="pt-6 sm:justify-end">
+                          {project.liveLink && (
+                            <Button asChild>
+                              <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                                <ExternalLink className="mr-2" /> {t('visit_site')}
+                              </a>
+                            </Button>
+                          )}
+                          {project.githubLink && (
+                            <Button asChild variant="secondary">
+                              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                <Github className="mr-2" /> GitHub
+                              </a>
+                            </Button>
+                          )}
+                        </DialogFooter>
                       </ScrollArea>
                     </div>
-                    <DialogFooter className="sm:justify-end">
-                      {project.liveLink && (
-                        <Button asChild>
-                          <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="mr-2" /> {t('visit_site')}
-                          </a>
-                        </Button>
-                      )}
-                      {project.githubLink && (
-                        <Button asChild variant="secondary">
-                          <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                            <Github className="mr-2" /> GitHub
-                          </a>
-                        </Button>
-                      )}
-                    </DialogFooter>
                   </DialogContent>
                 ) : key === 'lsp' ? (
                   <DialogContent className="max-h-[90svh] max-w-4xl">
@@ -203,7 +203,7 @@ export default function ProjectsSection() {
                       <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
                       <DialogDescription>{project.modal.description}</DialogDescription>
                     </DialogHeader>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 py-4">
+                    <div className="grid grid-cols-1 gap-x-8 gap-y-4 py-4 md:grid-cols-2">
                       <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
                         {image && (
                           <Image
@@ -234,24 +234,24 @@ export default function ProjectsSection() {
                             ))}
                           </div>
                         </div>
+                        <DialogFooter className="pt-6 sm:justify-end">
+                          {project.liveLink && (
+                            <Button asChild>
+                              <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                                <ExternalLink className="mr-2" /> {t('visit_site')}
+                              </a>
+                            </Button>
+                          )}
+                          {project.githubLink && (
+                            <Button asChild variant="secondary">
+                              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                <Github className="mr-2" /> GitHub
+                              </a>
+                            </Button>
+                          )}
+                        </DialogFooter>
                       </ScrollArea>
                     </div>
-                    <DialogFooter className="sm:justify-end">
-                      {project.liveLink && (
-                        <Button asChild>
-                          <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="mr-2" /> {t('visit_site')}
-                          </a>
-                        </Button>
-                      )}
-                      {project.githubLink && (
-                        <Button asChild variant="secondary">
-                          <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                            <Github className="mr-2" /> GitHub
-                          </a>
-                        </Button>
-                      )}
-                    </DialogFooter>
                   </DialogContent>
                 ) : key === 'crm' ? (
                   <DialogContent className="max-h-[90svh] max-w-4xl">
@@ -260,12 +260,12 @@ export default function ProjectsSection() {
                       <DialogDescription>{project.modal.description}</DialogDescription>
                     </DialogHeader>
                     <ScrollArea className="h-[60vh] -mr-6 pr-6">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 py-4">
+                      <div className="grid grid-cols-1 gap-x-8 gap-y-4 py-4 md:grid-cols-2">
                         <div className="flex flex-col gap-4">
                           {project.modal.intro && (
                             <p className="text-sm text-muted-foreground">{project.modal.intro}</p>
                           )}
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
                               <Image
                                 src="https://drive.google.com/uc?export=view&id=1BfxH3Ro3NpZNzcfaKaCvCy1y8arkEU2F"
@@ -307,31 +307,31 @@ export default function ProjectsSection() {
                           </div>
                         </div>
                       </div>
+                      <DialogFooter className="pt-6 sm:justify-end">
+                        {project.liveLink && (
+                          <Button asChild>
+                            <a
+                              href={project.liveLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <ExternalLink className="mr-2" /> {t('visit_site')}
+                            </a>
+                          </Button>
+                        )}
+                        {project.githubLink && (
+                          <Button asChild variant="secondary">
+                            <a
+                              href={project.githubLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Github className="mr-2" /> GitHub
+                            </a>
+                          </Button>
+                        )}
+                      </DialogFooter>
                     </ScrollArea>
-                    <DialogFooter className="sm:justify-end">
-                      {project.liveLink && (
-                        <Button asChild>
-                          <a
-                            href={project.liveLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <ExternalLink className="mr-2" /> {t('visit_site')}
-                          </a>
-                        </Button>
-                      )}
-                      {project.githubLink && (
-                        <Button asChild variant="secondary">
-                          <a
-                            href={project.githubLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <Github className="mr-2" /> GitHub
-                          </a>
-                        </Button>
-                      )}
-                    </DialogFooter>
                   </DialogContent>
                 ) : (
                   <DialogContent className="max-h-[90svh] max-w-4xl">
@@ -382,31 +382,31 @@ export default function ProjectsSection() {
                           </>
                         )}
                       </div>
+                      <DialogFooter className="pt-6 sm:justify-end">
+                        {project.liveLink && (
+                          <Button asChild>
+                            <a
+                              href={project.liveLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <ExternalLink className="mr-2" /> {t('visit_site')}
+                            </a>
+                          </Button>
+                        )}
+                        {project.githubLink && (
+                          <Button asChild variant="secondary">
+                            <a
+                              href={project.githubLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Github className="mr-2" /> GitHub
+                            </a>
+                          </Button>
+                        )}
+                      </DialogFooter>
                     </ScrollArea>
-                    <DialogFooter className="sm:justify-end">
-                      {project.liveLink && (
-                        <Button asChild>
-                          <a
-                            href={project.liveLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <ExternalLink className="mr-2" /> {t('visit_site')}
-                          </a>
-                        </Button>
-                      )}
-                      {project.githubLink && (
-                        <Button asChild variant="secondary">
-                          <a
-                            href={project.githubLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <Github className="mr-2" /> GitHub
-                          </a>
-                        </Button>
-                      )}
-                    </DialogFooter>
                   </DialogContent>
                 )}
               </Dialog>
