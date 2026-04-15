@@ -203,32 +203,18 @@ export default function ProjectsSection() {
                       <DialogDescription>{project.modal.description}</DialogDescription>
                     </DialogHeader>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 py-4">
-                      {/* Image Column */}
-                      <div className="flex flex-col gap-4">
-                        <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
-                          {image && (
-                            <Image
-                              src={image.imageUrl}
-                              alt="LSP Website Screenshot 1"
-                              fill
-                              loading="lazy"
-                              className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
-                              sizes="(max-width: 768px) 90vw, 45vw"
-                            />
-                          )}
-                        </div>
-                        <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
+                      <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
+                        {image && (
                           <Image
-                            src="https://drive.google.com/uc?export=view&id=1IUFvComql8f0x_yii1gcFrajUCGx9WXE"
-                            alt="LSP Website Feature Preview 2"
+                            src={image.imageUrl}
+                            alt={project.title}
                             fill
                             loading="lazy"
                             className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
                             sizes="(max-width: 768px) 90vw, 45vw"
                           />
-                        </div>
+                        )}
                       </div>
-                      {/* Text Column */}
                       <ScrollArea className="h-[60vh] -mr-6 pr-6">
                         <div className="space-y-6 text-sm">
                           <h3 className="text-lg font-semibold text-foreground">
