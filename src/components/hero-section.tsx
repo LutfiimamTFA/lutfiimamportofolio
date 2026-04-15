@@ -23,7 +23,7 @@ export default function HeroSection() {
   return (
     <section id="hero" className="relative flex items-center min-h-[calc(100vh-4rem)] py-16 lg:py-24">
       <div className="container">
-        <div className="grid items-start gap-12 text-center md:grid-cols-2 md:text-left lg:gap-20">
+        <div className="grid items-center gap-12 text-center md:grid-cols-2 md:text-left lg:gap-20">
           <div>
             <h1 className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">
               {t('role')}
@@ -46,7 +46,7 @@ export default function HeroSection() {
               )}
             </div>
           </div>
-          <div className="relative order-first mx-auto h-[30rem] w-[30rem] md:order-last md:h-[35rem] md:w-[35rem]">
+          <div className="relative order-first mx-auto h-[18rem] w-[18rem] sm:h-[22rem] sm:w-[22rem] md:order-last md:h-[28rem] md:w-[28rem] lg:h-[32rem] lg:w-[32rem]">
             {avatarImage && (
               <Image 
                 src={avatarImage.imageUrl}
