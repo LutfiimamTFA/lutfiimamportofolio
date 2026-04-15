@@ -17,7 +17,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isClient, setIsClient] = React.useState(false);
   const t = useTranslations('Header');
-  const navLinks = ['about', 'projects', 'skills', 'contact'] as const;
+  const navLinks = ['about', 'projects', 'skills', 'certificates', 'contact'] as const;
 
   React.useEffect(() => {
     const handleScroll = () => {

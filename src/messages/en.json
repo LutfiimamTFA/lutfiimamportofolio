@@ -10,6 +10,7 @@
       "about": "About",
       "projects": "Projects",
       "skills": "Skills",
+      "certificates": "Certificates",
       "contact": "Contact"
     },
     "cta": "Hire Me"
@@ -418,6 +419,24 @@
       }
     }
   },
+  "Certificates": {
+    "title": "Certificates & Programs",
+    "description": "A showcase of programs and experiences that have shaped my skills and expertise in web development.",
+    "items": {
+      "maganghub": {
+        "title": "MagangHub – Web Developer Intern",
+        "organizer": "Kementerian Ketenagakerjaan RI",
+        "date": "2025 – 2026",
+        "description": "Participated in a national internship program as a Web Developer at PT Environesia Global Saraya, developing various web-based systems for business needs."
+      },
+      "mbkm": {
+        "title": "MBKM – Procurement System Development",
+        "organizer": "Program Merdeka Belajar Kampus Merdeka",
+        "date": "2024 – 2025",
+        "description": "Contributed to the development of a procurement application for the Blitar Regency Livestock and Fisheries Service using Laravel."
+      }
+    }
+  },
   "Approach": {
     "title": "My Working Approach",
     "description": "I focus on building systems that are actually used, not just for the sake of completion.",
@@ -446,6 +465,7 @@
       "home": "Home",
       "about": "About",
       "projects": "Projects",
+      "certificates": "Certificates",
       "contact": "Contact"
     }
   },

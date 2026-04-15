@@ -1,4 +1,4 @@
-import { unstable_setRequestLocale } from 'next-intl/server';
+'use client';
 
 import Header from '@/components/layout/header';
 import HeroSection from '@/components/hero-section';
@@ -8,15 +8,9 @@ import SkillsSection from '@/components/skills-section';
 import ApproachSection from '@/components/approach-section';
 import ContactSection from '@/components/contact-section';
 import Footer from '@/components/layout/footer';
+import CertificatesSection from '@/components/certificates-section';
 
-type Props = {
-  params: { locale: string };
-};
-
-export default function Home({ params }: Props) {
-  const { locale } = params;
-  unstable_setRequestLocale(locale);
-  
+export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -25,6 +19,7 @@ export default function Home({ params }: Props) {
         <AboutSection />
         <ProjectsSection />
         <SkillsSection />
+        <CertificatesSection />
         <ApproachSection />
         <ContactSection />
       </main>

@@ -10,6 +10,7 @@
       "about": "Tentang",
       "projects": "Proyek",
       "skills": "Keahlian",
+      "certificates": "Sertifikat",
       "contact": "Kontak"
     },
     "cta": "Rekrut Saya"
@@ -418,6 +419,24 @@
       }
     }
   },
+  "Certificates": {
+    "title": "Sertifikat & Program",
+    "description": "Beberapa program dan pengalaman yang saya ikuti sebagai bagian dari pengembangan kemampuan dan pengalaman di bidang pengembangan web.",
+    "items": {
+      "maganghub": {
+        "title": "MagangHub – Web Developer Intern",
+        "organizer": "Kementerian Ketenagakerjaan RI",
+        "date": "2025 – 2026",
+        "description": "Mengikuti program magang nasional sebagai Web Developer di PT Environesia Global Saraya dan mengembangkan berbagai sistem berbasis web untuk kebutuhan bisnis."
+      },
+      "mbkm": {
+        "title": "MBKM – Pengembangan Sistem Pengadaan Barang",
+        "organizer": "Program Merdeka Belajar Kampus Merdeka",
+        "date": "2024 – 2025",
+        "description": "Berkontribusi dalam pengembangan aplikasi pengadaan barang untuk Dinas Peternakan dan Perikanan Kabupaten Blitar menggunakan Laravel."
+      }
+    }
+  },
   "Approach": {
     "title": "Cara Saya Bekerja",
     "description": "Saya fokus membangun sistem yang benar-benar digunakan, bukan sekadar selesai dibuat.",
@@ -446,6 +465,7 @@
       "home": "Beranda",
       "about": "Tentang",
       "projects": "Proyek",
+      "certificates": "Sertifikat",
       "contact": "Kontak"
     }
   },

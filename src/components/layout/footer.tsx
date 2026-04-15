@@ -13,6 +13,7 @@ export default function Footer() {
     { name: tFooter('nav.home'), href: '#hero' },
     { name: tFooter('nav.about'), href: '#about' },
     { name: tFooter('nav.projects'), href: '#projects' },
+    { name: tFooter('nav.certificates'), href: '#certificates' },
     { name: tFooter('nav.contact'), href: '#contact' },
   ];
 
