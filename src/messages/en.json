@@ -361,9 +361,9 @@
               "title": "Core System Features",
               "points": [
                 "Procurement data management",
-                "Transaction recording and monitoring",
-                "Dashboard for tracking the procurement process",
-                "Web-based system for easy data access and management"
+                "Pencatatan dan monitoring transaksi",
+                "Dashboard untuk tracking proses pengadaan",
+                "Sistem berbasis web untuk mempermudah akses dan pengelolaan data"
               ]
             }
           ],
@@ -422,18 +422,29 @@
   "Certificates": {
     "title": "Certificates & Programs",
     "description": "A showcase of programs and experiences that have shaped my skills and expertise in web development.",
+    "view_certificate_button": "View Certificate",
     "items": {
-      "maganghub": {
-        "title": "MagangHub – Web Developer Intern",
-        "organizer": "Kementerian Ketenagakerjaan RI",
-        "date": "2025 – 2026",
-        "description": "Participated in a national internship program as a Web Developer at PT Environesia Global Saraya, developing various web-based systems for business needs."
-      },
       "mbkm": {
-        "title": "MBKM – Procurement System Development",
-        "organizer": "Program Merdeka Belajar Kampus Merdeka",
+        "title": "MBKM – Merdeka Campus Program",
+        "organizer": "Full Stack Web Developer",
         "date": "2024 – 2025",
-        "description": "Contributed to the development of a procurement application for the Blitar Regency Livestock and Fisheries Service using Laravel."
+        "description": "Participated in the Merdeka Belajar Kampus Merdeka (MBKM) program focusing on web application development for government agencies. Involved in creating a procurement system for the Blitar Regency Livestock and Fisheries Service.",
+        "pdfs": [
+          { "title": "Certificate 1", "url": "https://drive.google.com/file/d/1wPWIy45aai-7QApKPcENEv9PfcV_Pm1v/preview" },
+          { "title": "Certificate 2", "url": "https://drive.google.com/file/d/11dibkISFyK4_H2Zc-m6OK45wH--LNhMi/preview" },
+          { "title": "Certificate 3", "url": "https://drive.google.com/file/d/1Cb4oDTNhKj-rPVd4gLzPfTKnt0vAZ1mc/preview" }
+        ]
+      },
+      "maganghub": {
+        "title": "MagangHub – Web Developer",
+        "organizer": "Kementerian Ketenagakerjaan RI",
+        "date": "Ongoing",
+        "badge": "In Progress",
+        "description": "Currently participating in the MagangHub program as a Web Developer at PT Environesia Global Saraya, focusing on developing web-based systems such as project management, HR system, and CRM. The official certificate will be available after the program is completed.",
+        "images": [
+          "https://drive.google.com/uc?export=view&id=1fS9X5xnRSu-UJOwotUT9k_TvUJ8Ymz4",
+          "https://drive.google.com/uc?export=view&id=15axQTzc4S6uA0c6VrA1WbEozAqLNbDsq"
+        ]
       }
     }
   },

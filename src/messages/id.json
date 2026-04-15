@@ -422,18 +422,29 @@
   "Certificates": {
     "title": "Sertifikat & Program",
     "description": "Beberapa program dan pengalaman yang saya ikuti sebagai bagian dari pengembangan kemampuan dan pengalaman di bidang pengembangan web.",
+    "view_certificate_button": "Lihat Sertifikat",
     "items": {
-      "maganghub": {
-        "title": "MagangHub – Web Developer Intern",
-        "organizer": "Kementerian Ketenagakerjaan RI",
-        "date": "2025 – 2026",
-        "description": "Mengikuti program magang nasional sebagai Web Developer di PT Environesia Global Saraya dan mengembangkan berbagai sistem berbasis web untuk kebutuhan bisnis."
-      },
       "mbkm": {
-        "title": "MBKM – Pengembangan Sistem Pengadaan Barang",
-        "organizer": "Program Merdeka Belajar Kampus Merdeka",
+        "title": "MBKM – Program Kampus Merdeka",
+        "organizer": "Full Stack Web Developer",
         "date": "2024 – 2025",
-        "description": "Berkontribusi dalam pengembangan aplikasi pengadaan barang untuk Dinas Peternakan dan Perikanan Kabupaten Blitar menggunakan Laravel."
+        "description": "Berpartisipasi dalam program Merdeka Belajar Kampus Merdeka (MBKM) dengan fokus pada pengembangan aplikasi berbasis web untuk instansi pemerintah. Terlibat dalam pembuatan sistem pengadaan barang untuk Dinas Peternakan dan Perikanan Kabupaten Blitar.",
+        "pdfs": [
+          { "title": "Sertifikat 1", "url": "https://drive.google.com/file/d/1wPWIy45aai-7QApKPcENEv9PfcV_Pm1v/preview" },
+          { "title": "Sertifikat 2", "url": "https://drive.google.com/file/d/11dibkISFyK4_H2Zc-m6OK45wH--LNhMi/preview" },
+          { "title": "Sertifikat 3", "url": "https://drive.google.com/file/d/1Cb4oDTNhKj-rPVd4gLzPfTKnt0vAZ1mc/preview" }
+        ]
+      },
+      "maganghub": {
+        "title": "MagangHub – Web Developer",
+        "organizer": "Kementerian Ketenagakerjaan RI",
+        "date": "Sedang Berlangsung",
+        "badge": "Sedang Berlangsung",
+        "description": "Sedang mengikuti program MagangHub sebagai Web Developer di PT Environesia Global Saraya, dengan fokus pada pengembangan sistem berbasis web seperti project management, HR system, dan CRM. Sertifikat resmi akan tersedia setelah program selesai.",
+        "images": [
+          "https://drive.google.com/uc?export=view&id=1fS9X5xnRSu-UJOwotUT9k_TvUJ8Ymz4",
+          "https://drive.google.com/uc?export=view&id=15axQTzc4S6uA0c6VrA1WbEozAqLNbDsq"
+        ]
       }
     }
   },
