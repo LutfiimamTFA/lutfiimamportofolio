@@ -350,19 +350,19 @@
         "githubLink": "",
         "modal": {
           "title": "Procurement System - Blitar Regency Service",
-          "description": "Contributed to the development of a web application for goods procurement for the Blitar Livestock and Fisheries Service using Laravel as part of the MBKM program.",
+          "description": "Contributed to the development of a web application for goods procurement for the Blitar Regency Livestock and Fisheries Service using Laravel as part of the MBKM program. This system helps manage the procurement process in a more structured, efficient, and digitized way.",
           "ai_description": "",
           "intro": "",
-          "highlights_title": "Key Contributions",
+          "highlights_title": "Feature Highlights",
           "all_features_title": "",
           "highlights": [
             {
-              "title": "Core System Development",
+              "title": "Core System Features",
               "points": [
-                "Designed multi-user login with Laravel Guards to differentiate user access rights.",
-                "Developed modules for incoming and outgoing goods transactions, procurement history, and recipient information.",
-                "Structured a secure and transaction-supporting MySQL database.",
-                "Collaborated within an Agile team using Git for version control."
+                "Procurement data management",
+                "Transaction recording and monitoring",
+                "Dashboard for tracking the procurement process",
+                "Web-based system for easy data access and management"
               ]
             }
           ],
