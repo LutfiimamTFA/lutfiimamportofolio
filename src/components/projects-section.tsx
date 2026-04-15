@@ -196,6 +196,76 @@ export default function ProjectsSection() {
                       )}
                     </DialogFooter>
                   </DialogContent>
+                ) : key === 'lsp' ? (
+                  <DialogContent className="max-h-[90svh] max-w-4xl">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
+                      <DialogDescription>{project.modal.description}</DialogDescription>
+                    </DialogHeader>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 py-4">
+                      {/* Image Column */}
+                      <div className="flex flex-col gap-4">
+                        <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
+                          {image && (
+                            <Image
+                              src={image.imageUrl}
+                              alt="LSP Website Screenshot 1"
+                              fill
+                              loading="lazy"
+                              className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                              sizes="(max-width: 768px) 90vw, 45vw"
+                            />
+                          )}
+                        </div>
+                        <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
+                          <Image
+                            src="https://drive.google.com/uc?export=view&id=1IUFvComql8f0x_yii1gcFrajUCGx9WXE"
+                            alt="LSP Website Feature Preview 2"
+                            fill
+                            loading="lazy"
+                            className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                            sizes="(max-width: 768px) 90vw, 45vw"
+                          />
+                        </div>
+                      </div>
+                      {/* Text Column */}
+                      <ScrollArea className="h-[60vh] -mr-6 pr-6">
+                        <div className="space-y-6 text-sm">
+                          <h3 className="text-lg font-semibold text-foreground">
+                            {project.modal.highlights_title}
+                          </h3>
+                          <div className="space-y-4">
+                            {project.modal.highlights.map((highlight, i) => (
+                              <div key={i}>
+                                <h4 className="font-semibold">{highlight.title}</h4>
+                                <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                                  {highlight.points.map((point, j) => (
+                                    <li key={j}>{point}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </ScrollArea>
+                    </div>
+                    <DialogFooter className="sm:justify-end">
+                      {project.liveLink && (
+                        <Button asChild>
+                          <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="mr-2" /> {t('visit_site')}
+                          </a>
+                        </Button>
+                      )}
+                      {project.githubLink && (
+                        <Button asChild variant="secondary">
+                          <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                            <Github className="mr-2" /> GitHub
+                          </a>
+                        </Button>
+                      )}
+                    </DialogFooter>
+                  </DialogContent>
                 ) : (
                   <DialogContent className="max-h-[90svh] max-w-4xl">
                     <DialogHeader className="pr-6">
@@ -246,7 +316,7 @@ export default function ProjectsSection() {
                         )}
                       </div>
                     </ScrollArea>
-                    <DialogFooter className="flex-col items-end gap-2 sm:flex-row sm:justify-end">
+                    <DialogFooter className="sm:justify-end">
                       {project.liveLink && (
                         <Button asChild>
                           <a
