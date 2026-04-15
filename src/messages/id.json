@@ -48,6 +48,7 @@
         "modal": {
           "title": "Detail Fitur: Ruang Kerja CBDMS",
           "description": "Sebuah platform manajemen proyek dan kolaborasi tim yang komprehensif, dirancang untuk menyederhanakan alur kerja, meningkatkan produktivitas, dan memberikan visibilitas penuh atas semua tugas.",
+          "intro": "",
           "highlights_title": "Fitur Unggulan",
           "all_features_title": "Daftar Fitur Lengkap",
           "highlights": [
@@ -153,6 +154,7 @@
         "modal": {
           "title": "Pengembangan Situs Web LSP",
           "description": "Berkontribusi dalam pengembangan situs web resmi untuk Lembaga Studi Lingkungan (LSP) menggunakan WordPress dan Elementor.",
+          "intro": "",
           "highlights_title": "Kontribusi Utama",
           "all_features_title": "",
           "highlights": [
@@ -183,6 +185,7 @@
         "modal": {
           "title": "PoC: Integrasi CRM dengan WhatsApp",
           "description": "Sebuah proyek bukti konsep (proof-of-concept) yang dirancang untuk memberikan visibilitas kepada manajer penjualan terhadap percakapan WhatsApp tim mereka. Meskipun proyek ini tidak dilanjutkan karena perubahan strategi bisnis, proyek ini berhasil menunjukkan kemampuan integrasi teknis.",
+          "intro": "Proof of Concept integrasi CRM dengan WhatsApp untuk membantu monitoring aktivitas dan komunikasi tim sales secara real-time.",
           "highlights_title": "Kontribusi Utama",
           "all_features_title": "",
           "highlights": [
@@ -214,6 +217,7 @@
         "modal": {
             "title": "Detail Fitur: HRP Starter Kit",
             "description": "Sebuah platform Human Resource Panning (HRP) yang solid, modular, dan siap untuk dikembangkan lebih lanjut. Setiap fitur dirancang untuk saling terhubung dan mendukung proses HR dari hulu ke hilir.",
+            "intro": "",
             "highlights_title": "Fitur Unggulan",
             "all_features_title": "Daftar Fitur Lengkap per Modul",
             "highlights": [
@@ -282,7 +286,7 @@
                     "title": "Fitur Khusus Magang",
                     "points": [
                         "Formulir laporan harian untuk intern (aktivitas, pembelajaran, kendala).",
-                        "Rekap laporan untuk melihat ringkasan semua laporan yang dibuat.",
+                        "Rekap laporan untuk melihat ringkasan semua laporan yang telah dibuat.",
                         "Fitur evaluasi dan feedback bulanan dari mentor atau HRD."
                     ]
                 },
@@ -311,6 +315,7 @@
         "modal": {
           "title": "Landing Page 'Hajatan Akbar'",
           "description": "Sebuah landing page yang dirancang khusus untuk tampilan mobile guna mempromosikan sebuah event. Proyek ini merupakan kolaborasi di mana saya bertanggung jawab untuk mengubah desain statis menjadi halaman web yang fungsional.",
+          "intro": "",
           "highlights_title": "Kontribusi Utama",
           "all_features_title": "",
           "highlights": [
@@ -341,6 +346,7 @@
         "modal": {
           "title": "Sistem Pengadaan Barang - Dinas Kab. Blitar",
           "description": "Berkontribusi dalam pengembangan aplikasi web pengadaan barang untuk Dinas Peternakan dan Perikanan Blitar menggunakan Laravel sebagai bagian dari program MBKM.",
+          "intro": "",
           "highlights_title": "Kontribusi Utama",
           "all_features_title": "",
           "highlights": [

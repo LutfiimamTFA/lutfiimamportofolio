@@ -67,6 +67,7 @@ export default function ProjectsSection() {
               modal: {
                 title: t(`items.${key}.modal.title`),
                 description: t(`items.${key}.modal.description`),
+                intro: t(`items.${key}.modal.intro`),
                 highlights_title: t(`items.${key}.modal.highlights_title`),
                 all_features_title: t(
                   `items.${key}.modal.all_features_title`
@@ -246,6 +247,86 @@ export default function ProjectsSection() {
                       {project.githubLink && (
                         <Button asChild variant="secondary">
                           <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                            <Github className="mr-2" /> GitHub
+                          </a>
+                        </Button>
+                      )}
+                    </DialogFooter>
+                  </DialogContent>
+                ) : key === 'crm' ? (
+                  <DialogContent className="max-h-[90svh] max-w-4xl">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
+                      <DialogDescription>{project.modal.description}</DialogDescription>
+                    </DialogHeader>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 py-4">
+                      <div className="flex flex-col gap-4">
+                        {project.modal.intro && (
+                          <p className="text-sm text-muted-foreground">{project.modal.intro}</p>
+                        )}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                          <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
+                            <Image
+                              src="https://drive.google.com/uc?export=view&id=1BfxH3Ro3NpZNzcfaKaCvCy1y8arkEU2F"
+                              alt="CRM WhatsApp Integration Preview 1"
+                              fill
+                              loading="lazy"
+                              className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                              sizes="(max-width: 768px) 90vw, 45vw"
+                            />
+                          </div>
+                          <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
+                            <Image
+                              src="https://drive.google.com/uc?export=view&id=1BpiO_KV0j68qT4TZ-UaOHKBMlJzBDqIg"
+                              alt="CRM WhatsApp Integration Preview 2"
+                              fill
+                              loading="lazy"
+                              className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                              sizes="(max-width: 768px) 90vw, 45vw"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <ScrollArea className="h-[60vh] -mr-6 pr-6">
+                        <div className="space-y-6 text-sm">
+                          <h3 className="text-lg font-semibold text-foreground">
+                            {project.modal.highlights_title}
+                          </h3>
+                          <div className="space-y-4">
+                            {project.modal.highlights.map((highlight, i) => (
+                              <div key={i}>
+                                <h4 className="font-semibold">{highlight.title}</h4>
+                                <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                                  {highlight.points.map((point, j) => (
+                                    <li key={j}>{point}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </ScrollArea>
+                    </div>
+                    <DialogFooter className="sm:justify-end">
+                      {project.liveLink && (
+                        <Button asChild>
+                          <a
+                            href={project.liveLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="mr-2" /> {t('visit_site')}
+                          </a>
+                        </Button>
+                      )}
+                      {project.githubLink && (
+                        <Button asChild variant="secondary">
+                          <a
+                            href={project.githubLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <Github className="mr-2" /> GitHub
                           </a>
                         </Button>
