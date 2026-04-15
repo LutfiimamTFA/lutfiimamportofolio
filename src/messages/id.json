@@ -48,6 +48,7 @@
         "modal": {
           "title": "Detail Fitur: Ruang Kerja CBDMS",
           "description": "Sebuah platform manajemen proyek dan kolaborasi tim yang komprehensif, dirancang untuk menyederhanakan alur kerja, meningkatkan produktivitas, dan memberikan visibilitas penuh atas semua tugas.",
+          "ai_description": "",
           "intro": "",
           "highlights_title": "Fitur Unggulan",
           "all_features_title": "Daftar Fitur Lengkap",
@@ -154,6 +155,7 @@
         "modal": {
           "title": "Pengembangan Situs Web LSP",
           "description": "Berkontribusi dalam pengembangan situs web resmi untuk Lembaga Studi Lingkungan (LSP) menggunakan WordPress dan Elementor.",
+          "ai_description": "",
           "intro": "",
           "highlights_title": "Kontribusi Utama",
           "all_features_title": "",
@@ -185,6 +187,7 @@
         "modal": {
           "title": "PoC: Integrasi CRM dengan WhatsApp",
           "description": "Sebuah proyek bukti konsep (proof-of-concept) yang dirancang untuk memberikan visibilitas kepada manajer penjualan terhadap percakapan WhatsApp tim mereka. Meskipun proyek ini tidak dilanjutkan karena perubahan strategi bisnis, proyek ini berhasil menunjukkan kemampuan integrasi teknis.",
+          "ai_description": "",
           "intro": "Proof of Concept integrasi CRM dengan WhatsApp untuk membantu monitoring aktivitas dan komunikasi tim sales secara real-time.",
           "highlights_title": "Kontribusi Utama",
           "all_features_title": "",
@@ -316,6 +319,7 @@
         "modal": {
           "title": "Landing Page 'Hajatan Akbar'",
           "description": "Sebuah landing page yang dirancang khusus untuk tampilan mobile guna mempromosikan sebuah event. Proyek ini merupakan kolaborasi di mana saya bertanggung jawab untuk mengubah desain statis menjadi halaman web yang fungsional.",
+          "ai_description": "",
           "intro": "",
           "highlights_title": "Kontribusi Utama",
           "all_features_title": "",
@@ -347,6 +351,7 @@
         "modal": {
           "title": "Sistem Pengadaan Barang - Dinas Kab. Blitar",
           "description": "Berkontribusi dalam pengembangan aplikasi web pengadaan barang untuk Dinas Peternakan dan Perikanan Blitar menggunakan Laravel sebagai bagian dari program MBKM.",
+          "ai_description": "",
           "intro": "",
           "highlights_title": "Kontribusi Utama",
           "all_features_title": "",

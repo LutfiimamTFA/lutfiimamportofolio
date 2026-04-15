@@ -48,6 +48,7 @@
         "modal": {
           "title": "Feature Details: CBDMS Workspace",
           "description": "A comprehensive project management and team collaboration platform, designed to streamline workflows, boost productivity, and provide full visibility on all tasks.",
+          "ai_description": "",
           "intro": "",
           "highlights_title": "Feature Highlights",
           "all_features_title": "Complete Feature List",
@@ -154,6 +155,7 @@
         "modal": {
           "title": "LSP Website Development",
           "description": "Contributed to the development of the official website for the Environmental Study Center (LSP) using WordPress and Elementor.",
+          "ai_description": "",
           "intro": "",
           "highlights_title": "Key Contributions",
           "all_features_title": "",
@@ -185,6 +187,7 @@
         "modal": {
           "title": "PoC: CRM with WhatsApp Integration",
           "description": "A proof-of-concept project designed to give sales managers visibility into their team's WhatsApp conversations. While the project was not continued due to a shift in business strategy, it successfully demonstrated the technical integration capabilities.",
+          "ai_description": "",
           "intro": "Proof of Concept for CRM and WhatsApp integration to help monitor sales team activities and communication in real-time.",
           "highlights_title": "Key Contributions",
           "all_features_title": "",
@@ -316,6 +319,7 @@
         "modal": {
           "title": "'Hajatan Akbar' Landing Page",
           "description": "A landing page designed specifically for mobile display to promote an event. This project was a collaboration where I was responsible for turning a static design into a functional web page.",
+          "ai_description": "",
           "intro": "",
           "highlights_title": "Key Contributions",
           "all_features_title": "",
@@ -347,6 +351,7 @@
         "modal": {
           "title": "Procurement System - Blitar Regency Service",
           "description": "Contributed to the development of a web application for goods procurement for the Blitar Livestock and Fisheries Service using Laravel as part of the MBKM program.",
+          "ai_description": "",
           "intro": "",
           "highlights_title": "Key Contributions",
           "all_features_title": "",
