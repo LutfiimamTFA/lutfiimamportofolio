@@ -87,13 +87,13 @@ export default function CertificatesSection() {
               </Card>
 
               {program.key === 'mbkm' ? (
-                <DialogContent className="h-[90vh] max-w-4xl">
+                <DialogContent className="flex h-[90vh] max-w-4xl flex-col">
                   <DialogHeader>
                     <DialogTitle>{program.title}</DialogTitle>
                   </DialogHeader>
                   <Tabs
                     defaultValue={mbkmPdfs[0].url}
-                    className="flex h-full flex-col"
+                    className="flex flex-1 flex-col min-h-0"
                   >
                     <TabsList className="grid w-full grid-cols-3">
                       {mbkmPdfs.map((pdf, index) => (
@@ -106,7 +106,7 @@ export default function CertificatesSection() {
                       <TabsContent
                         key={index}
                         value={pdf.url}
-                        className="flex-grow"
+                        className="flex-1 mt-4"
                       >
                         <iframe
                           src={pdf.url}
