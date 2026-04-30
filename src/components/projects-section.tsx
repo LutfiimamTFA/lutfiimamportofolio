@@ -150,8 +150,8 @@ export default function ProjectsSection() {
                               <div key={i}>
                                 <h4 className="font-semibold">{highlight.title}</h4>
                                 <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, j) => (
-                                    <li key={j}>{point}</li>
+                                  {highlight.points.map((point, i) => (
+                                    <li key={i}>{point}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -169,8 +169,8 @@ export default function ProjectsSection() {
                                   <div key={i}>
                                     <h4 className="font-semibold">{feature.title}</h4>
                                     <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                      {feature.points.map((point, j) => (
-                                        <li key={j}>{point}</li>
+                                      {feature.points.map((point, i) => (
+                                        <li key={i}>{point}</li>
                                       ))}
                                     </ul>
                                   </div>
@@ -227,8 +227,8 @@ export default function ProjectsSection() {
                               <div key={i}>
                                 <h4 className="font-semibold">{highlight.title}</h4>
                                 <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, j) => (
-                                    <li key={j}>{point}</li>
+                                  {highlight.points.map((point, i) => (
+                                    <li key={i}>{point}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -285,8 +285,8 @@ export default function ProjectsSection() {
                               <div key={i}>
                                 <h4 className="font-semibold">{highlight.title}</h4>
                                 <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, j) => (
-                                    <li key={j}>{point}</li>
+                                  {highlight.points.map((point, i) => (
+                                    <li key={i}>{point}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -307,8 +307,8 @@ export default function ProjectsSection() {
                                           {feature.title}
                                         </h4>
                                         <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                          {feature.points.map((point, j) => (
-                                            <li key={j}>{point}</li>
+                                          {feature.points.map((point, i) => (
+                                            <li key={i}>{point}</li>
                                           ))}
                                         </ul>
                                       </div>
@@ -391,8 +391,8 @@ export default function ProjectsSection() {
                               <div key={i}>
                                 <h4 className="font-semibold">{highlight.title}</h4>
                                 <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, j) => (
-                                    <li key={j}>{point}</li>
+                                  {highlight.points.map((point, i) => (
+                                    <li key={i}>{point}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -439,7 +439,7 @@ export default function ProjectsSection() {
                         )}
                         <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
                           <Image
-                            src="https://drive.google.com/uc?export=view&id=1_CntT8W53s3q8h9vRTtA3nBBT8V8z1To"
+                            src="https://drive.google.com/uc?export=view&id=150hi_UP0cxUrEQMrTIXKi3dYHoSSub3t"
                             alt="Landing Page Hajatan Akbar Preview"
                             fill
                             loading="lazy"
@@ -456,8 +456,8 @@ export default function ProjectsSection() {
                               <div key={i}>
                                 <h4 className="font-semibold">{highlight.title}</h4>
                                 <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, j) => (
-                                    <li key={j}>{point}</li>
+                                  {highlight.points.map((point, i) => (
+                                    <li key={i}>{point}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -510,8 +510,8 @@ export default function ProjectsSection() {
                               <div key={i}>
                                 <h4 className="font-semibold">{highlight.title}</h4>
                                 <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, j) => (
-                                    <li key={j}>{point}</li>
+                                  {highlight.points.map((point, i) => (
+                                    <li key={i}>{point}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -557,8 +557,8 @@ export default function ProjectsSection() {
                             <div key={i}>
                               <h4 className="font-semibold">{highlight.title}</h4>
                               <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                {highlight.points.map((point, j) => (
-                                  <li key={j}>{point}</li>
+                                {highlight.points.map((point, i) => (
+                                  <li key={i}>{point}</li>
                                 ))}
                               </ul>
                             </div>
@@ -576,8 +576,8 @@ export default function ProjectsSection() {
                                 <div key={i}>
                                   <h4 className="font-semibold">{feature.title}</h4>
                                   <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                    {feature.points.map((point, j) => (
-                                      <li key={j}>{point}</li>
+                                    {feature.points.map((point, i) => (
+                                      <li key={i}>{point}</li>
                                     ))}
                                   </ul>
                                 </div>
