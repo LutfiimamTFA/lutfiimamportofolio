@@ -155,7 +155,7 @@
         "githubLink": "",
         "modal": {
           "title": "Website Konsultan Lingkungan – Environesia",
-          "description": "Mengembangkan website layanan konsultan lingkungan menggunakan WordPress Elementor sebagai media informasi perusahaan yang responsif dan mudah diakses melalui desktop maupun mobile.",
+          "description": "Mengembangkan website layanan konsultan lingkungan berbasis WordPress Elementor sebagai media company profile dan informasi layanan perusahaan. Website dirancang responsive dengan tampilan modern untuk meningkatkan kemudahan akses informasi bagi pelanggan.",
           "ai_description": "",
           "intro": "Website company profile profesional yang dirancang untuk menampilkan layanan dan memberikan informasi jelas kepada klien.",
           "highlights_title": "Kontribusi Utama",
@@ -165,9 +165,10 @@
               "title": "Fitur Unggulan",
               "points": [
                 "Responsive design (desktop & mobile)",
-                "Company profile & katalog layanan",
+                "Company profile & layanan",
                 "Built with WordPress Elementor",
-                "User-friendly interface"
+                "User-friendly interface",
+                "Informasi layanan terstruktur"
               ]
             }
           ],
@@ -219,7 +220,7 @@
         "githubLink": "",
         "modal": {
           "title": "PoC: Integrasi CRM dengan WhatsApp",
-          "description": "Sebuah proyek bukti konsep (proof-of-concept) yang dirancang untuk memberikan visibilitas kepada manajer penjualan terhadap percakapan WhatsApp tim mereka. Meskipun proyek ini tidak dilanjutkan karena perubahan strategi bisnis, proyek ini berhasil menunjukkan kemampuan integrasi teknis.",
+          "description": "Sebuah proyek bukti konsep (proof-of-concept) yang dirancang untuk memberikan visibilitas kepada manajer penjualan terhadap percakapan WhatsApp tim mereka. Meskipun proyek ini tidak dilanjutkan karena perubahan serangan bisnis, proyek ini berhasil menunjukkan kemampuan integrasi teknis.",
           "ai_description": "",
           "intro": "Proof of Concept integrasi CRM dengan WhatsApp untuk membantu monitoring aktivitas dan komunikasi tim sales secara real-time.",
           "highlights_title": "Kontribusi Utama",
