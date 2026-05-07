@@ -33,6 +33,7 @@
     "description": "Pilihan proyek yang pernah saya kerjakan, menampilkan keahlian dan keahlian saya.",
     "view_details": "Lihat Detail",
     "visit_site": "Kunjungi Situs",
+    "visit_website": "Kunjungi Website",
     "items": {
       "cbdms": {
         "title": "Ruang Kerja CBDMS",
@@ -142,6 +143,37 @@
           ]
         }
       },
+      "environesia": {
+        "title": "Website Layanan Environesia",
+        "description": "Mengembangkan website company profile dan layanan konsultan lingkungan menggunakan WordPress Elementor.",
+        "tech": [
+          "WordPress",
+          "Elementor"
+        ],
+        "role": "Pengembangan Web",
+        "liveLink": "https://environesia.id/layanan/",
+        "githubLink": "",
+        "modal": {
+          "title": "Website Konsultan Lingkungan – Environesia",
+          "description": "Mengembangkan website layanan konsultan lingkungan menggunakan WordPress Elementor sebagai media informasi perusahaan yang responsif dan mudah diakses melalui desktop maupun mobile.",
+          "ai_description": "",
+          "intro": "Website company profile profesional yang dirancang untuk menampilkan layanan dan memberikan informasi jelas kepada klien.",
+          "highlights_title": "Kontribusi Utama",
+          "all_features_title": "Fitur Unggulan",
+          "highlights": [
+            {
+              "title": "Fitur Unggulan",
+              "points": [
+                "Responsive design (desktop & mobile)",
+                "Company profile & katalog layanan",
+                "Built with WordPress Elementor",
+                "User-friendly interface"
+              ]
+            }
+          ],
+          "all_features": []
+        }
+      },
       "lsp": {
         "title": "Situs WordPress untuk LSP",
         "description": "Berkontribusi dalam pengembangan situs WordPress menggunakan Elementor, dengan fokus pada entri data dan implementasi fitur kecil dari template.",
@@ -210,100 +242,100 @@
         "title": "HRP (Environesia Karir)",
         "description": "Platform rekrutmen dan manajemen SDM end-to-end dengan analisis kandidat berbasis AI dan sistem persetujuan dinamis.",
         "tech": [
-            "Next.js",
-            "Firebase",
-            "Genkit",
-            "Tailwind CSS"
+          "Next.js",
+          "Firebase",
+          "Genkit",
+          "Tailwind CSS"
         ],
         "role": "Pengembangan Full Stack",
         "liveLink": "https://studio--studio-9262077557-bc9c9.us-central1.hosted.app/careers",
         "githubLink": "https://github.com/LutfiimamTFA/HRPEnvironesia.git",
         "modal": {
-            "title": "Detail Fitur: HRP Starter Kit",
-            "description": "HRP Starter Kit adalah sistem HR berbasis web yang mencakup proses rekrutmen, manajemen karyawan, serta sistem persetujuan bertingkat untuk mendukung operasional perusahaan secara terstruktur.",
-            "ai_description": "Dilengkapi analisis kandidat berbasis AI untuk membantu proses seleksi lebih cepat.",
-            "intro": "",
-            "highlights_title": "Fitur Unggulan",
-            "all_features_title": "Daftar Fitur Lengkap per Modul",
-            "highlights": [
-                {
-                    "title": "Alur Rekrutmen End-to-End yang Cerdas",
-                    "points": [
-                        "Mengelola seluruh siklus hidup rekrutmen, dari posting lowongan, lamaran kandidat, tes, wawancara, hingga menjadi karyawan.",
-                        "Analisis Kandidat Berbasis AI: Sistem 'membaca' CV dan memberikan skor kecocokan serta rekomendasi pertanyaan wawancara otomatis."
-                    ]
-                },
-                {
-                    "title": "Manajemen Karyawan Berbasis Peran & Tipe",
-                    "points": [
-                        "Dasbor dan alur kerja yang berbeda untuk Karyawan Tetap, Karyawan Probation (Training), dan Peserta Magang.",
-                        "Fitur khusus seperti laporan harian dan evaluasi bulanan untuk mendukung program magang yang terstruktur."
-                    ]
-                },
-                {
-                    "title": "Sistem Persetujuan Bertingkat yang Dinamis",
-                    "points": [
-                        "Alur persetujuan otomatis untuk Lembur dan Izin: Karyawan -> Manajer Divisi -> HRD.",
-                        "Penanganan cerdas: Jika seorang Manajer mengajukan untuk dirinya sendiri, sistem otomatis meneruskannya ke HRD, melewati persetujuan level manajer."
-                    ]
-                },
-                {
-                    "title": "Arsitektur Berbasis Peran yang Kuat (RBAC)",
-                    "points": [
-                        "Setiap pengguna (Super Admin, HRD, Manajer, Karyawan, Kandidat) memiliki tampilan dan akses yang disesuaikan dengan tanggung jawab mereka.",
-                        "Diatur secara dinamis melalui konfigurasi menu dan security rules yang ketat."
-                    ]
-                }
-            ],
-            "all_features": [
-                {
-                    "title": "Portal Karir & Kandidat",
-                    "points": [
-                        "Halaman publik untuk menampilkan semua lowongan yang aktif.",
-                        "Proses lamaran multi-langkah: profil, unggah dokumen, dan melamar.",
-                        "Dasbor pribadi kandidat untuk melacak status lamaran dan jadwal."
-                    ]
-                },
-                {
-                    "title": "Manajemen Rekrutmen (HRD/Admin)",
-                    "points": [
-                        "Manajemen lowongan (Draft, Published, Closed).",
-                        "Manajemen aplikasi kandidat (Screening, Interview, Hired, etc.).",
-                        "Penjadwalan wawancara dan pengiriman penawaran kerja."
-                    ]
-                },
-                {
-                    "title": "Manajemen Karyawan",
-                    "points": [
-                        "Pusat data untuk mengelola profil semua tipe karyawan.",
-                        "Onboarding via undangan dengan kuota untuk rekrutmen massal.",
-                        "Manajemen absensi harian dengan validasi berbasis lokasi (GPS)."
-                    ]
-                },
-                {
-                    "title": "Pengajuan & Persetujuan",
-                    "points": [
-                        "Formulir dinamis untuk pengajuan lembur dan izin (sakit, keluar, dll) dengan unggah lampiran.",
-                        "Dasbor khusus untuk Manajer dan HRD untuk me-review dan menyetujui/menolak pengajuan."
-                    ]
-                },
-                {
-                    "title": "Fitur Khusus Magang",
-                    "points": [
-                        "Formulir laporan harian untuk intern (aktivitas, pembelajaran, kendala).",
-                        "Rekap laporan untuk melihat ringkasan dari semua laporan yang telah dibuat.",
-                        "Fitur evaluasi dan feedback bulanan dari mentor atau HRD."
-                    ]
-                },
-                {
-                    "title": "Administrasi & Pengaturan",
-                    "points": [
-                        "Manajemen pengguna dan peran (HRD, Manager, dll).",
-                        "Master data perusahaan (Brands, Divisi).",
-                        "Kustomisasi menu navigasi untuk setiap peran pengguna."
-                    ]
-                }
-            ]
+          "title": "Detail Fitur: HRP Starter Kit",
+          "description": "HRP Starter Kit adalah sistem HR berbasis web yang mencakup proses rekrutmen, manajemen karyawan, serta sistem persetujuan bertingkat untuk mendukung operasional perusahaan secara terstruktur.",
+          "ai_description": "Dilengkapi analisis kandidat berbasis AI untuk membantu proses seleksi lebih cepat.",
+          "intro": "",
+          "highlights_title": "Fitur Unggulan",
+          "all_features_title": "Daftar Fitur Lengkap per Modul",
+          "highlights": [
+            {
+              "title": "Alur Rekrutmen End-to-End yang Cerdas",
+              "points": [
+                "Mengelola seluruh siklus hidup rekrutmen, dari posting lowongan, lamaran kandidat, tes, wawancara, hingga menjadi karyawan.",
+                "Analisis Kandidat Berbasis AI: Sistem 'membaca' CV dan memberikan skor kecocokan serta rekomendasi pertanyaan wawancara otomatis."
+              ]
+            },
+            {
+              "title": "Manajemen Karyawan Berbasis Peran & Tipe",
+              "points": [
+                "Dasbor dan alur kerja yang berbeda untuk Karyawan Tetap, Karyawan Probation (Training), dan Peserta Magang.",
+                "Fitur khusus seperti laporan harian dan evaluasi bulanan untuk mendukung program magang yang terstruktur."
+              ]
+            },
+            {
+              "title": "Sistem Persetujuan Bertingkat yang Dinamis",
+              "points": [
+                "Alur persetujuan otomatis untuk Lembur dan Izin: Karyawan -> Manajer Divisi -> HRD.",
+                "Penanganan cerdas: Jika seorang Manajer mengajukan untuk dirinya sendiri, sistem otomatis meneruskannya ke HRD, melewati persetujuan level manajer."
+              ]
+            },
+            {
+              "title": "Arsitektur Berbasis Peran yang Kuat (RBAC)",
+              "points": [
+                "Setiap pengguna (Super Admin, HRD, Manajer, Karyawan, Kandidat) memiliki tampilan dan akses yang disesuaikan dengan tanggung jawab mereka.",
+                "Diatur secara dinamis melalui konfigurasi menu dan security rules yang ketat."
+              ]
+            }
+          ],
+          "all_features": [
+            {
+              "title": "Portal Karir & Kandidat",
+              "points": [
+                "Halaman publik untuk menampilkan semua lowongan yang aktif.",
+                "Proses lamaran multi-langkah: profil, unggah dokumen, dan melamar.",
+                "Dasbor pribadi kandidat untuk melacak status lamaran dan jadwal."
+              ]
+            },
+            {
+              "title": "Manajemen Rekrutmen (HRD/Admin)",
+              "points": [
+                "Manajemen lowongan (Draft, Published, Closed).",
+                "Manajemen aplikasi kandidat (Screening, Interview, Hired, etc.).",
+                "Penjadwalan wawancara dan pengiriman penawaran kerja."
+              ]
+            },
+            {
+              "title": "Manajemen Karyawan",
+              "points": [
+                "Pusat data untuk mengelola profil semua tipe karyawan.",
+                "Onboarding via undangan dengan kuota untuk rekrutmen massal.",
+                "Manajemen absensi harian dengan validasi berbasis lokasi (GPS)."
+              ]
+            },
+            {
+              "title": "Pengajuan & Persetujuan",
+              "points": [
+                "Formulir dinamis untuk pengajuan lembur dan izin (sakit, keluar, dll) dengan unggah lampiran.",
+                "Dasbor khusus untuk Manajer dan HRD untuk me-review dan menyetujui/menolak pengajuan."
+              ]
+            },
+            {
+              "title": "Fitur Khusus Magang",
+              "points": [
+                "Formulir laporan harian untuk intern (aktivitas, pembelajaran, kendala).",
+                "Rekap laporan untuk melihat ringkasan dari semua laporan yang telah dibuat.",
+                "Fitur evaluasi dan feedback bulanan dari mentor atau HRD."
+              ]
+            },
+            {
+              "title": "Administrasi & Pengaturan",
+              "points": [
+                "Manajemen pengguna dan peran (HRD, Manager, dll).",
+                "Master data perusahaan (Brands, Divisi).",
+                "Kustomisasi menu navigasi untuk setiap peran pengguna."
+              ]
+            }
+          ]
         }
       },
       "hajatan": {
@@ -430,19 +462,28 @@
         "date": "16 Februari - 30 Juni 2024",
         "description": "Berpartisipasi dalam program Merdeka Belajar Kampus Merdeka (MBKM) dengan fokus pada pengembangan aplikasi berbasis web untuk instansi pemerintah. Terlibat dalam pembuatan sistem pengadaan barang untuk Dinas Peternakan dan Perikanan Kabupaten Blitar.",
         "pdfs": [
-          { "title": "Sertifikat 1", "url": "https://drive.google.com/file/d/1wPWIy45aai-7QApKPcENEv9PfcV_Pm1v/preview" },
-          { "title": "Sertifikat 2", "url": "https://drive.google.com/file/d/11dibkISFyK4_H2Zc-m6OK45wH--LNhMi/preview" },
-          { "title": "Sertifikat 3", "url": "https://drive.google.com/file/d/1Cb4oDTNhKj-rPVd4gLzPfTKnt0vAZ1mc/preview" }
+          {
+            "title": "Sertifikat 1",
+            "url": "https://drive.google.com/file/d/1wPWIy45aai-7QApKPcENEv9PfcV_Pm1v/preview"
+          },
+          {
+            "title": "Sertifikat 2",
+            "url": "https://drive.google.com/file/d/11dibkISFyK4_H2Zc-m6OK45wH--LNhMi/preview"
+          },
+          {
+            "title": "Sertifikat 3",
+            "url": "https://drive.google.com/file/d/1Cb4oDTNhKj-rPVd4gLzPfTKnt0vAZ1mc/preview"
+          }
         ]
       },
       "maganghub": {
-        "title": "MagangHub – Web Developer",
+        "title": "MagangHub – Web Developer Intern",
         "organizer": "Kementerian Ketenagakerjaan RI",
-        "date": "Sedang Berlangsung",
-        "badge": "Sedang Berlangsung",
+        "date": "2025 – 2026",
         "description": "Sedang mengikuti program MagangHub sebagai Web Developer di PT Environesia Global Saraya, dengan fokus pada pengembangan sistem berbasis web seperti project management, HR system, dan CRM. Sertifikat resmi akan tersedia setelah program selesai.",
+        "badge": "Ongoing",
         "images": [
-          "https://drive.google.com/uc?export=view&id=1fS9X5xnRSu-UJOwotUT9k_TvUJ8Ymz4_",
+          "https://drive.google.com/uc?export=view&id=1fS9X5xnRSu-UJOwotUT9k_TvUJ8Ymz4",
           "https://drive.google.com/uc?export=view&id=15axQTzc4S6uA0c6VrA1WbEozAqLNbDsq"
         ]
       }

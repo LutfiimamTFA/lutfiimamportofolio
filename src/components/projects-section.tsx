@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -27,15 +28,16 @@ import { Separator } from '@/components/ui/separator';
 
 export default function ProjectsSection() {
   const t = useTranslations('Projects');
-  const projectKeys = ['cbdms', 'lsp', 'crm', 'hrp', 'hajatan', 'procurement'] as const;
+  const projectKeys = ['cbdms', 'hrp', 'environesia', 'crm', 'lsp', 'hajatan', 'procurement'] as const;
 
-  const projectImageIds: Record<typeof projectKeys[number], string> = {
+  const projectImageIds: Record<string, string> = {
     cbdms: 'project-1',
     lsp: 'project-2',
     crm: 'project-3',
     hrp: 'project-4',
     hajatan: 'project-5',
     procurement: 'project-6',
+    environesia: 'project-7'
   };
 
   const getImageById = (id: string) => {
@@ -54,7 +56,7 @@ export default function ProjectsSection() {
           </h2>
           <p className="text-lg text-muted-foreground">{t('description')}</p>
         </div>
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projectKeys.map((key) => {
             const project = {
               title: t(`items.${key}.title`),
@@ -104,21 +106,24 @@ export default function ProjectsSection() {
                       </div>
                     </div>
                     <CardHeader>
-                      <CardTitle>{project.title}</CardTitle>
-                      <CardDescription className="text-base">
+                      <CardTitle className="line-clamp-1">{project.title}</CardTitle>
+                      <CardDescription className="text-base line-clamp-1">
                         {project.role}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex flex-1 flex-col">
-                      <p className="flex-1 text-muted-foreground">
+                      <p className="flex-1 text-muted-foreground line-clamp-3">
                         {project.description}
                       </p>
                       <div className="mt-4 flex flex-wrap gap-2">
-                        {project.tech.map((tech) => (
+                        {project.tech.slice(0, 3).map((tech) => (
                           <Badge key={tech} variant="secondary">
                             {tech}
                           </Badge>
                         ))}
+                        {project.tech.length > 3 && (
+                          <Badge variant="outline">+{project.tech.length - 3}</Badge>
+                        )}
                       </div>
                     </CardContent>
                   </Card>
@@ -197,6 +202,86 @@ export default function ProjectsSection() {
                         </DialogFooter>
                       </ScrollArea>
                     </div>
+                  </DialogContent>
+                ) : key === 'environesia' ? (
+                  <DialogContent className="max-h-[90svh] max-w-6xl">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
+                      <DialogDescription>{project.modal.description}</DialogDescription>
+                    </DialogHeader>
+                    <ScrollArea className="h-[70vh] -mr-6 pr-6">
+                      <div className="space-y-8 py-4">
+                        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                          <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-xl">
+                            <Image
+                              src="https://drive.google.com/uc?export=view&id=1_LfdBZYeeUs0L9zbJtdv5JR7-iwyiujz"
+                              alt="Environesia Desktop Preview"
+                              fill
+                              loading="lazy"
+                              className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                              sizes="(max-width: 768px) 90vw, 45vw"
+                            />
+                          </div>
+                          <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-xl">
+                            <Image
+                              src="https://drive.google.com/uc?export=view&id=1q_Uy0COvHTIdOn1nL73kHHd2HVvscY4f"
+                              alt="Environesia Service Preview"
+                              fill
+                              loading="lazy"
+                              className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                              sizes="(max-width: 768px) 90vw, 45vw"
+                            />
+                          </div>
+                        </div>
+                        
+                        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                          <div>
+                            <h3 className="text-lg font-semibold text-foreground mb-4">
+                              {project.modal.highlights_title}
+                            </h3>
+                            <div className="space-y-4 text-sm">
+                              {project.modal.highlights.map((highlight, i) => (
+                                <div key={i}>
+                                  <h4 className="font-semibold">{highlight.title}</h4>
+                                  <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                                    {highlight.points.map((point, i) => (
+                                      <li key={i}>{point}</li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h3 className="text-lg font-semibold text-foreground mb-4">
+                              {project.modal.all_features_title}
+                            </h3>
+                            <div className="space-y-4 text-sm">
+                              {project.modal.all_features.map((feature, i) => (
+                                <div key={i}>
+                                  <h4 className="font-semibold">{feature.title}</h4>
+                                  <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                                    {feature.points.map((point, i) => (
+                                      <li key={i}>{point}</li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <DialogFooter className="pt-6 sm:justify-end">
+                          {project.liveLink && (
+                            <Button asChild size="lg">
+                              <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                                <ExternalLink className="mr-2" /> {t('visit_website')}
+                              </a>
+                            </Button>
+                          )}
+                        </DialogFooter>
+                      </div>
+                    </ScrollArea>
                   </DialogContent>
                 ) : key === 'lsp' ? (
                   <DialogContent className="max-h-[90svh] max-w-4xl">

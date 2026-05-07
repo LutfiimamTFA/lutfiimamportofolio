@@ -33,6 +33,7 @@
     "description": "A selection of projects I've worked on, showcasing my skills and expertise.",
     "view_details": "View Details",
     "visit_site": "Visit Site",
+    "visit_website": "Visit Website",
     "items": {
       "cbdms": {
         "title": "CBDMS Workspace",
@@ -142,6 +143,37 @@
           ]
         }
       },
+      "environesia": {
+        "title": "Environesia Services Website",
+        "description": "Developed a company profile and environmental consulting services website using WordPress Elementor.",
+        "tech": [
+          "WordPress",
+          "Elementor"
+        ],
+        "role": "Web Development",
+        "liveLink": "https://environesia.id/layanan/",
+        "githubLink": "",
+        "modal": {
+          "title": "Website Konsultan Lingkungan – Environesia",
+          "description": "Developing a environmental consulting services website using WordPress Elementor as a responsive and easily accessible company information media via desktop or mobile.",
+          "ai_description": "",
+          "intro": "A professional company profile website designed to showcase services and provide clear information to clients.",
+          "highlights_title": "Project Highlights",
+          "all_features_title": "Key Features",
+          "highlights": [
+            {
+              "title": "Key Features",
+              "points": [
+                "Responsive design (desktop & mobile)",
+                "Company profile & services catalog",
+                "Built with WordPress Elementor",
+                "User-friendly interface"
+              ]
+            }
+          ],
+          "all_features": []
+        }
+      },
       "lsp": {
         "title": "WordPress Site for LSP",
         "description": "Contributed to the development of a WordPress site using Elementor, focusing on data entry and implementing minor features from a template.",
@@ -210,100 +242,100 @@
         "title": "HRP (Environesia Career)",
         "description": "An end-to-end recruitment and HR management platform with AI-powered candidate analysis and a dynamic approval system.",
         "tech": [
-            "Next.js",
-            "Firebase",
-            "Genkit",
-            "Tailwind CSS"
+          "Next.js",
+          "Firebase",
+          "Genkit",
+          "Tailwind CSS"
         ],
         "role": "Full Stack Development",
         "liveLink": "https://studio--studio-9262077557-bc9c9.us-central1.hosted.app/careers",
         "githubLink": "https://github.com/LutfiimamTFA/HRPEnvironesia.git",
         "modal": {
-            "title": "Feature Details: HRP Starter Kit",
-            "description": "The HRP Starter Kit is a web-based HR system that covers the recruitment process, employee management, and a multi-level approval system to support structured company operations.",
-            "ai_description": "Equipped with AI-powered candidate analysis to help speed up the selection process.",
-            "intro": "",
-            "highlights_title": "Feature Highlights",
-            "all_features_title": "Complete Feature List by Module",
-            "highlights": [
-                {
-                    "title": "Intelligent End-to-End Recruitment Workflow",
-                    "points": [
-                        "Manages the entire recruitment lifecycle, from job posting, candidate application, testing, interviews, to employee activation.",
-                        "AI-Powered Candidate Analysis: The system 'reads' CVs and provides a match score and automated interview question recommendations."
-                    ]
-                },
-                {
-                    "title": "Role & Type-Based Employee Management",
-                    "points": [
-                        "Different dashboards and workflows for Permanent Employees, Probationary (Training) Employees, and Interns.",
-                        "Specialized features like daily reports and monthly evaluations to support a structured internship program."
-                    ]
-                },
-                {
-                    "title": "Dynamic Multi-Level Approval System",
-                    "points": [
-                        "Automated approval flows for Overtime and Leave requests: Employee -> Division Manager -> HRD.",
-                        "Smart routing: If a Manager submits a request for themselves, the system automatically routes it to HRD, bypassing the manager-level approval."
-                    ]
-                },
-                {
-                    "title": "Robust Role-Based Access Control (RBAC) Architecture",
-                    "points": [
-                        "Each user (Super Admin, HRD, Manager, Employee, Candidate) gets a tailored view and access based on their responsibilities.",
-                        "Dynamically configured through menu settings and strict security rules."
-                    ]
-                }
-            ],
-            "all_features": [
-                {
-                    "title": "Career & Candidate Portal",
-                    "points": [
-                        "Public-facing page to display all active job vacancies.",
-                        "Multi-step application process: profile, document uploads, and job application.",
-                        "Personal candidate dashboard to track application status and schedules."
-                    ]
-                },
-                {
-                    "title": "Recruitment Management (HRD/Admin)",
-                    "points": [
-                        "Vacancy management (Draft, Published, Closed).",
-                        "Candidate application management (Screening, Interview, Hired, etc.).",
-                        "Interview scheduling and job offer delivery."
-                    ]
-                },
-                {
-                    "title": "Employee Management",
-                    "points": [
-                        "Centralized database to manage profiles of all employee types.",
-                        "Onboarding via invitation batches with quotas for mass recruitment.",
-                        "Daily attendance management with location-based (GPS) validation."
-                    ]
-                },
-                {
-                    "title": "Requests & Approvals",
-                    "points": [
-                        "Dynamic forms for submitting overtime and leave requests (sick, personal, etc.) with attachment uploads.",
-                        "Dedicated dashboards for Managers and HRD to review and approve/reject requests."
-                    ]
-                },
-                {
-                    "title": "Internship-Specific Features",
-                    "points": [
-                        "Daily report forms for interns (activities, learnings, challenges).",
-                        "Report summaries to view all submitted reports.",
-                        "Monthly evaluation and feedback feature from mentors or HRD."
-                    ]
-                },
-                {
-                    "title": "Administration & Settings",
-                    "points": [
-                        "User and role management (HRD, Manager, etc.).",
-                        "Company master data (Brands, Divisions).",
-                        "Navigation menu customization for each user role."
-                    ]
-                }
-            ]
+          "title": "Feature Details: HRP Starter Kit",
+          "description": "The HRP Starter Kit is a web-based HR system that covers the recruitment process, employee management, and a multi-level approval system to support structured company operations.",
+          "ai_description": "Equipped with AI-powered candidate analysis to help speed up the selection process.",
+          "intro": "",
+          "highlights_title": "Feature Highlights",
+          "all_features_title": "Complete Feature List by Module",
+          "highlights": [
+            {
+              "title": "Intelligent End-to-End Recruitment Workflow",
+              "points": [
+                "Manages the entire recruitment lifecycle, from job posting, candidate application, testing, interviews, to employee activation.",
+                "AI-Powered Candidate Analysis: The system 'reads' CVs and provides a match score and automated interview question recommendations."
+              ]
+            },
+            {
+              "title": "Role & Type-Based Employee Management",
+              "points": [
+                "Different dashboards and workflows for Permanent Employees, Probationary (Training) Employees, and Interns.",
+                "Specialized features like daily reports and monthly evaluations to support a structured internship program."
+              ]
+            },
+            {
+              "title": "Dynamic Multi-Level Approval System",
+              "points": [
+                "Automated approval flows for Overtime and Leave requests: Employee -> Division Manager -> HRD.",
+                "Smart routing: If a Manager submits a request for themselves, the system automatically routes it to HRD, bypassing the manager-level approval."
+              ]
+            },
+            {
+              "title": "Robust Role-Based Access Control (RBAC) Architecture",
+              "points": [
+                "Each user (Super Admin, HRD, Manager, Employee, Candidate) gets a tailored view and access based on their responsibilities.",
+                "Dynamically configured through menu settings and strict security rules."
+              ]
+            }
+          ],
+          "all_features": [
+            {
+              "title": "Career & Candidate Portal",
+              "points": [
+                "Public-facing page to display all active job vacancies.",
+                "Multi-step application process: profile, document uploads, and job application.",
+                "Personal candidate dashboard to track application status and schedules."
+              ]
+            },
+            {
+              "title": "Recruitment Management (HRD/Admin)",
+              "points": [
+                "Vacancy management (Draft, Published, Closed).",
+                "Candidate application management (Screening, Interview, Hired, etc.).",
+                "Interview scheduling and job offer delivery."
+              ]
+            },
+            {
+              "title": "Employee Management",
+              "points": [
+                "Centralized database to manage profiles of all employee types.",
+                "Onboarding via invitation batches with quotas for mass recruitment.",
+                "Daily attendance management with location-based (GPS) validation."
+              ]
+            },
+            {
+              "title": "Requests & Approvals",
+              "points": [
+                "Dynamic forms for submitting overtime and leave requests (sick, personal, etc.) with attachment uploads.",
+                "Dedicated dashboards for Managers and HRD to review and approve/reject requests."
+              ]
+            },
+            {
+              "title": "Internship-Specific Features",
+              "points": [
+                "Daily report forms for interns (activities, learnings, challenges).",
+                "Report summaries to view all submitted reports.",
+                "Monthly evaluation and feedback feature from mentors or HRD."
+              ]
+            },
+            {
+              "title": "Administration & Settings",
+              "points": [
+                "User and role management (HRD, Manager, etc.).",
+                "Company master data (Brands, Divisions).",
+                "Navigation menu customization for each user role."
+              ]
+            }
+          ]
         }
       },
       "hajatan": {
@@ -427,22 +459,31 @@
       "mbkm": {
         "title": "MBKM – Merdeka Campus Program",
         "organizer": "Full Stack Web Developer",
-        "date": "Feb 16 - Jun 30, 2024",
+        "date": "16 February - 30 June 2024",
         "description": "Participated in the Merdeka Belajar Kampus Merdeka (MBKM) program focusing on web application development for government agencies. Involved in creating a procurement system for the Blitar Regency Livestock and Fisheries Service.",
         "pdfs": [
-          { "title": "Certificate 1", "url": "https://drive.google.com/file/d/1wPWIy45aai-7QApKPcENEv9PfcV_Pm1v/preview" },
-          { "title": "Certificate 2", "url": "https://drive.google.com/file/d/11dibkISFyK4_H2Zc-m6OK45wH--LNhMi/preview" },
-          { "title": "Certificate 3", "url": "https://drive.google.com/file/d/1Cb4oDTNhKj-rPVd4gLzPfTKnt0vAZ1mc/preview" }
+          {
+            "title": "Certificate 1",
+            "url": "https://drive.google.com/file/d/1wPWIy45aai-7QApKPcENEv9PfcV_Pm1v/preview"
+          },
+          {
+            "title": "Certificate 2",
+            "url": "https://drive.google.com/file/d/11dibkISFyK4_H2Zc-m6OK45wH--LNhMi/preview"
+          },
+          {
+            "title": "Certificate 3",
+            "url": "https://drive.google.com/file/d/1Cb4oDTNhKj-rPVd4gLzPfTKnt0vAZ1mc/preview"
+          }
         ]
       },
       "maganghub": {
-        "title": "MagangHub – Web Developer",
+        "title": "MagangHub – Web Developer Intern",
         "organizer": "Kementerian Ketenagakerjaan RI",
-        "date": "Ongoing",
-        "badge": "In Progress",
-        "description": "Currently participating in the MagangHub program as a Web Developer at PT Environesia Global Saraya, focusing on developing web-based systems such as project management, HR system, and CRM. The official certificate will be available after the program is completed.",
+        "date": "2025 – 2026",
+        "description": "Participated in a national internship program as a Web Developer at PT Environesia Global Saraya, developing various web-based systems for business needs.",
+        "badge": "Ongoing",
         "images": [
-          "https://drive.google.com/uc?export=view&id=1fS9X5xnRSu-UJOwotUT9k_TvUJ8Ymz4_",
+          "https://drive.google.com/uc?export=view&id=1fS9X5xnRSu-UJOwotUT9k_TvUJ8Ymz4",
           "https://drive.google.com/uc?export=view&id=15axQTzc4S6uA0c6VrA1WbEozAqLNbDsq"
         ]
       }

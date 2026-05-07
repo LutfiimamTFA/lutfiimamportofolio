@@ -41,6 +41,18 @@
       "description": "Procurement system for a government agency",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1_9WVe3Bh3dHEybaNiCvulG0XvRnNQwsC",
       "imageHint": "government procurement system"
+    },
+    {
+      "id": "project-7",
+      "description": "Environesia Services Website Preview 1",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1_LfdBZYeeUs0L9zbJtdv5JR7-iwyiujz",
+      "imageHint": "environesia service website desktop"
+    },
+    {
+      "id": "project-8",
+      "description": "Environesia Services Website Preview 2",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1q_Uy0COvHTIdOn1nL73kHHd2HVvscY4f",
+      "imageHint": "environesia service website mobile stack"
     }
   ]
 }
