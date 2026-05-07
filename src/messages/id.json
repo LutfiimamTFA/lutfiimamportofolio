@@ -172,7 +172,22 @@
               ]
             }
           ],
-          "all_features": []
+          "all_features": [
+            {
+              "title": "Showcase Layanan",
+              "points": [
+                "Menu layanan dinamis untuk navigasi mudah di berbagai sektor konsultasi.",
+                "Presentasi visual yang jelas tentang alur kerja perizinan dan studi lingkungan."
+              ]
+            },
+            {
+              "title": "Komunikasi & SEO",
+              "points": [
+                "Saluran kontak terintegrasi untuk pertanyaan langsung dari klien.",
+                "Struktur situs yang dioptimalkan untuk visibilitas mesin pencari (SEO) yang lebih baik."
+              ]
+            }
+          ]
         }
       },
       "lsp": {

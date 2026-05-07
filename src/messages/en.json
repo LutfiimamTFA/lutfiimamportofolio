@@ -172,7 +172,22 @@
               ]
             }
           ],
-          "all_features": []
+          "all_features": [
+            {
+              "title": "Service Showcase",
+              "points": [
+                "Dynamic service menu for easy navigation across various consulting sectors.",
+                "Clear visual presentation of environmental permitting and studies workflows."
+              ]
+            },
+            {
+              "title": "Communication & SEO",
+              "points": [
+                "Integrated contact channels for direct client inquiries.",
+                "Optimized site structure for better search engine visibility (SEO)."
+              ]
+            }
+          ]
         }
       },
       "lsp": {
