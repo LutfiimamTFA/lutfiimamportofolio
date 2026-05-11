@@ -155,7 +155,7 @@
         "githubLink": "",
         "modal": {
           "title": "Environmental Consultant Website – Environesia",
-          "description": "Developing a environmental consulting services website based on WordPress Elementor as a company profile and service information media. The website is designed responsive with a modern look to increase the ease of accessing information for customers.",
+          "description": "Developing a environmental consulting services website based on WordPress Elementor as a company profile and service information media. Website is designed responsive with a modern look to increase the ease of accessing information for customers.",
           "ai_description": "",
           "intro": "A professional company profile website designed to showcase services and provide clear information to clients.",
           "highlights_title": "Project Highlights",
@@ -264,7 +264,7 @@
           "Tailwind CSS"
         ],
         "role": "Full Stack Development",
-        "liveLink": "https://studio--studio-9262077557-bc9c9.us-central1.hosted.app/careers",
+        "liveLink": "https://hrp-environesia.vercel.app/",
         "githubLink": "https://github.com/LutfiimamTFA/HRPEnvironesia.git",
         "modal": {
           "title": "Feature Details: HRP Starter Kit",
