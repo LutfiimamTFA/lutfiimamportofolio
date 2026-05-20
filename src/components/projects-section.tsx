@@ -128,576 +128,208 @@ export default function ProjectsSection() {
                     </CardContent>
                   </Card>
                 </DialogTrigger>
-                {key === 'cbdms' ? (
-                  <DialogContent className="max-h-[90svh] max-w-6xl">
-                    <DialogHeader>
-                      <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
-                      <DialogDescription>{project.modal.description}</DialogDescription>
-                    </DialogHeader>
-                    <div className="grid grid-cols-1 gap-x-8 gap-y-4 py-4 md:grid-cols-2">
-                      <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
-                        <Image
-                          src="https://drive.google.com/uc?export=view&id=1J_BfXc0RU628WtF6kTTgzoWimIwhmt8e"
-                          alt="CBDMS Workspace Feature Preview"
-                          fill
-                          loading="lazy"
-                          className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
-                          sizes="(max-width: 768px) 90vw, 45vw"
-                        />
-                      </div>
-                      <ScrollArea className="h-[60vh] -mr-6 pr-6">
-                        <div className="space-y-6 text-sm">
-                          <h3 className="text-lg font-semibold text-foreground">
-                            {project.modal.highlights_title}
-                          </h3>
-                          <div className="space-y-4">
-                            {project.modal.highlights.map((highlight, i) => (
-                              <div key={i}>
-                                <h4 className="font-semibold">{highlight.title}</h4>
-                                <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, i) => (
-                                    <li key={i}>{point}</li>
-                                  ))}
-                                </ul>
-                              </div>
-                            ))}
-                          </div>
-                          
-                          {project.modal.all_features && project.modal.all_features.length > 0 && (
-                            <>
-                              <Separator />
-                              <h3 className="text-lg font-semibold text-foreground">
-                                {project.modal.all_features_title}
-                              </h3>
-                              <div className="grid grid-cols-1 gap-x-6 gap-y-4">
-                                {project.modal.all_features.map((feature, i) => (
+                
+                <DialogContent className="flex h-[95vh] w-[95vw] max-w-6xl flex-col p-0 sm:h-[90vh]">
+                  <DialogHeader className="p-6 pb-2">
+                    <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
+                    <DialogDescription>{project.modal.description}</DialogDescription>
+                  </DialogHeader>
+                  
+                  <div className="flex-1 overflow-hidden">
+                    <ScrollArea className="h-full px-6">
+                      <div className="py-4">
+                        {/* Layout grid based on project key */}
+                        {key === 'cbdms' ? (
+                          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                            <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
+                              <Image
+                                src="https://drive.google.com/uc?export=view&id=1J_BfXc0RU628WtF6kTTgzoWimIwhmt8e"
+                                alt="CBDMS Workspace Feature Preview"
+                                fill
+                                loading="lazy"
+                                className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                                sizes="(max-width: 768px) 90vw, 45vw"
+                              />
+                            </div>
+                            <div className="space-y-6 text-sm">
+                              <h3 className="text-lg font-semibold text-foreground">{project.modal.highlights_title}</h3>
+                              <div className="space-y-4">
+                                {project.modal.highlights.map((highlight, i) => (
                                   <div key={i}>
-                                    <h4 className="font-semibold">{feature.title}</h4>
+                                    <h4 className="font-semibold">{highlight.title}</h4>
                                     <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                      {feature.points.map((point, i) => (
-                                        <li key={i}>{point}</li>
-                                      ))}
+                                      {highlight.points.map((point, i) => <li key={i}>{point}</li>)}
                                     </ul>
                                   </div>
                                 ))}
                               </div>
-                            </>
-                          )}
-                        </div>
-                         <DialogFooter className="pt-6 sm:justify-end">
-                          {project.liveLink && (
-                            <Button asChild>
-                              <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                                <ExternalLink className="mr-2" /> {t('visit_site')}
-                              </a>
-                            </Button>
-                          )}
-                          {project.githubLink && (
-                            <Button asChild variant="secondary">
-                              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                                <Github className="mr-2" /> GitHub
-                              </a>
-                            </Button>
-                          )}
-                        </DialogFooter>
-                      </ScrollArea>
-                    </div>
-                  </DialogContent>
-                ) : key === 'environesia' ? (
-                  <DialogContent className="max-h-[90svh] max-w-6xl">
-                    <DialogHeader>
-                      <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
-                      <DialogDescription>{project.modal.description}</DialogDescription>
-                    </DialogHeader>
-                    <ScrollArea className="h-[70vh] -mr-6 pr-6">
-                      <div className="space-y-8 py-4">
-                        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                          <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-xl">
-                            <Image
-                              src="https://drive.google.com/uc?export=view&id=1_LfdBZYeeUs0L9zbJtdv5JR7-iwyiujz"
-                              alt="Environesia Desktop Preview"
-                              fill
-                              loading="lazy"
-                              className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                              sizes="(max-width: 768px) 90vw, 45vw"
-                            />
-                          </div>
-                          <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-xl">
-                            <Image
-                              src="https://drive.google.com/uc?export=view&id=1q_Uy0COvHTIdOn1nL73kHHd2HVvscY4f"
-                              alt="Environesia Service Preview"
-                              fill
-                              loading="lazy"
-                              className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                              sizes="(max-width: 768px) 90vw, 45vw"
-                            />
-                          </div>
-                        </div>
-                        
-                        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                          <div>
-                            <h3 className="text-lg font-semibold text-foreground mb-4">
-                              {project.modal.highlights_title}
-                            </h3>
-                            <div className="space-y-4 text-sm">
-                              {project.modal.highlights.map((highlight, i) => (
-                                <div key={i}>
-                                  <h4 className="font-semibold">{highlight.title}</h4>
-                                  <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                    {highlight.points.map((point, i) => (
-                                      <li key={i}>{point}</li>
-                                    ))}
-                                  </ul>
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                          <div>
-                            <h3 className="text-lg font-semibold text-foreground mb-4">
-                              {project.modal.all_features_title}
-                            </h3>
-                            <div className="space-y-4 text-sm">
-                              {project.modal.all_features.map((feature, i) => (
-                                <div key={i}>
-                                  <h4 className="font-semibold">{feature.title}</h4>
-                                  <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                    {feature.points.map((point, i) => (
-                                      <li key={i}>{point}</li>
-                                    ))}
-                                  </ul>
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                        
-                        <DialogFooter className="pt-6 sm:justify-end">
-                          {project.liveLink && (
-                            <Button asChild size="lg">
-                              <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                                <ExternalLink className="mr-2" /> {t('visit_website')}
-                              </a>
-                            </Button>
-                          )}
-                        </DialogFooter>
-                      </div>
-                    </ScrollArea>
-                  </DialogContent>
-                ) : key === 'lsp' ? (
-                  <DialogContent className="max-h-[90svh] max-w-4xl">
-                    <DialogHeader>
-                      <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
-                      <DialogDescription>{project.modal.description}</DialogDescription>
-                    </DialogHeader>
-                    <ScrollArea className="h-[60vh] -mr-6 pr-6">
-                      <div className="grid grid-cols-1 gap-x-8 gap-y-4 py-4">
-                        <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
-                          {image && (
-                            <Image
-                              src={image.imageUrl}
-                              alt={project.title}
-                              fill
-                              loading="lazy"
-                              className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
-                              sizes="(max-width: 768px) 90vw, 45vw"
-                            />
-                          )}
-                        </div>
-                        <div className="space-y-6 text-sm">
-                          <h3 className="text-lg font-semibold text-foreground">
-                            {project.modal.highlights_title}
-                          </h3>
-                          <div className="space-y-4">
-                            {project.modal.highlights.map((highlight, i) => (
-                              <div key={i}>
-                                <h4 className="font-semibold">{highlight.title}</h4>
-                                <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, i) => (
-                                    <li key={i}>{point}</li>
-                                  ))}
-                                </ul>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                      <DialogFooter className="pt-6 sm:justify-end">
-                        {project.liveLink && (
-                          <Button asChild>
-                            <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                              <ExternalLink className="mr-2" /> {t('visit_site')}
-                            </a>
-                          </Button>
-                        )}
-                        {project.githubLink && (
-                          <Button asChild variant="secondary">
-                            <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                              <Github className="mr-2" /> GitHub
-                            </a>
-                          </Button>
-                        )}
-                      </DialogFooter>
-                    </ScrollArea>
-                  </DialogContent>
-                 ) : key === 'hrp' ? (
-                  <DialogContent className="max-h-[90svh] max-w-6xl">
-                    <DialogHeader>
-                      <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
-                      <DialogDescription>
-                        {project.modal.description}
-                        <br />
-                        {project.modal.ai_description}
-                      </DialogDescription>
-                    </DialogHeader>
-                    <div className="grid grid-cols-1 gap-x-8 gap-y-4 py-4 md:grid-cols-2">
-                      <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
-                        <Image
-                          src="https://drive.google.com/uc?export=view&id=1E5rA_CySxUrP3DKsTDADUgIxqbfZcAA-"
-                          alt="HRP Starter Kit Feature Preview"
-                          fill
-                          loading="lazy"
-                          className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
-                          sizes="(max-width: 768px) 90vw, 45vw"
-                        />
-                      </div>
-                      <ScrollArea className="h-[60vh] -mr-6 pr-6">
-                        <div className="space-y-6 text-sm">
-                          <h3 className="text-lg font-semibold text-foreground">
-                            {project.modal.highlights_title}
-                          </h3>
-                          <div className="space-y-4">
-                            {project.modal.highlights.map((highlight, i) => (
-                              <div key={i}>
-                                <h4 className="font-semibold">{highlight.title}</h4>
-                                <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, i) => (
-                                    <li key={i}>{point}</li>
-                                  ))}
-                                </ul>
-                              </div>
-                            ))}
-                          </div>
-                          {project.modal.all_features &&
-                            project.modal.all_features.length > 0 && (
-                              <>
-                                <Separator />
-                                <h3 className="text-lg font-semibold text-foreground">
-                                  {project.modal.all_features_title}
-                                </h3>
-                                <div className="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2">
-                                  {project.modal.all_features.map(
-                                    (feature, i) => (
+                              {project.modal.all_features && project.modal.all_features.length > 0 && (
+                                <>
+                                  <Separator />
+                                  <h3 className="text-lg font-semibold text-foreground">{project.modal.all_features_title}</h3>
+                                  <div className="space-y-4">
+                                    {project.modal.all_features.map((feature, i) => (
                                       <div key={i}>
-                                        <h4 className="font-semibold">
-                                          {feature.title}
-                                        </h4>
+                                        <h4 className="font-semibold">{feature.title}</h4>
                                         <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                          {feature.points.map((point, i) => (
-                                            <li key={i}>{point}</li>
-                                          ))}
+                                          {feature.points.map((point, i) => <li key={i}>{point}</li>)}
                                         </ul>
                                       </div>
-                                    )
+                                    ))}
+                                  </div>
+                                </>
+                              )}
+                            </div>
+                          </div>
+                        ) : key === 'environesia' ? (
+                          <div className="space-y-8">
+                            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                              <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-xl">
+                                <Image
+                                  src="https://drive.google.com/uc?export=view&id=1_LfdBZYeeUs0L9zbJtdv5JR7-iwyiujz"
+                                  alt="Environesia Desktop Preview"
+                                  fill
+                                  loading="lazy"
+                                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                  sizes="(max-width: 768px) 90vw, 45vw"
+                                />
+                              </div>
+                              <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-xl">
+                                <Image
+                                  src="https://drive.google.com/uc?export=view&id=1q_Uy0COvHTIdOn1nL73kHHd2HVvscY4f"
+                                  alt="Environesia Service Preview"
+                                  fill
+                                  loading="lazy"
+                                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                  sizes="(max-width: 768px) 90vw, 45vw"
+                                />
+                              </div>
+                            </div>
+                            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                              <div>
+                                <h3 className="text-lg font-semibold text-foreground mb-4">{project.modal.highlights_title}</h3>
+                                <div className="space-y-4 text-sm">
+                                  {project.modal.highlights.map((highlight, i) => (
+                                    <div key={i}>
+                                      <h4 className="font-semibold">{highlight.title}</h4>
+                                      <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                                        {highlight.points.map((point, i) => <li key={i}>{point}</li>)}
+                                      </ul>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                              <div>
+                                <h3 className="text-lg font-semibold text-foreground mb-4">{project.modal.all_features_title}</h3>
+                                <div className="space-y-4 text-sm">
+                                  {project.modal.all_features.map((feature, i) => (
+                                    <div key={i}>
+                                      <h4 className="font-semibold">{feature.title}</h4>
+                                      <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                                        {feature.points.map((point, i) => <li key={i}>{point}</li>)}
+                                      </ul>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        ) : key === 'hrp' ? (
+                          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                            <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
+                              <Image
+                                src="https://drive.google.com/uc?export=view&id=1E5rA_CySxUrP3DKsTDADUgIxqbfZcAA-"
+                                alt="HRP Starter Kit Feature Preview"
+                                fill
+                                loading="lazy"
+                                className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                                sizes="(max-width: 768px) 90vw, 45vw"
+                              />
+                            </div>
+                            <div className="space-y-6 text-sm">
+                              <h3 className="text-lg font-semibold text-foreground">{project.modal.highlights_title}</h3>
+                              <div className="space-y-4">
+                                {project.modal.highlights.map((highlight, i) => (
+                                  <div key={i}>
+                                    <h4 className="font-semibold">{highlight.title}</h4>
+                                    <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                                      {highlight.points.map((point, i) => <li key={i}>{point}</li>)}
+                                    </ul>
+                                  </div>
+                                ))}
+                              </div>
+                              {project.modal.all_features && project.modal.all_features.length > 0 && (
+                                <>
+                                  <Separator />
+                                  <h3 className="text-lg font-semibold text-foreground">{project.modal.all_features_title}</h3>
+                                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                    {project.modal.all_features.map((feature, i) => (
+                                      <div key={i}>
+                                        <h4 className="font-semibold">{feature.title}</h4>
+                                        <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                                          {feature.points.map((point, i) => <li key={i}>{point}</li>)}
+                                        </ul>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </>
+                              )}
+                            </div>
+                          </div>
+                        ) : (
+                          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                             <div className="space-y-4">
+                                <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
+                                  {image && (
+                                    <Image
+                                      src={image.imageUrl}
+                                      alt={project.title}
+                                      fill
+                                      loading="lazy"
+                                      className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                                      sizes="(max-width: 768px) 90vw, 45vw"
+                                    />
                                   )}
                                 </div>
-                              </>
-                            )}
-                        </div>
-                        <DialogFooter className="pt-6 sm:justify-end">
-                          {project.liveLink && (
-                            <Button asChild>
-                              <a
-                                href={project.liveLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <ExternalLink className="mr-2" />{' '}
-                                {t('visit_site')}
-                              </a>
-                            </Button>
-                          )}
-                          {project.githubLink && (
-                            <Button asChild variant="secondary">
-                              <a
-                                href={project.githubLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <Github className="mr-2" /> GitHub
-                              </a>
-                            </Button>
-                          )}
-                        </DialogFooter>
-                      </ScrollArea>
-                    </div>
-                  </DialogContent>
-                ) : key === 'crm' ? (
-                  <DialogContent className="max-h-[90svh] max-w-4xl">
-                    <DialogHeader>
-                      <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
-                      <DialogDescription>{project.modal.description}</DialogDescription>
-                    </DialogHeader>
-                    <ScrollArea className="h-[60vh] -mr-6 pr-6">
-                      <div className="grid grid-cols-1 gap-x-8 gap-y-4 py-4 md:grid-cols-2">
-                        <div className="flex flex-col gap-4">
-                          {project.modal.intro && (
-                            <p className="text-sm text-muted-foreground">{project.modal.intro}</p>
-                          )}
-                          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                            <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
-                              <Image
-                                src="https://drive.google.com/uc?export=view&id=1BfxH3Ro3NpZNzcfaKaCvCy1y8arkEU2F"
-                                alt="CRM WhatsApp Integration Preview 1"
-                                fill
-                                loading="lazy"
-                                className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
-                                sizes="(max-width: 768px) 90vw, 45vw"
-                              />
-                            </div>
-                            <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
-                              <Image
-                                src="https://drive.google.com/uc?export=view&id=1BpiO_KV0j68qT4TZ-UaOHKBMlJzBDqIg"
-                                alt="CRM WhatsApp Integration Preview 2"
-                                fill
-                                loading="lazy"
-                                className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
-                                sizes="(max-width: 768px) 90vw, 45vw"
-                              />
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="space-y-6 text-sm">
-                          <h3 className="text-lg font-semibold text-foreground">
-                            {project.modal.highlights_title}
-                          </h3>
-                          <div className="space-y-4">
-                            {project.modal.highlights.map((highlight, i) => (
-                              <div key={i}>
-                                <h4 className="font-semibold">{highlight.title}</h4>
-                                <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, i) => (
-                                    <li key={i}>{point}</li>
+                                {project.modal.intro && <p className="text-sm text-muted-foreground">{project.modal.intro}</p>}
+                             </div>
+                             <div className="space-y-6 text-sm">
+                                <h3 className="text-lg font-semibold text-foreground">{project.modal.highlights_title}</h3>
+                                <div className="space-y-4">
+                                  {project.modal.highlights.map((highlight, i) => (
+                                    <div key={i}>
+                                      <h4 className="font-semibold">{highlight.title}</h4>
+                                      <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
+                                        {highlight.points.map((point, i) => <li key={i}>{point}</li>)}
+                                      </ul>
+                                    </div>
                                   ))}
-                                </ul>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                      <DialogFooter className="pt-6 sm:justify-end">
-                        {project.liveLink && (
-                          <Button asChild>
-                            <a
-                              href={project.liveLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <ExternalLink className="mr-2" /> {t('visit_site')}
-                            </a>
-                          </Button>
-                        )}
-                        {project.githubLink && (
-                          <Button asChild variant="secondary">
-                            <a
-                              href={project.githubLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <Github className="mr-2" /> GitHub
-                            </a>
-                          </Button>
-                        )}
-                      </DialogFooter>
-                    </ScrollArea>
-                  </DialogContent>
-                ) : key === 'hajatan' ? (
-                  <DialogContent className="max-h-[90svh] max-w-4xl">
-                    <DialogHeader>
-                      <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
-                      <DialogDescription>{project.modal.description}</DialogDescription>
-                    </DialogHeader>
-                    <ScrollArea className="h-[60vh] -mr-6 pr-6">
-                      <div className="space-y-6 py-4">
-                        {project.modal.intro && (
-                          <p className="text-sm text-muted-foreground">{project.modal.intro}</p>
-                        )}
-                        <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
-                          <Image
-                            src="https://drive.google.com/uc?export=view&id=150hi_UP0cxUrEQMrTIXKi3dYHoSSub3t"
-                            alt="Landing Page Hajatan Akbar Preview"
-                            fill
-                            loading="lazy"
-                            className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
-                            sizes="(max-width: 768px) 90vw, 45vw"
-                          />
-                        </div>
-                        <div className="space-y-6 text-sm">
-                          <h3 className="text-lg font-semibold text-foreground">
-                            {project.modal.highlights_title}
-                          </h3>
-                          <div className="space-y-4">
-                            {project.modal.highlights.map((highlight, i) => (
-                              <div key={i}>
-                                <h4 className="font-semibold">{highlight.title}</h4>
-                                <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, i) => (
-                                    <li key={i}>{point}</li>
-                                  ))}
-                                </ul>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                      <DialogFooter className="pt-6 sm:justify-end">
-                        {project.liveLink && (
-                          <Button asChild>
-                            <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                              <ExternalLink className="mr-2" /> {t('visit_site')}
-                            </a>
-                          </Button>
-                        )}
-                        {project.githubLink && (
-                          <Button asChild variant="secondary">
-                            <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                              <Github className="mr-2" /> GitHub
-                            </a>
-                          </Button>
-                        )}
-                      </DialogFooter>
-                    </ScrollArea>
-                  </DialogContent>
-                ) : key === 'procurement' ? (
-                  <DialogContent className="max-h-[90svh] max-w-6xl">
-                    <DialogHeader>
-                      <DialogTitle className="text-2xl">{project.modal.title}</DialogTitle>
-                      <DialogDescription>{project.modal.description}</DialogDescription>
-                    </DialogHeader>
-                    <div className="grid grid-cols-1 gap-x-8 gap-y-4 py-4 md:grid-cols-2">
-                      <div className="group relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
-                        <Image
-                          src="https://drive.google.com/uc?export=view&id=1_9WVe3Bh3dHEybaNiCvulG0XvRnNQwsC"
-                          alt="Sistem Pengadaan Barang Blitar Preview"
-                          fill
-                          loading="lazy"
-                          className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
-                          sizes="(max-width: 768px) 90vw, 45vw"
-                        />
-                      </div>
-                      <ScrollArea className="h-[60vh] -mr-6 pr-6">
-                        <div className="space-y-6 text-sm">
-                          <h3 className="text-lg font-semibold text-foreground">
-                            {project.modal.highlights_title}
-                          </h3>
-                          <div className="space-y-4">
-                            {project.modal.highlights.map((highlight, i) => (
-                              <div key={i}>
-                                <h4 className="font-semibold">{highlight.title}</h4>
-                                <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                  {highlight.points.map((point, i) => (
-                                    <li key={i}>{point}</li>
-                                  ))}
-                                </ul>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                        <DialogFooter className="pt-6 sm:justify-end">
-                          {project.liveLink && (
-                            <Button asChild>
-                              <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                                <ExternalLink className="mr-2" /> {t('visit_site')}
-                              </a>
-                            </Button>
-                          )}
-                          {project.githubLink && (
-                            <Button asChild variant="secondary">
-                              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                                <Github className="mr-2" /> GitHub
-                              </a>
-                            </Button>
-                          )}
-                        </DialogFooter>
-                      </ScrollArea>
-                    </div>
-                  </DialogContent>
-                ) : (
-                  <DialogContent className="max-h-[90svh] max-w-4xl">
-                    <DialogHeader className="pr-6">
-                      <DialogTitle className="text-2xl">
-                        {project.modal.title}
-                      </DialogTitle>
-                      <DialogDescription>
-                        {project.modal.description}
-                      </DialogDescription>
-                    </DialogHeader>
-                    <ScrollArea className="-mr-6 h-[60svh] pr-6">
-                      <div className="space-y-6 text-sm">
-                        <h3 className="text-lg font-semibold text-foreground">
-                          {project.modal.highlights_title}
-                        </h3>
-                        <div className="space-y-4">
-                          {project.modal.highlights.map((highlight, i) => (
-                            <div key={i}>
-                              <h4 className="font-semibold">{highlight.title}</h4>
-                              <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                {highlight.points.map((point, i) => (
-                                  <li key={i}>{point}</li>
-                                ))}
-                              </ul>
-                            </div>
-                          ))}
-                        </div>
-                        
-                        {project.modal.all_features && project.modal.all_features.length > 0 && (
-                          <>
-                            <Separator />
-                            <h3 className="text-lg font-semibold text-foreground">
-                              {project.modal.all_features_title}
-                            </h3>
-                            <div className="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2">
-                              {project.modal.all_features.map((feature, i) => (
-                                <div key={i}>
-                                  <h4 className="font-semibold">{feature.title}</h4>
-                                  <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-foreground">
-                                    {feature.points.map((point, i) => (
-                                      <li key={i}>{point}</li>
-                                    ))}
-                                  </ul>
                                 </div>
-                              ))}
-                            </div>
-                          </>
+                             </div>
+                          </div>
                         )}
                       </div>
-                      <DialogFooter className="pt-6 sm:justify-end">
-                        {project.liveLink && (
-                          <Button asChild>
-                            <a
-                              href={project.liveLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <ExternalLink className="mr-2" /> {t('visit_site')}
-                            </a>
-                          </Button>
-                        )}
-                        {project.githubLink && (
-                          <Button asChild variant="secondary">
-                            <a
-                              href={project.githubLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <Github className="mr-2" /> GitHub
-                            </a>
-                          </Button>
-                        )}
-                      </DialogFooter>
                     </ScrollArea>
-                  </DialogContent>
-                )}
+                  </div>
+
+                  <DialogFooter className="border-t bg-background p-6 flex-row gap-2 sm:justify-end">
+                    {project.liveLink && (
+                      <Button asChild className="flex-1 sm:flex-none">
+                        <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="mr-2 h-4 w-4" /> 
+                          {key === 'environesia' ? t('visit_website') : t('visit_site')}
+                        </a>
+                      </Button>
+                    )}
+                    {project.githubLink && (
+                      <Button asChild variant="secondary" className="flex-1 sm:flex-none">
+                        <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                          <Github className="mr-2 h-4 w-4" /> GitHub
+                        </a>
+                      </Button>
+                    )}
+                  </DialogFooter>
+                </DialogContent>
               </Dialog>
             );
           })}
